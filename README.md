@@ -1,5 +1,4 @@
-seminario de solucion de problemas de traductores de lenguaje II
-Aula DUCT2-7
+seminario de solucion de problemas de traductores de lenguaje II Aula DUCT2-7
 Profesor: MICHEL EMANUEL LOPEZ FRANCO
 
 # Mini-Generador-lexico
