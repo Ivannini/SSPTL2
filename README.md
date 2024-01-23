@@ -13,7 +13,7 @@ En un generador léxico típico, cada token consta de un tipo y, opcionalmente, 
 Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
 
     import re 
-    def tokenTraductor(token):  # Para decifrar el número correspondiente a algún Token
+    def tokenTraductor(token):  
     if token == 'identificador':
         return 0
     elif token == 'entero':
@@ -65,53 +65,52 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
     else:
         return -1
 
-    def lexemaAnalizador(ingresado):  # Analiza letra a letra en base a un autómata finito
+    def lexemaAnalizador(ingresado):  
     print("----------------------------------------------------------------------------")
     elementos = []
     estado = 0
     indice = 0
-    cadena = ingresado + '$'  # Tomamos lo que tiene el campo de texto
+    cadena = ingresado + '$'  
     while (indice <= (len(cadena) - 1) and estado == 0):
-        # Estado 20 es el boogy man, no aparece, lo usamos como termino general para reiniciar
         lexema = ''
-        token = 'error'  # Default por si no tenemos el token en cuestión
-        while indice <= (len(cadena) - 1) and estado != 20:  # Es -1 para no contar el $ añadido
+        token = 'error'  
+        while indice <= (len(cadena) - 1) and estado != 20:  
             if estado == 0:  # ESTADO INICIAL
-                if cadena[indice].isspace():  # Cubrimos espacio, saltos de línea y tab
+                if cadena[indice].isspace():  
                     estado = 0
                 elif cadena[indice].isnumeric():  # 0-9
                     estado = 1
                     lexema += cadena[indice]
                     token = 'entero'
-                elif cadena[indice] == '+' or cadena[indice] == '-':  # Operador Suma
+                elif cadena[indice] == '+' or cadena[indice] == '-':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'opSuma'
-                elif cadena[indice] == '=':  # Encontramos igual
+                elif cadena[indice] == '=':  
                     estado = 2
                     lexema += cadena[indice]
                     token = 'asignación'
-                elif cadena[indice] == ';':  # Encontramos punto y coma
+                elif cadena[indice] == ';':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'punto y coma'
-                elif cadena[indice] == ',':  # Encontramos coma
+                elif cadena[indice] == ',':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'coma'
-                elif cadena[indice] == '(':  # Paréntesis izquierdo
+                elif cadena[indice] == '(':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'parIzq'
-                elif cadena[indice] == ')':  # Paréntesis derecho
+                elif cadena[indice] == ')':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'parDer'
-                elif cadena[indice] == '{':  # Llave izquierda
+                elif cadena[indice] == '{':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'llaveIzq'
-                elif cadena[indice] == '}':  # Llave derecha
+                elif cadena[indice] == '}':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'llaveDer'
@@ -127,7 +126,7 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                     estado = 6
                     lexema += cadena[indice]
                     token = 'error'
-                elif cadena[indice] == '$':  # Fin de cadena
+                elif cadena[indice] == '$':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'pesos'
@@ -135,15 +134,15 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                     estado = 20
                     lexema += cadena[indice]
                     token = 'opMul'
-                elif cadena[indice] == '<' or cadena[indice] == '>':  # Mayor y menor da igual
+                elif cadena[indice] == '<' or cadena[indice] == '>':  
                     estado = 7
                     lexema += cadena[indice]
                     token = 'opRelacional'
-                elif cadena[indice] == '!':  # Encontramos Admiración
+                elif cadena[indice] == '!':  
                     estado = 8
                     lexema += cadena[indice]
                     token = 'opNot'
-                elif cadena[indice] == '"':  # Encontramos comillas NO PRESENTE EN EL AUTOMATA
+                elif cadena[indice] == '"':  
                     estado = 9
                     lexema += cadena[indice]
                     token = 'cadena'
@@ -153,25 +152,25 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                     token = 'error'
                 indice += 1  # Procedemos al siguiente char en cadena
 
-            elif estado == 1:  # NODO DE NÚMEROS
-                if cadena[indice].isnumeric():  # 0-9
+            elif estado == 1:  
+                if cadena[indice].isnumeric():  
                     estado = 1
                     lexema += cadena[indice]
                     token = 'entero'
-                    indice += 1  # Procedemos al siguiente char en cadena
-                elif cadena[indice] == '.':  # Es número decimal
+                    indice += 1  
+                elif cadena[indice] == '.':  
                     estado = 5
                     lexema += cadena[indice]
                     token = 'error'
-                    indice += 1  # Procedemos al siguiente char en cadena
-                elif cadena[indice] == '+' or cadena[indice] == '-' or cadena[indice] == '*' or cadena[indice] == '/':  # Rescatamos operadores
+                    indice += 1  
+                elif cadena[indice] == '+' or cadena[indice] == '-' or cadena[indice] == '*' or cadena[indice] == '/':  
                     estado = 20
-                elif cadena[indice].isnumeric() is False and cadena[indice] != '$' and cadena[indice].isspace() is False:  # No vale algo diferente a números
+                elif cadena[indice].isnumeric() is False and cadena[indice] != '$' and cadena[indice].isspace() is False:  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'error'
-                    indice += 1  # Procedemos al siguiente char en cadena
-                elif cadena[indice] == '.':  # Encontramos punto
+                    indice += 1  
+                elif cadena[indice] == '.': 
                     estado = 5
                     lexema += cadena[indice]
                     token = 'punto'
@@ -181,29 +180,29 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                     #token = 'error'
                 #indice += 1  # Procedemos al siguiente char en cadena
 
-            elif estado == 2:  # NODO IGUAL
-                if cadena[indice] == '=':  # Tenemos doble igual
+            elif estado == 2:  
+                if cadena[indice] == '=':  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'opIgualdad'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1  
                 else:
                     estado = 20
-                #indice += 1  # Procedemos al siguiente char en cadena
+                #indice += 1  
 
             elif estado == 3:  # OP LÓGICO ||
                 if cadena[indice] == '|':
                     estado = 20
                     lexema += cadena[indice]
                     token = 'opOr'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1  
                 else:
                     estado = 20
                     #lexema += cadena[indice]
                     #token = 'error'
-                #indice += 1  # Procedemos al siguiente char en cadena
+                #indice += 1  
 
-            elif estado == 4:  # NODO IDENTIFICADOR
+            elif estado == 4:  
                 if cadena[indice].isdigit() or cadena[indice].isalpha() or cadena[indice] == '_':  # Formato variable
                     estado = 4
                     lexema += cadena[indice]
@@ -212,43 +211,43 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                 else:
                     estado = 20
 
-            elif estado == 5:  # NODO NÚMERO DECIMAL
+            elif estado == 5:  
                 if cadena[indice].isnumeric():  # 0-9
                     estado = 5
                     lexema += cadena[indice]
                     token = 'real'
-                    indice += 1  # Procedemos al siguiente char en cadena
-                elif cadena[indice] == '+' or cadena[indice] == '-' or cadena[indice] == '*' or cadena[indice] == '/':  # Rescatamos operadores
+                    indice += 1  
+                elif cadena[indice] == '+' or cadena[indice] == '-' or cadena[indice] == '*' or cadena[indice] == '/':  
                     estado = 20
-                elif cadena[indice].isnumeric() is False and cadena[indice] != '$' and cadena[indice].isspace() is False:  # Diferente a número
+                elif cadena[indice].isnumeric() is False and cadena[indice] != '$' and cadena[indice].isspace() is False:  
                     estado = 20
                     lexema += cadena[indice]
                     token = 'error'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1  
                 else:
                     estado = 20
                     #lexema += cadena[indice]
                     #token = 'constante'
-                #indice += 1  # Procedemos al siguiente char en cadena
+                #indice += 1  
 
             elif estado == 6:  # OP LÓGICO &&
                 if cadena[indice] == '&':
                     estado = 20
                     lexema += cadena[indice]
                     token = 'opAnd'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1  
                 else:
                     estado = 20
                     #lexema += cadena[indice]
                     #token = 'error'
-                #indice += 1  # Procedemos al siguiente char en cadena
+                #indice += 1  
 
             elif estado == 7:  # OP RELACIONAL < y >
                 if cadena[indice] == '=':
                     estado = 20
                     lexema += cadena[indice]
                     token = 'opRelacional'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1  
                 else:
                     estado = 20
 
@@ -257,7 +256,7 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                     estado = 20
                     lexema += cadena[indice]
                     token = 'opIgualdad'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1 
                 else:
                     estado = 20
 
@@ -266,7 +265,7 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                     estado = 20
                     lexema += cadena[indice]
                     token = 'cadena'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1  
                 elif cadena[indice] == '$':
                     estado = 20
                     token = 'error'
@@ -274,7 +273,7 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
                     estado = 9
                     lexema += cadena[indice]
                     token = 'cadena'
-                    indice += 1  # Procedemos al siguiente char en cadena
+                    indice += 1  
 
         estado = 0  # Reiniciamos el conteo
         elementos.append({'token': token, 'lexema': lexema})
