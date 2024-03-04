@@ -83,6 +83,9 @@ Se modifico el codigo del analizador lexico para que funcionara junto con un cod
 
 Para proposito de que no terminara muy larga la explicacion solo se tomo captura del inicio y final de la tabla
 
+Utilizando tu analizador léxico y tu algoritmo para trabajar con las tablas lr. Carga e implementa la siguiente gramática.
+(Los archivos de la garmatica esten en: https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/tree/main/Proyecto%20principal/GramaticaCompilador)
+
 # Arbol sintactico
 
 El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
