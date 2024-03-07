@@ -44,6 +44,8 @@ identificadores, operadores, números, y otros elementos del lenguaje de program
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 
+(https://user-images.githubusercontent.com/89165084/230996230-38d2e05f-9757-4d8a-a2ca-d5e657be37c9.png)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Tarea: Mini generador léxico 
