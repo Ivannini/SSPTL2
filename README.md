@@ -55,14 +55,6 @@ Resultado de la ejecucion:
 ![Analizador completo img 1](https://user-images.githubusercontent.com/89165084/213944726-ec851892-1ca3-4041-afac-36f8ae2a7296.jpg)!
 ![Analizador completo img 2](https://user-images.githubusercontent.com/89165084/213944892-50c32dfd-bedf-4cc9-b39f-dbef5ddffcfc.jpg)!
 
-Se mejoro el aspecto visual, de manera que ahora si se ejecuta en un servidor local o con la extension live server de visual code el archivo index.html, aparecera una interfaz visual que permitira ingresar cualquier texto y lo analizara:
-
-![Lexico visual1](https://user-images.githubusercontent.com/89165084/216058211-45b5e04a-d30b-4e36-8872-c6eb2074101f.jpg)
-
-![Lexico visual2](https://user-images.githubusercontent.com/89165084/216058237-a12973df-fb88-4dd8-a91e-8b2237fc4bcb.jpg)
-
-
-
 
 
 # Tarea: Etapa del proyecto analizador léxico completo.
