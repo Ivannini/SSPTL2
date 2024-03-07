@@ -33,7 +33,6 @@ identificadores, operadores, números, y otros elementos del lenguaje de program
 
 # Analizador Lexico
 
-
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 
 # Tarea: Mini generador léxico 
@@ -41,6 +40,7 @@ Genera un pequeño analizador léxico, que identifique los siguientes tokens (id
 identificadores = letra(letra|digito)*
 Real = entero.entero+
 
+<img width="466" alt="Captura de pantalla 2024-03-07 150842" src="https://github.com/Ivannini/SSPTL2/assets/99306363/b4cac4f7-13ea-4084-b6ab-e5701fb7d65d">
 
 
 
