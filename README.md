@@ -3,6 +3,15 @@ AULA DUCT2-7
 PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Compilador
+
+Un traductor es un programa que recibe como entrada código escrito en un cierto lenguaje y produce como salida código en otro lenguaje.
+
+Un compilador es un programa informático que traduce un programa que ha sido escrito en un lenguaje de programación a un lenguaje común, usualmente lenguaje de máquina, aunque también puede ser traducido a un código intermedio (bytecode) o a texto. Este proceso de traducción se conoce como compilación.
+
+https://es.wikipedia.org/wiki/Compilador
+
+--------------------------------------------------------------------------------------
 # Mini-Generador-lexico
 Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
 
