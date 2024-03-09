@@ -48,8 +48,8 @@ El Análisis Léxico es la primera fase de un compilador, este consiste en un pr
 --------------------------------------------------------------------------------------
 # Tarea: Ejemplo gramática LR utilizando tabla de compilador.
 
-Se modifico el codigo de la clase sintactico para que se creara un arbol sintactico mientras se va realizando el analisis y asi guardar cada parte del codigo a analizar,
-se crearon las clases necesarias para el arbol, una por cada regla, una siendo el nodo y las ultimas dos siendo el arbol y una que controlara todas.
+El codigo de la clase sintactico para que se creara un arbol sintactico mientras se va realizando el analisis y asi guardar cada parte del codigo a analizar,
+las clases necesarias para el arbol, una por cada regla, una siendo el nodo y las ultimas dos siendo el arbol y una que controlara todas.
 
 ![image](https://user-images.githubusercontent.com/89165084/224136832-d4bca03e-445e-4c20-8350-0a59caba4b80.png)
 
