@@ -2,7 +2,7 @@ SEMNINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJE II
 AULA DUCT2-7
 PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Compilador
 
 Un traductor es un programa que recibe como entrada código escrito en un cierto lenguaje y produce como salida código en otro lenguaje.
@@ -11,7 +11,7 @@ Un compilador es un programa informático que traduce un programa que ha sido es
 
 https://es.wikipedia.org/wiki/Compilador
 
---------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Mini-Generador-lexico
 Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
 
