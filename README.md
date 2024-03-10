@@ -64,15 +64,11 @@ Resultado de la ejecucion:
 ![Analizador completo img 1](https://user-images.githubusercontent.com/89165084/213944726-ec851892-1ca3-4041-afac-36f8ae2a7296.jpg)!
 ![Analizador completo img 2](https://user-images.githubusercontent.com/89165084/213944892-50c32dfd-bedf-4cc9-b39f-dbef5ddffcfc.jpg)!
 
-
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea: Etapa del proyecto analizador léxico completo.
 Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
 https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf
 <img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
-
-
-
 
 # Analizador sintactico
 Un analizador sintáctico, es un programa informático que analiza una cadena de símbolos según las reglas de una gramática formal. El análisis sintáctico convierte el texto de entrada en otras estructuras (comúnmente árboles), que son más útiles para el posterior análisis y capturan la jerarquía implícita de la entrada. 
@@ -80,7 +76,7 @@ Un analizador sintáctico, es un programa informático que analiza una cadena de
 Un analizador léxico crea tokens de una secuencia de caracteres de entrada y son estos tokens los que son procesados por el analizador sintáctico para construir la estructura de datos, por ejemplo un árbol de análisis o árboles de sintaxis abstracta. 
 
 El uso más común de los analizadores sintácticos es como parte de la fase de análisis de los compiladores. De modo que tienen que analizar el código fuente del lenguaje, los lenguajes de programación tienden a basarse en gramáticas libres de contexto, debido a que se pueden escribir analizadores rápidos y eficientes para estas.
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea: Mini analizador sintáctico (Excel)
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
 
@@ -118,45 +114,17 @@ Para proposito de que no terminara muy larga la explicacion solo se tomo captura
 # Arbol sintactico
 
 El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
---------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # Analizador Semantico
 
 Un analizador semántico es una herramienta utilizada en el procesamiento de lenguaje natural y la compilación de programas informáticos. Su función principal es analizar la estructura sintáctica de una oración o expresión, y asignar significado a las palabras y elementos presentes en la misma.
 En el caso de la compilación de programas informáticos, el analizador semántico se utiliza para validar la corrección de la sintaxis de un programa y verificar que las variables y operaciones utilizadas tengan sentido en el contexto del lenguaje de programación utilizado. Por ejemplo, si se utiliza una variable que no ha sido declarada previamente, el analizador semántico detectará el error y lo reportará.
-
-
-
-Si ejecutamos el programa nos presenta el modelo visual que ya concoemos de un textArea y un boton, en este caso al analizar la entrada nos despliega el arbol sintactico y ademas nos dice si la estrada es aceptada o si ocurre algun error semantico, ademas de que nos indica cual.
-
-
-
-
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Generador de codigo
 Un generador de código es una herramienta o recurso que genera un tipo particular de código o lenguaje de programación de computadora. Esto tiene muchos significados específicos en el mundo de TI, muchos de ellos relacionados con los procesos a veces complejos de convertir la sintaxis de programación humana al lenguaje de máquina que puede leer un sistema informático.
 --------------------------------------------------------------------------------------------------------------------------
-# Tarea: Generador e codigo
-Utilizando tu arbol sintactico y con el previo analisis semanticos codifica un algoritmo que genere un codigo en lensuaje ensamblador que pueda ser ejecutado por un emulador o programa ensamblador.
-
-Se modifico el proyecto agregando al clase genCode, dicha clase se encarga de recorrer por seguna vez el arbol sintactico esta vez no para analizarlo si no que lo realiza para escribir codigo en un archivo, este codigo representa la escrito por el usuario y lo tranforma en leguaje ensamblador, plasmandolo mediante un arreglo de strings que despues mediante un objeto Blob el cual construye el archivo con termiancion .asm listo para descargar y ejecutarlo en procesador o un emulador.
-
-![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/9e50b2a7-698b-4ce6-948b-383854c2be13)
-
-Ademas se cambio visualmente la interfaz del programa, ahora enfocandose en la geenracion del codigo, ademas de añadir el boton de descargar cuando el codigo sea ingresado correctamente y termine de geenrar el archivo .asm:
-
-![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/44e88525-7b81-4100-8ab7-66ef0ad9e968)
-
-
-Ejecucion:
-
-![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/e270def9-455c-485b-9525-8f18f31b0678)
-
-![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/1cb63a17-299f-48d0-92a5-f284811b3a52)
-
-![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/b82c9c3d-4dc4-4749-b039-f232ff152d88)
-
 
 
 
