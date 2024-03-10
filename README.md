@@ -32,6 +32,7 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de programación, como palabras clave, identificadores, constantes y operadores. El analizador léxico es la primera fase del proceso de compilación y su objetivo principal es simplificar el código fuente para su procesamiento posterior. Una parte fundamental de un compilador o intérprete, encargado de analizar el flujo de caracteres de un programa fuente para identificar y clasificar lexemas, que son las unidades léxicas más pequeñas con significado. Estos lexemas pueden ser palabras clave, identificadores, operadores, números, y otros elementos del lenguaje de programación.
 
 https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf
+
 (https://user-images.githubusercontent.com/89165084/230996230-38d2e05f-9757-4d8a-a2ca-d5e657be37c9.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -93,17 +94,7 @@ a+b+c+d+e+f
 Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo (PracticaAnalizadorSintactico.pdf)
 
 Se modifico el codigo del analizador lexico para que funcionara junto con un codigo nuevo y hicira la funcion del analizador sintactico. Se agrego una nueva clase (Sintactico) la cual realiza as tareas importantes del mismo, ademas de que se cambio la interfaz para que concordara con el objetivo de este mini analizador sintactico.
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea: Gramática del compilador
 
 Se modifico el codigo de la clase sintactico para que de esta manera la gramatica y tabla LR que utilizara de base fuera la dada en los archivos de la nueva
@@ -145,12 +136,26 @@ Si ejecutamos el programa nos presenta el modelo visual que ya concoemos de un t
 
 # Generador de codigo
 Un generador de código es una herramienta o recurso que genera un tipo particular de código o lenguaje de programación de computadora. Esto tiene muchos significados específicos en el mundo de TI, muchos de ellos relacionados con los procesos a veces complejos de convertir la sintaxis de programación humana al lenguaje de máquina que puede leer un sistema informático.
-
+--------------------------------------------------------------------------------------------------------------------------
 # Tarea: Generador e codigo
 Utilizando tu arbol sintactico y con el previo analisis semanticos codifica un algoritmo que genere un codigo en lensuaje ensamblador que pueda ser ejecutado por un emulador o programa ensamblador.
 
 Se modifico el proyecto agregando al clase genCode, dicha clase se encarga de recorrer por seguna vez el arbol sintactico esta vez no para analizarlo si no que lo realiza para escribir codigo en un archivo, este codigo representa la escrito por el usuario y lo tranforma en leguaje ensamblador, plasmandolo mediante un arreglo de strings que despues mediante un objeto Blob el cual construye el archivo con termiancion .asm listo para descargar y ejecutarlo en procesador o un emulador.
 
+![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/9e50b2a7-698b-4ce6-948b-383854c2be13)
+
+Ademas se cambio visualmente la interfaz del programa, ahora enfocandose en la geenracion del codigo, ademas de añadir el boton de descargar cuando el codigo sea ingresado correctamente y termine de geenrar el archivo .asm:
+
+![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/44e88525-7b81-4100-8ab7-66ef0ad9e968)
+
+
+Ejecucion:
+
+![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/e270def9-455c-485b-9525-8f18f31b0678)
+
+![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/1cb63a17-299f-48d0-92a5-f284811b3a52)
+
+![image](https://github.com/guzhdz/TRADUCTORES-DE-LENGUAJES-II/assets/89165084/b82c9c3d-4dc4-4749-b039-f232ff152d88)
 
 
 
