@@ -27,7 +27,7 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Informe sobre Analizador Léxico
+# Analizador Léxico
 Un analizador léxico es una parte esencial de un compilador o intérprete que se encarga de
 analizar un flujo de caracteres de un programa fuente y convertirlo en una secuencia de
 "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de
@@ -43,6 +43,7 @@ identificadores, operadores, números, y otros elementos del lenguaje de program
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 
+https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf
 (https://user-images.githubusercontent.com/89165084/230996230-38d2e05f-9757-4d8a-a2ca-d5e657be37c9.png)
 
 --------------------------------------------------------------------------------------
