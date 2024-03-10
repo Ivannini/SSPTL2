@@ -17,8 +17,6 @@ Genera un pequeño analizador léxico, que identifique los siguientes tokens (id
 
 La tarea del generador léxico es identificar y clasificar estos tokens a partir de la cadena de entrada, siguiendo reglas predefinidas que especifican la estructura léxica del lenguaje de programación. Estas reglas suelen definirse mediante expresiones regulares.
 
-En un generador léxico típico, cada token consta de un tipo y, opcionalmente, de un valor (lexema) asociado. Los tipos de tokens pueden incluir palabras clave, identificadores, números, operadores, delimitadores y otros elementos reconocibles en el código fuente.
-
 Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
 
 
@@ -62,18 +60,18 @@ Genera un analizador léxico utilizando todos los símbolos léxicos en el archi
 Resultado de la ejecucion:
 
 ![Analizador completo img 1](https://user-images.githubusercontent.com/89165084/213944726-ec851892-1ca3-4041-afac-36f8ae2a7296.jpg)!
+
 ![Analizador completo img 2](https://user-images.githubusercontent.com/89165084/213944892-50c32dfd-bedf-4cc9-b39f-dbef5ddffcfc.jpg)!
 
 ![Lexico visual1](https://user-images.githubusercontent.com/89165084/216058211-45b5e04a-d30b-4e36-8872-c6eb2074101f.jpg)
 
 ![Lexico visual2](https://user-images.githubusercontent.com/89165084/216058237-a12973df-fb88-4dd8-a91e-8b2237fc4bcb.jpg)
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Tarea: Etapa del proyecto analizador léxico completo.
 Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
 https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf
-<img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
 
+<img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
+-----------------------------------------------------------------------------------------------
 # Analizador sintactico
 Un analizador sintáctico, es un programa informático que analiza una cadena de símbolos según las reglas de una gramática formal. El análisis sintáctico convierte el texto de entrada en otras estructuras (comúnmente árboles), que son más útiles para el posterior análisis y capturan la jerarquía implícita de la entrada. 
 
@@ -89,6 +87,9 @@ hola+mundo
 
 Entrada para el Ejercicio 2
 a+b+c+d+e+f
+
+<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
+-------------------------------------------------------------------------------------------------------
 
 # Tarea: Mini analizador sintáctico (código)
 Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo (PracticaAnalizadorSintactico.pdf)
@@ -119,16 +120,12 @@ Para proposito de que no terminara muy larga la explicacion solo se tomo captura
 
 El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 # Analizador Semantico
 
 Un analizador semántico es una herramienta utilizada en el procesamiento de lenguaje natural y la compilación de programas informáticos. Su función principal es analizar la estructura sintáctica de una oración o expresión, y asignar significado a las palabras y elementos presentes en la misma.
 En el caso de la compilación de programas informáticos, el analizador semántico se utiliza para validar la corrección de la sintaxis de un programa y verificar que las variables y operaciones utilizadas tengan sentido en el contexto del lenguaje de programación utilizado. Por ejemplo, si se utiliza una variable que no ha sido declarada previamente, el analizador semántico detectará el error y lo reportará.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Generador de codigo
-Un generador de código es una herramienta o recurso que genera un tipo particular de código o lenguaje de programación de computadora. Esto tiene muchos significados específicos en el mundo de TI, muchos de ellos relacionados con los procesos a veces complejos de convertir la sintaxis de programación humana al lenguaje de máquina que puede leer un sistema informático.
---------------------------------------------------------------------------------------------------------------------------
+
 
 
 
