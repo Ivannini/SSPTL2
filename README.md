@@ -226,16 +226,6 @@ Resultado de la ejecucion:
 <img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Analizador sintactico
-
-Un analizador sintáctico, es un programa informático que analiza una cadena de símbolos según las reglas de una gramática formal. El análisis sintáctico convierte el texto de entrada en otras estructuras (comúnmente árboles), que son más útiles para el posterior análisis y capturan la jerarquía implícita de la entrada. 
-
-Un analizador léxico crea tokens de una secuencia de caracteres de entrada y son estos tokens los que son procesados por el analizador sintáctico para construir la estructura de datos, por ejemplo un árbol de análisis o árboles de sintaxis abstracta. 
-
-El uso más común de los analizadores sintácticos es como parte de la fase de análisis de los compiladores. De modo que tienen que analizar el código fuente del lenguaje, los lenguajes de programación tienden a basarse en gramáticas libres de contexto, debido a que se pueden escribir analizadores rápidos y eficientes para estas.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Analizador Sintactico (Implementacion usando Objetos)](https://github.com/Ivannini/SSPTL2/blob/main/Tarea_%20Analizador%20Sint%C3%A1ctico%20(Implementaci%C3%B3n%20usando%20Objetos).pdf)
 Se ha implementado una jerarquía de clases utilizando herencia y clases abstractas para representar elementos de una pila, como Terminal, NoTerminal, y Estado. La clase Pila se encarga de gestionar una lista que actúa como una pila, con métodos para agregar, eliminar y mostrar elementos. Se han creado objetos de las clases definidas, insertándolos en la pila y mostrando su contenido. La estructura general del código sigue principios de programación orientada a objetos (OOP) con encapsulamiento y polimorfismo.
 
