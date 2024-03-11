@@ -2,14 +2,9 @@ SEMNINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJE II
 AULA DUCT2-7
 PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Compilador
+----------------------------------------------------------------------------------------------------
 
-Un traductor es un programa que recibe como entrada código escrito en un cierto lenguaje y produce como salida código en otro lenguaje.
-
-Un compilador es un programa informático que traduce un programa que ha sido escrito en un lenguaje de programación a un lenguaje común, usualmente lenguaje de máquina, aunque también puede ser traducido a un código intermedio (bytecode) o a texto. Este proceso de traducción se conoce como compilación.
-
-https://es.wikipedia.org/wiki/Compilador
+En este readme se podran observar todos los trabajos de la materia y asi como contruyo un traductor.
 ----------------------------------------------------------------------------------------------------
 # ¿Qué es es un analizador léxico ?
 
@@ -25,8 +20,7 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea: Mini analizador sintáctico (Excel)
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
 
@@ -37,7 +31,7 @@ Entrada para el Ejercicio 2
 a+b+c+d+e+f
 
 <img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Analizador Lexico completo
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
