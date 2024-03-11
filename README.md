@@ -13,7 +13,7 @@ En este readme se podran observar todos los trabajos de la materia y asi como co
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Mini Generador lexico
+# [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/tree/main/Modulo1/Simbolos_lexicos)
 Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
 
 La tarea del generador léxico es identificar y clasificar estos tokens a partir de la cadena de entrada, siguiendo reglas predefinidas que especifican la estructura léxica del lenguaje de programación. Estas reglas suelen definirse mediante expresiones regulares.
