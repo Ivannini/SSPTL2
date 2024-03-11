@@ -10,7 +10,6 @@ Lunes y Miercoles 1 a 3 PM
 
 PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
-En este readme se podran observar todos los trabajos de la materia y asi como contruyo un traductor.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
