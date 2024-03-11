@@ -1,8 +1,13 @@
 SEMNINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJE II
+
 AULA DUCT2-7
+
 Seccion: D02
+
 Siglo: 2024A
+
 Lunes y Miercoles 1 a 3 PM
+
 PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 En este readme se podran observar todos los trabajos de la materia y asi como contruyo un traductor.
