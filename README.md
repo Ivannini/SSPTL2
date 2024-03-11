@@ -81,7 +81,7 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 
 
 
-class AnalizadorLexicoApp:
+    class AnalizadorLexicoApp:
     def __init__(self, master):
         self.master = master
         master.title("Analizador Léxico")
