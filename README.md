@@ -129,7 +129,8 @@ class AnalizadorLexicoApp:
             self.resultados_text.insert(tk.END, resultados)
             self.resultados_text.configure(state="disabled")
 
-(https://user-images.githubusercontent.com/89165084/230996230-38d2e05f-9757-4d8a-a2ca-d5e657be37c9.png)
+<img width="410" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/60a6948f-8bb3-4b55-873d-0701cd521801">
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea: Ejemplo gramática LR utilizando tabla de compilador.
