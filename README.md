@@ -302,10 +302,6 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
-Utilizando tu analizador léxico y tu algoritmo para trabajar con las tablas lr. Carga e implementa la siguiente gramática.
-(Los archivos de la garmatica esten en: 
-
-https://github.com/Ivannini/SSPTL2/tree/main/GramaticaLR/classes
 
 
     import { Pila } from './pila.js';
