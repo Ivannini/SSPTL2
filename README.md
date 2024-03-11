@@ -37,6 +37,8 @@ a+b+c+d+e+f
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 Un analizador léxico es una parte esencial de un compilador o intérprete que se encarga de analizar un flujo de caracteres de un programa fuente y convertirlo en una secuencia de "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de programación, como palabras clave, identificadores, constantes y operadores. 
 
+# Codigo del analizador lexico completo
+En esta parte del codigo se puede observar que se utilizaron todos los simbolos lexicos del archivo, para asi realizar la actividad.
 
       switch = {
             self.ERROR: self.m_ERROR,
@@ -76,7 +78,6 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
             self.VOID: self.m_VOID,
             self.PESO: self.m_PESO
         }
-
 
 
 
@@ -134,9 +135,10 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Mini analizador sintáctico (código)
-Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo (PracticaAnalizadorSintactico.pdf)
+Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
 
-Se modifico el codigo del analizador lexico para que funcionara junto con un codigo nuevo y hicira la funcion del analizador sintactico. Se agrego una nueva clase (Sintactico) la cual realiza as tareas importantes del mismo, ademas de que se cambio la interfaz para que concordara con el objetivo de este mini analizador sintactico.
+#Codigo
+Se define una clase Pila que implementa una pila básica utilizando una lista en Python. Esta clase tiene métodos para realizar operaciones típicas de una pila como push, pop, top, muestra, e isEmpty.
 
     class Pila:
     def __init__(self):
@@ -269,7 +271,6 @@ Al final se agrego codigo en el script.js donde se imprime el arbol despues de r
 
 ![image](https://user-images.githubusercontent.com/89165084/224136677-781e542e-5a15-4b72-923b-19b00ea183c9.png)
 
-Como se observa se muestra el arbol y el numero indica el nivel e cada nodo.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -313,11 +314,11 @@ https://github.com/Ivannini/SSPTL2/tree/main/GramaticaLR/classes
 Se modifico el codigo de la clase sintactico para que de esta manera la gramatica y tabla LR que utilizara de base fuera la dada en los archivos de la nueva
 gramatica, se hizo de manera que que se leyera el archivo cada que se construyera el objeto y en sus arreglos copiaba la tabla:
 
-import { Pila } from './pila.js';
-import * as genR from './Tree/generadorReglas.js';
-import { Nodo, Arbol } from './Tree/arbol.js';
+    import { Pila } from './pila.js';
+    import * as genR from './Tree/generadorReglas.js';
+    import { Nodo, Arbol } from './Tree/arbol.js';
 
-class Sintactico {
+    class Sintactico {
     
     constructor() {
         this.pila = new Pila();
