@@ -208,7 +208,7 @@ Al final se agrego codigo en el script.js donde se imprime el arbol despues de r
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Etapa del proyecto analizador léxico completo.
+# [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf)
 Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
 
 Resultado de la ejecucion:
