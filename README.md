@@ -10,7 +10,6 @@ En este readme se podran observar todos los trabajos de la materia y asi como co
 
 # ¿Qué es es un analizador léxico?
 
-
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -189,7 +188,54 @@ Se define una clase Lexico que representa un analizador léxico básico. Esta cl
 
 <img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Tarea: Ejemplo gramática LR utilizando tabla de compilador.
+
+El codigo de la clase sintactico para que se creara un arbol sintactico mientras se va realizando el analisis y asi guardar cada parte del codigo a analizar,
+las clases necesarias para el arbol, una por cada regla, una siendo el nodo y las ultimas dos siendo el arbol y una que controlara todas.
+
+![image](https://user-images.githubusercontent.com/89165084/224136832-d4bca03e-445e-4c20-8350-0a59caba4b80.png)
+
+![image](https://user-images.githubusercontent.com/89165084/224136929-58835ee3-8954-495d-9a7d-38f99ca125f0.png)
+
+Al final se agrego codigo en el script.js donde se imprime el arbol despues de realizar el analisis, probemos con el ejemplo int hola; :
+
+![image](https://user-images.githubusercontent.com/89165084/224136601-0b05f6b2-b49b-49a4-8772-932d62dddadd.png)
+
+![image](https://user-images.githubusercontent.com/89165084/224136677-781e542e-5a15-4b72-923b-19b00ea183c9.png)
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Etapa del proyecto analizador léxico completo.
+Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
+
+Resultado de la ejecucion:
+
+![Analizador completo img 1](https://user-images.githubusercontent.com/89165084/213944726-ec851892-1ca3-4041-afac-36f8ae2a7296.jpg)!
+
+![Analizador completo img 2](https://user-images.githubusercontent.com/89165084/213944892-50c32dfd-bedf-4cc9-b39f-dbef5ddffcfc.jpg)!
+
+![Lexico visual1](https://user-images.githubusercontent.com/89165084/216058211-45b5e04a-d30b-4e36-8872-c6eb2074101f.jpg)
+
+![Lexico visual2](https://user-images.githubusercontent.com/89165084/216058237-a12973df-fb88-4dd8-a91e-8b2237fc4bcb.jpg)
+
+
+
+<img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Analizador sintactico
+
+Un analizador sintáctico, es un programa informático que analiza una cadena de símbolos según las reglas de una gramática formal. El análisis sintáctico convierte el texto de entrada en otras estructuras (comúnmente árboles), que son más útiles para el posterior análisis y capturan la jerarquía implícita de la entrada. 
+
+Un analizador léxico crea tokens de una secuencia de caracteres de entrada y son estos tokens los que son procesados por el analizador sintáctico para construir la estructura de datos, por ejemplo un árbol de análisis o árboles de sintaxis abstracta. 
+
+El uso más común de los analizadores sintácticos es como parte de la fase de análisis de los compiladores. De modo que tienen que analizar el código fuente del lenguaje, los lenguajes de programación tienden a basarse en gramáticas libres de contexto, debido a que se pueden escribir analizadores rápidos y eficientes para estas.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Analizador Sintactico (Implementacion usando Objetos)
 Se ha implementado una jerarquía de clases utilizando herencia y clases abstractas para representar elementos de una pila, como Terminal, NoTerminal, y Estado. La clase Pila se encarga de gestionar una lista que actúa como una pila, con métodos para agregar, eliminar y mostrar elementos. Se han creado objetos de las clases definidas, insertándolos en la pila y mostrando su contenido. La estructura general del código sigue principios de programación orientada a objetos (OOP) con encapsulamiento y polimorfismo.
 
@@ -258,55 +304,6 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
         for elemento in self.lista:
             elemento.muestra()
         print()
-
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Tarea: Ejemplo gramática LR utilizando tabla de compilador.
-
-El codigo de la clase sintactico para que se creara un arbol sintactico mientras se va realizando el analisis y asi guardar cada parte del codigo a analizar,
-las clases necesarias para el arbol, una por cada regla, una siendo el nodo y las ultimas dos siendo el arbol y una que controlara todas.
-
-![image](https://user-images.githubusercontent.com/89165084/224136832-d4bca03e-445e-4c20-8350-0a59caba4b80.png)
-
-![image](https://user-images.githubusercontent.com/89165084/224136929-58835ee3-8954-495d-9a7d-38f99ca125f0.png)
-
-Al final se agrego codigo en el script.js donde se imprime el arbol despues de realizar el analisis, probemos con el ejemplo int hola; :
-
-![image](https://user-images.githubusercontent.com/89165084/224136601-0b05f6b2-b49b-49a4-8772-932d62dddadd.png)
-
-![image](https://user-images.githubusercontent.com/89165084/224136677-781e542e-5a15-4b72-923b-19b00ea183c9.png)
-
-
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Etapa del proyecto analizador léxico completo.
-Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
-
-Resultado de la ejecucion:
-
-![Analizador completo img 1](https://user-images.githubusercontent.com/89165084/213944726-ec851892-1ca3-4041-afac-36f8ae2a7296.jpg)!
-
-![Analizador completo img 2](https://user-images.githubusercontent.com/89165084/213944892-50c32dfd-bedf-4cc9-b39f-dbef5ddffcfc.jpg)!
-
-![Lexico visual1](https://user-images.githubusercontent.com/89165084/216058211-45b5e04a-d30b-4e36-8872-c6eb2074101f.jpg)
-
-![Lexico visual2](https://user-images.githubusercontent.com/89165084/216058237-a12973df-fb88-4dd8-a91e-8b2237fc4bcb.jpg)
-
-
-
-
-<img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Analizador sintactico
-
-Un analizador sintáctico, es un programa informático que analiza una cadena de símbolos según las reglas de una gramática formal. El análisis sintáctico convierte el texto de entrada en otras estructuras (comúnmente árboles), que son más útiles para el posterior análisis y capturan la jerarquía implícita de la entrada. 
-
-Un analizador léxico crea tokens de una secuencia de caracteres de entrada y son estos tokens los que son procesados por el analizador sintáctico para construir la estructura de datos, por ejemplo un árbol de análisis o árboles de sintaxis abstracta. 
-
-El uso más común de los analizadores sintácticos es como parte de la fase de análisis de los compiladores. De modo que tienen que analizar el código fuente del lenguaje, los lenguajes de programación tienden a basarse en gramáticas libres de contexto, debido a que se pueden escribir analizadores rápidos y eficientes para estas.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -382,7 +379,7 @@ Para proposito de que no terminara muy larga la explicacion solo se tomo captura
 
 Aquí tienes una versión ligeramente modificada para mejorar la redacción:
 
-"En esta sección, se presentarán los avances generales del traductor. Mientras las demás secciones explican partes específicas del traductor, aquí se mostrará el traductor en su conjunto, si se puede llamar así. Claro que se irá actualizando, pero los avances estarán visibles.
+En esta sección, se presentarán los avances generales del traductor. Mientras las demás secciones explican partes específicas del traductor, aquí se mostrará el traductor en su conjunto, si se puede llamar así. Claro que se irá actualizando, pero los avances estarán visibles.
 
 En cuanto a parsetab.py, este archivo contiene información crucial sobre cómo el analizador sintáctico debe interpretar y procesar la entrada. Algunos puntos clave incluyen:
 
