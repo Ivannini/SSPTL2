@@ -288,8 +288,8 @@ Resultado de la ejecucion:
 
 ![Lexico visual2](https://user-images.githubusercontent.com/89165084/216058237-a12973df-fb88-4dd8-a91e-8b2237fc4bcb.jpg)
 
-Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
-https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf
+
+
 
 <img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
 
