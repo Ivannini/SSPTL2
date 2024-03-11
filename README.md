@@ -388,8 +388,6 @@ Este código lee las primeras tres líneas del archivo para inicializar los atri
 
 # Construccion del Traductor
 
-Aquí tienes una versión ligeramente modificada para mejorar la redacción:
-
 En esta sección, se presentarán los avances generales del traductor. Mientras las demás secciones explican partes específicas del traductor, aquí se mostrará el traductor en su conjunto, si se puede llamar así. Claro que se irá actualizando, pero los avances estarán visibles.
 
 En cuanto a parsetab.py, este archivo contiene información crucial sobre cómo el analizador sintáctico debe interpretar y procesar la entrada. Algunos puntos clave incluyen:
