@@ -370,6 +370,7 @@ Ejecucion:
 ![image](https://user-images.githubusercontent.com/89165084/219900969-cc45ffc5-bb61-499d-8645-c6ac39edf9d5.png)
 
 Para proposito de que no terminara muy larga la explicacion solo se tomo captura del inicio y final de la tabla
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Construccion del Traductor
