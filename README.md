@@ -125,6 +125,22 @@ class Pila:
         return len(self.items) == 0
 
 
+Se define una clase Lexico que representa un analizador léxico básico. Esta clase se utiliza para analizar una cadena de entrada y dividirla en símbolos. Tiene métodos para avanzar al siguiente símbolo y verificar si se ha llegado al final de la entrada.
+
+class Lexico:
+    def __init__(self, entrada):
+        self.entrada = entrada
+        self.indice = 0
+        self.simbolo = ''
+
+    def sigSimbolo(self):
+        if self.indice < len(self.entrada):
+            self.simbolo = self.entrada[self.indice]
+            self.indice += 1
+
+    def terminado(self):
+        return self.indice >= len(self.entrada)
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
