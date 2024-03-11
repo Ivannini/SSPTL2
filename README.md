@@ -138,7 +138,7 @@ En esta parte del codigo se puede observar que se utilizaron todos los simbolos 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Mini analizador sintáctico (código)
+# [Mini analizador sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
 Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
 
 #Codigo
