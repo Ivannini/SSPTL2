@@ -184,6 +184,77 @@ Se define una clase Lexico que representa un analizador léxico básico. Esta cl
 <img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Analizador Sintactico (Implementacion usando Objetos)
+Se ha implementado una jerarquía de clases utilizando herencia y clases abstractas para representar elementos de una pila, como Terminal, NoTerminal, y Estado. La clase Pila se encarga de gestionar una lista que actúa como una pila, con métodos para agregar, eliminar y mostrar elementos. Se han creado objetos de las clases definidas, insertándolos en la pila y mostrando su contenido. La estructura general del código sigue principios de programación orientada a objetos (OOP) con encapsulamiento y polimorfismo.
+
+Se definen tres clases concretas que heredan de ElementoPila: Terminal, NoTerminal y Estado. Cada una de estas clases representa un tipo de elemento que puede estar en la pila. Cada clase implementa el método muestra según su propio tipo.
+
+    // Clase base ElementoPila
+    class ElementoPila {
+    public:
+    virtual ~ElementoPila() {}  // Destructor virtual
+    virtual void muestra() = 0;  // Función virtual pura
+    };
+
+    // Clase Terminal hereda de ElementoPila
+    class Terminal : public ElementoPila {
+    protected:
+    string nombre;
+    public:
+    Terminal(string nombre) : nombre(nombre) {}
+
+    void muestra() override {
+        cout << "Terminal: " << nombre << endl;
+    }
+    };
+
+    // Clase NoTerminal hereda de ElementoPila
+    class NoTerminal : public ElementoPila {
+    protected:
+    string nombre;
+    public:
+    NoTerminal(string nombre) : nombre(nombre) {}
+
+    void muestra() override {
+        cout << "No Terminal: " << nombre << endl;
+    }
+    };
+
+    // Clase Estado hereda de ElementoPila
+    class Estado : public ElementoPila {
+    protected:
+    string nombre;
+    public:
+    Estado(string nombre) : nombre(nombre) {}
+
+    void muestra() override {
+        cout << "Estado: " << nombre << endl;
+    }
+    };
+    
+Se define la clase Pila, que representa una pila de elementos. Tiene métodos para agregar (push) y quitar (pop) elementos de la pila, así como para obtener el elemento en la parte superior de la pila (top). Además, tiene un método muestra para mostrar el contenido de la pila.
+
+    class Pila:
+    def __init__(self):
+        self.lista = []
+
+    def push(self, elemento):
+        self.lista.insert(0, elemento)
+
+    def pop(self):
+        return self.lista.pop(0)
+
+    def top(self):
+        return self.lista[0] if self.lista else None
+
+    def muestra(self):
+        print("Pila:")
+        for elemento in self.lista:
+            elemento.muestra()
+        print()
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea: Ejemplo gramática LR utilizando tabla de compilador.
 
 El codigo de la clase sintactico para que se creara un arbol sintactico mientras se va realizando el analisis y asi guardar cada parte del codigo a analizar,
