@@ -230,9 +230,10 @@ Resultado de la ejecucion:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Analizador Sintactico (Implementacion usando Objetos)](https://github.com/Ivannini/SSPTL2/blob/main/Tarea_%20Analizador%20Sint%C3%A1ctico%20(Implementaci%C3%B3n%20usando%20Objetos).pdf)
-Se ha implementado una jerarquía de clases utilizando herencia y clases abstractas para representar elementos de una pila, como Terminal, NoTerminal, y Estado. La clase Pila se encarga de gestionar una lista que actúa como una pila, con métodos para agregar, eliminar y mostrar elementos. Se han creado objetos de las clases definidas, insertándolos en la pila y mostrando su contenido. La estructura general del código sigue principios de programación orientada a objetos (OOP) con encapsulamiento y polimorfismo.
 
-Se definen tres clases concretas que heredan de ElementoPila: Terminal, NoTerminal y Estado. Cada una de estas clases representa un tipo de elemento que puede estar en la pila. Cada clase implementa el método muestra según su propio tipo.
+Se ha implementado una jerarquía de clases mediante el uso de herencia y clases abstractas para modelar elementos de una pila, tales como Terminal, NoTerminal y Estado. La clase Pila se encarga de gestionar una lista que actúa como una pila, con métodos para agregar, eliminar y mostrar elementos. Se han instanciado objetos de las clases definidas, añadiéndolos a la pila y mostrando su contenido. El código sigue los principios de la programación orientada a objetos (OOP) con la aplicación de encapsulamiento y polimorfismo.
+
+Se han definido tres clases concretas que heredan de ElementoPila: Terminal, NoTerminal y Estado. Cada una de estas clases representa un tipo de elemento que puede encontrarse en la pila. Además, cada clase implementa el método "muestra" según su propio tipo, permitiendo una visualización personalizada de la información asociada a cada elemento.
 
     // Clase base ElementoPila
     class ElementoPila {
@@ -306,8 +307,6 @@ Utilizando tu analizador léxico y tu algoritmo para trabajar con las tablas lr.
 
 https://github.com/Ivannini/SSPTL2/tree/main/GramaticaLR/classes
 
-Se modifico el codigo de la clase sintactico para que de esta manera la gramatica y tabla LR que utilizara de base fuera la dada en los archivos de la nueva
-gramatica, se hizo de manera que que se leyera el archivo cada que se construyera el objeto y en sus arreglos copiaba la tabla:
 
     import { Pila } from './pila.js';
     import * as genR from './Tree/generadorReglas.js';
@@ -352,19 +351,42 @@ gramatica, se hizo de manera que que se leyera el archivo cada que se construyer
 
 
 
-Ademas se cambio visualmente la interfaz del programa, ahora enfocandose en el analisis sintactico y cambiando el input por yn textarea, asi el usuario puede
-ingresar un programa:
 
 
-![image](https://user-images.githubusercontent.com/89165084/219900924-ad395dbe-7274-43ee-a2d4-164bcb39291a.png)
 
-Ejecucion:
+Este código implementa un analizador léxico y un analizador sintáctico utilizando una tabla LR para llevar a cabo el análisis sintáctico de un archivo de código fuente. Aquí se proporciona una introducción para una mejor comprensión de cada parte:
 
-![image](https://user-images.githubusercontent.com/89165084/219900948-4348fa38-aaac-45fb-a270-91b6bfda7bd0.png)
+**Analizador Léxico (scanner):** Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
 
-![image](https://user-images.githubusercontent.com/89165084/219900969-cc45ffc5-bb61-499d-8645-c6ac39edf9d5.png)
+La clase `LRTable` tiene cuatro atributos: `idRegla`, `lonRegla`, `noTerminal` y `table`. Estos atributos se inicializan como listas vacías en el constructor `__init__`.
 
-Para proposito de que no terminara muy larga la explicacion solo se tomo captura del inicio y final de la tabla
+```python
+class LRTable:
+    def __init__(self, filename):
+        self.idRegla = []
+        self.lonRegla = []
+        self.noTerminal = []
+        self.table = []
+```
+
+
+Cada línea del archivo se lee y se almacena en la variable `lines`. Luego, se itera sobre las primeras tres líneas (`lines[:3]`). Para cada línea, se eliminan los espacios en blanco al inicio y al final con `strip()`, y luego se divide la línea en partes utilizando el carácter de tabulación como separador (`'\t'`) mediante `split('\t')`. Estas partes se almacenan en la lista `parts`.
+
+```python
+lines = file.readlines()
+for line in lines[:3]:
+    parts = line.strip().split('\t')
+    try:
+        self.idRegla.append(int(parts[0]))
+        self.lonRegla.append(int(parts[1]))
+        self.noTerminal.append(parts[2])
+    except IndexError:
+        print("Error: formato incorrecto en la línea:", line.strip())
+```
+
+
+Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
