@@ -356,8 +356,10 @@ gramatica, se hizo de manera que que se leyera el archivo cada que se construyer
     }
 
 
+
 Ademas se cambio visualmente la interfaz del programa, ahora enfocandose en el analisis sintactico y cambiando el input por yn textarea, asi el usuario puede
 ingresar un programa:
+
 
 ![image](https://user-images.githubusercontent.com/89165084/219900924-ad395dbe-7274-43ee-a2d4-164bcb39291a.png)
 
