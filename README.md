@@ -21,7 +21,7 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Tarea: Mini analizador sintáctico (Excel)
+# Mini analizador sintáctico (Excel)
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
 
 Entrada para el Ejercicio 1
@@ -62,7 +62,7 @@ Como se observa se muestra el arbol y el numero indica el nivel e cada nodo.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Tarea: Etapa del proyecto analizador léxico completo.
+# Etapa del proyecto analizador léxico completo.
 Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
 
 Resultado de la ejecucion:
@@ -90,7 +90,7 @@ El uso más común de los analizadores sintácticos es como parte de la fase de 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Tarea: Mini analizador sintáctico (código)
+# Mini analizador sintáctico (código)
 Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo (PracticaAnalizadorSintactico.pdf)
 
 Se modifico el codigo del analizador lexico para que funcionara junto con un codigo nuevo y hicira la funcion del analizador sintactico. Se agrego una nueva clase (Sintactico) la cual realiza as tareas importantes del mismo, ademas de que se cambio la interfaz para que concordara con el objetivo de este mini analizador sintactico.
