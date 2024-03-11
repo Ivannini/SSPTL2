@@ -186,7 +186,7 @@ Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo (PracticaAna
 
 Se modifico el codigo del analizador lexico para que funcionara junto con un codigo nuevo y hicira la funcion del analizador sintactico. Se agrego una nueva clase (Sintactico) la cual realiza as tareas importantes del mismo, ademas de que se cambio la interfaz para que concordara con el objetivo de este mini analizador sintactico.
 
-class Pila:
+    class Pila:
     def __init__(self):
         self.items = []
 
@@ -212,7 +212,7 @@ class Pila:
 
 Se define una clase Lexico que representa un analizador léxico básico. Esta clase se utiliza para analizar una cadena de entrada y dividirla en símbolos. Tiene métodos para avanzar al siguiente símbolo y verificar si se ha llegado al final de la entrada.
 
-class Lexico:
+    class Lexico:
     def __init__(self, entrada):
         self.entrada = entrada
         self.indice = 0
