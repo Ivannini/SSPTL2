@@ -143,8 +143,11 @@ class Lexico:
 
 
 
+<img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Tarea: Gramática del compilador
+# Gramática del compilador
 
 Se modifico el codigo de la clase sintactico para que de esta manera la gramatica y tabla LR que utilizara de base fuera la dada en los archivos de la nueva
 gramatica, se hizo de manera que que se leyera el archivo cada que se construyera el objeto y en sus arreglos copiaba la tabla:
@@ -164,15 +167,7 @@ Ejecucion:
 
 Para proposito de que no terminara muy larga la explicacion solo se tomo captura del inicio y final de la tabla
 
-# Arbol sintactico
 
-El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Analizador Semantico
-
-Un analizador semántico es una herramienta utilizada en el procesamiento de lenguaje natural y la compilación de programas informáticos. Su función principal es analizar la estructura sintáctica de una oración o expresión, y asignar significado a las palabras y elementos presentes en la misma.
-En el caso de la compilación de programas informáticos, el analizador semántico se utiliza para validar la corrección de la sintaxis de un programa y verificar que las variables y operaciones utilizadas tengan sentido en el contexto del lenguaje de programación utilizado. Por ejemplo, si se utiliza una variable que no ha sido declarada previamente, el analizador semántico detectará el error y lo reportará.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
