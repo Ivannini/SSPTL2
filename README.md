@@ -148,6 +148,10 @@ class Lexico:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Gramática del compilador
+Utilizando tu analizador léxico y tu algoritmo para trabajar con las tablas lr. Carga e implementa la siguiente gramática.
+(Los archivos de la garmatica esten en: 
+
+https://github.com/Ivannini/SSPTL2/tree/main/GramaticaLR/classes
 
 Se modifico el codigo de la clase sintactico para que de esta manera la gramatica y tabla LR que utilizara de base fuera la dada en los archivos de la nueva
 gramatica, se hizo de manera que que se leyera el archivo cada que se construyera el objeto y en sus arreglos copiaba la tabla:
@@ -194,7 +198,18 @@ class Sintactico {
     }
 
 
+Ademas se cambio visualmente la interfaz del programa, ahora enfocandose en el analisis sintactico y cambiando el input por yn textarea, asi el usuario puede
+ingresar un programa:
 
+![image](https://user-images.githubusercontent.com/89165084/219900924-ad395dbe-7274-43ee-a2d4-164bcb39291a.png)
+
+Ejecucion:
+
+![image](https://user-images.githubusercontent.com/89165084/219900948-4348fa38-aaac-45fb-a270-91b6bfda7bd0.png)
+
+![image](https://user-images.githubusercontent.com/89165084/219900969-cc45ffc5-bb61-499d-8645-c6ac39edf9d5.png)
+
+Para proposito de que no terminara muy larga la explicacion solo se tomo captura del inicio y final de la tabla
 
 
 
