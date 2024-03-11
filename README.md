@@ -101,25 +101,32 @@ Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo (PracticaAna
 
 Se modifico el codigo del analizador lexico para que funcionara junto con un codigo nuevo y hicira la funcion del analizador sintactico. Se agrego una nueva clase (Sintactico) la cual realiza as tareas importantes del mismo, ademas de que se cambio la interfaz para que concordara con el objetivo de este mini analizador sintactico.
 
-Foto del codigo:
+class Pila:
+    def __init__(self):
+        self.items = []
 
-![image](https://user-images.githubusercontent.com/89165084/216158896-8cb0f7ee-7cd4-4c8a-90ed-876efc65695e.png)
+    def push(self, elemento):
+        self.items.append(elemento)
 
-Tablas LR en las que se baso el codigo:
+    def pop(self):
+        if not self.isEmpty():
+            return self.items.pop()
 
-![image](https://user-images.githubusercontent.com/89165084/216159161-9e1cdc1b-b374-48d8-aeab-01dfb023f9de.png)
+    def top(self):
+        if not self.isEmpty():
+            return self.items[-1]
 
-![image](https://user-images.githubusercontent.com/89165084/216159390-5e52721e-aa6b-4729-9a4d-fd20a71e23b5.png)
+    def muestra(self):
+        for item in self.items:
+            print(item, end=' ')
+        print()
 
-Prueba y ejecucion del codigo del Ejercicio 1:
+    def isEmpty(self):
+        return len(self.items) == 0
 
-![image](https://user-images.githubusercontent.com/89165084/216159777-45f6c593-721b-4c14-93fb-43335ffb41c9.png)
 
-Prueba y ejecucion del codigo del Ejercicio 2:
 
-![image](https://user-images.githubusercontent.com/89165084/216160956-22bb9bee-eb72-49fd-bfa2-d0586d7a0fb6.png)
-![image](https://user-images.githubusercontent.com/89165084/216161014-4494532f-6c4b-41e3-bd81-e439b35aa6ef.png)
-![image](https://user-images.githubusercontent.com/89165084/216161151-3f58e151-f901-40c1-aa00-9b7019499237.png)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea: Gramática del compilador
 
