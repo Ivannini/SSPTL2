@@ -7,9 +7,11 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 En este readme se podran observar todos los trabajos de la materia y asi como contruyo un traductor.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # ¿Qué es es un analizador léxico ?
 
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Mini-Generador-lexico
 Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
