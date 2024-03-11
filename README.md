@@ -8,8 +8,8 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 En este readme se podran observar todos los trabajos de la materia y asi como contruyo un traductor.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# ¿Qué es es un analizador léxico 
-https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Investigacion/%C2%BFQu%C3%A9%20es%20es%20un%20analizador%20l%C3%A9xico%20.pdf
+# ¿Qué es es un analizador léxico # https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Investigacion/%C2%BFQu%C3%A9%20es%20es%20un%20analizador%20l%C3%A9xico%20.pdf
+
 
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
 
