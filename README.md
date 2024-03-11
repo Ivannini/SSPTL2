@@ -38,7 +38,92 @@ a+b+c+d+e+f
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 Un analizador léxico es una parte esencial de un compilador o intérprete que se encarga de analizar un flujo de caracteres de un programa fuente y convertirlo en una secuencia de "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de programación, como palabras clave, identificadores, constantes y operadores. El analizador léxico es la primera fase del proceso de compilación y su objetivo principal es simplificar el código fuente para su procesamiento posterior. Una parte fundamental de un compilador o intérprete, encargado de analizar el flujo de caracteres de un programa fuente para identificar y clasificar lexemas, que son las unidades léxicas más pequeñas con significado. Estos lexemas pueden ser palabras clave, identificadores, operadores, números, y otros elementos del lenguaje de programación.
 
+switch = {
+            self.ERROR: self.m_ERROR,
+            self.IDENTIFICADOR: self.m_IDENTIFICADOR,
+            self.ENTERO: self.m_ENTERO,
+            self.REAL: self.m_REAL,
+            self.CADENA: self.m_CADENA,
+            self.OPSUMA: self.m_OPMAS,
+            self.OPRESTA: self.m_OPMENOS,
+            self.OPMULTIPLICACION: self.m_OPMULTI,
+            self.OPDIVISION: self.m_OPDIV,
+            self.OPMAYORQ: self.m_MAYORQUE,
+            self.OPMENORQ: self.m_MENORQUE,
+            self.OPMAYOROIGUAL: self.m_MAYORIGUAL,
+            self.OPMENOROIGUAL: self.m_MENORIGUAL,
+            self.OPOR: self.m_OR,
+            self.OPAND: self.m_AND,
+            self.OPNOT: self.m_NOT,
+            self.OPIGUAL: self.m_IGUAL,
+            self.OPESIGUAL: self.m_ESIGUAL,
+            self.OPESDIFERENTE: self.m_ESDIFERENTE,
+            self.PUNTOYCOMA: self.m_PUNTOCOMA,
+            self.COMA: self.m_COMA,
+            self.PARENTESIOSABIERTO: self.m_PARENTESISABIERTO,
+            self.PARENTESISCERRADO: self.m_PARENTESISCERRADO,
+            self.LLAVEABIERTA: self.m_LLAVEABIERTA,
+            self.LLAVECERRADA: self.m_LLAVECERRADA,
+            self.BRACKETABIERTO: self.m_BRACKETABIERTO,
+            self.BRACKETCERRADO: self.m_BRACKETCERRADO,
+            self.DOSPUNTOS: self.m_DOSPUNTOS,
+            self.IF: self.m_IF,
+            self.WHILE: self.m_WHILE,
+            self.RETURN: self.m_RETURN,
+            self.ELSE: self.m_ELSE,
+            self.INT: self.m_INT,
+            self.FLOAT: self.m_FLOAT,
+            self.VOID: self.m_VOID,
+            self.PESO: self.m_PESO
+        }
 
+class AnalizadorLexicoApp:
+    def __init__(self, master):
+        self.master = master
+        master.title("Analizador Léxico")
+
+        self.label = ttk.Label(master, text="Ingresa el código a evaluar:")
+        self.label.grid(row=0, column=0, padx=10, pady=10, sticky="w")
+
+        self.entry = ttk.Entry(master, width=50)
+        self.entry.grid(row=0, column=1, padx=10, pady=10)
+
+        self.analizar_button = ttk.Button(master, text="Analizar", command=self.analizar)
+        self.analizar_button.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
+
+        self.resultados_label = ttk.Label(master, text="Resultados:")
+        self.resultados_label.grid(row=2, column=0, padx=10, pady=5, sticky="w")
+
+        self.resultados_text = tk.Text(master, height=10, width=60, wrap="none")
+        self.resultados_text.grid(row=3, column=0, columnspan=2, padx=10, pady=5)
+        self.resultados_text.configure(state="disabled", relief="sunken")
+
+    def analizar(self):
+        cadena = self.entry.get()
+
+        if not cadena:
+            self.resultados_text.configure(state="normal")
+            self.resultados_text.delete(1.0, tk.END)
+            self.resultados_text.insert(tk.END, "La cadena no es válida.")
+            self.resultados_text.configure(state="disabled")
+        else:
+            analizador = AnalizadorLexico(cadena)
+            resultados = "\nResultado del análisis léxico:\n\n"
+            resultados += '{:<20} {:<20} {:<20}\n'.format("Símbolo", "Tipo", "Código de Tipo")
+
+            while analizador.caracter != "$":
+                analizador.siguienteSimbolo()
+                resultado = '{:<20} {:<20} {:<20}\n'.format(
+                    analizador.simbolo,
+                    analizador.tipoCadena(analizador.tipo),
+                    str(analizador.tipo)
+                )
+                resultados += resultado
+
+            self.resultados_text.configure(state="normal")
+            self.resultados_text.delete(1.0, tk.END)
+            self.resultados_text.insert(tk.END, resultados)
+            self.resultados_text.configure(state="disabled")
 
 (https://user-images.githubusercontent.com/89165084/230996230-38d2e05f-9757-4d8a-a2ca-d5e657be37c9.png)
 
