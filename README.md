@@ -189,7 +189,7 @@ Se define una clase Lexico que representa un analizador léxico básico. Esta cl
 <img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Tarea: Ejemplo gramática LR utilizando tabla de compilador.
+# [Ejemplo gramática LR utilizando tabla de compilador](https://github.com/Ivannini/SSPTL2/blob/main/Ejemplo%20de%20Gram%C3%A1ticaLR%20tabla%20compilador.pdf)
 
 El codigo de la clase sintactico para que se creara un arbol sintactico mientras se va realizando el analisis y asi guardar cada parte del codigo a analizar,
 las clases necesarias para el arbol, una por cada regla, una siendo el nodo y las ultimas dos siendo el arbol y una que controlara todas.
