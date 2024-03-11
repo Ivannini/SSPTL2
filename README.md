@@ -38,6 +38,7 @@ a+b+c+d+e+f
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 Un analizador léxico es una parte esencial de un compilador o intérprete que se encarga de analizar un flujo de caracteres de un programa fuente y convertirlo en una secuencia de "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de programación, como palabras clave, identificadores, constantes y operadores. El analizador léxico es la primera fase del proceso de compilación y su objetivo principal es simplificar el código fuente para su procesamiento posterior. Una parte fundamental de un compilador o intérprete, encargado de analizar el flujo de caracteres de un programa fuente para identificar y clasificar lexemas, que son las unidades léxicas más pequeñas con significado. Estos lexemas pueden ser palabras clave, identificadores, operadores, números, y otros elementos del lenguaje de programación.
 
+
 switch = {
             self.ERROR: self.m_ERROR,
             self.IDENTIFICADOR: self.m_IDENTIFICADOR,
@@ -76,6 +77,8 @@ switch = {
             self.VOID: self.m_VOID,
             self.PESO: self.m_PESO
         }
+
+
 
 class AnalizadorLexicoApp:
     def __init__(self, master):
