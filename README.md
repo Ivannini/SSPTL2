@@ -1,5 +1,8 @@
 # Proyecto Final
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/0f63cf58-ee21-4baa-b44b-4de502ab6ff3)
+
+
 SEMNINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJE II
 
 AULA DUCT2-7
