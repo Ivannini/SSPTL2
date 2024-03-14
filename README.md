@@ -1,6 +1,7 @@
 # Proyecto Final
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/0f63cf58-ee21-4baa-b44b-4de502ab6ff3)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/f138dab3-55d3-4c09-b704-f479b3214fc4)
+
 
 
 SEMNINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJE II
