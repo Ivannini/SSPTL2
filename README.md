@@ -481,6 +481,9 @@ t_RPAREN = r'\)'
 
 Estas expresiones regulares son esenciales para el reconocimiento de patrones en la entrada del analizador sintáctico."
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
