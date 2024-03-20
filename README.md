@@ -22,215 +22,6 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
-
-Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
-Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
-
-La tarea del generador léxico es identificar y clasificar estos tokens a partir de la cadena de entrada, siguiendo reglas predefinidas que especifican la estructura léxica del lenguaje de programación. Estas reglas suelen definirse mediante expresiones regulares.
-
-Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
-
-
-<img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
-Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
-
-Entrada para el Ejercicio 1
-hola+mundo
-
-Entrada para el Ejercicio 2
-a+b+c+d+e+f
-
-<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# [Mini analizador sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
-Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
-
-# [Codigo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo3/Tarea%3A%20Mini%20analizador%20sint%C3%A1ctico%20(c%C3%B3digo)Parte%202.py)
-Se define una clase Pila que implementa una pila básica utilizando una lista en Python. Esta clase tiene métodos para realizar operaciones típicas de una pila como push, pop, top, muestra, e isEmpty.
-
-    class Pila:
-    def __init__(self):
-        self.items = []
-
-    def push(self, elemento):
-        self.items.append(elemento)
-
-    def pop(self):
-        if not self.isEmpty():
-            return self.items.pop()
-
-    def top(self):
-        if not self.isEmpty():
-            return self.items[-1]
-
-    def muestra(self):
-        for item in self.items:
-            print(item, end=' ')
-        print()
-
-    def isEmpty(self):
-        return len(self.items) == 0
-
-
-Se define una clase Lexico que representa un analizador léxico básico. Esta clase se utiliza para analizar una cadena de entrada y dividirla en símbolos. Tiene métodos para avanzar al siguiente símbolo y verificar si se ha llegado al final de la entrada.
-
-    class Lexico:
-    def __init__(self, entrada):
-        self.entrada = entrada
-        self.indice = 0
-        self.simbolo = ''
-
-    def sigSimbolo(self):
-        if self.indice < len(self.entrada):
-            self.simbolo = self.entrada[self.indice]
-            self.indice += 1
-
-    def terminado(self):
-        return self.indice >= len(self.entrada)
-
-
-
-<img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
-
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
-
-
-    import { Pila } from './pila.js';
-    import * as genR from './Tree/generadorReglas.js';
-    import { Nodo, Arbol } from './Tree/arbol.js';
-
-    class Sintactico {
-    
-    constructor() {
-        this.pila = new Pila();
-        this.fila = 0;
-        this.columna = 0;
-        this.accion = 0;
-        this.idReglas = [];
-        this.lonReglas = [];
-        this.simReglas = [];
-        this.tablaLR = [];
-        this.arbol = new Arbol();
-
-
-        fetch('/GramaticaCompilador/compilador.lr').then(res => res.text())
-        .then(content => {
-            console.log(content);
-            let lines = content.split(/\n/);
-            let numReglas = parseInt(lines.shift());
-            for (let i = 0; i < numReglas; i++) {
-                lines[i] = lines[i].replace("\r", "");
-                let regla = lines[i].split("\t");
-                this.idReglas.push(regla[0]);
-                this.lonReglas.push(regla[1]);
-                this.simReglas.push(regla[2]);
-            }
-
-            let numFila = parseInt(lines[numReglas].split("\t").shift());
-            numReglas++;
-            for (let i = numReglas; i < numReglas + numFila; i++) {
-                lines[i] = lines[i].replace("\r", "");
-                let fila = lines[i].split("\t");
-                this.tablaLR.push(fila);
-            }
-        });
-    }
-
-
-
-
-Este código implementa un analizador léxico y un analizador sintáctico utilizando una tabla LR para llevar a cabo el análisis sintáctico de un archivo de código fuente. Aquí se proporciona una introducción para una mejor comprensión de cada parte:
-
-**Analizador Léxico (scanner):** Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
-
-La clase `LRTable` tiene cuatro atributos: `idRegla`, `lonRegla`, `noTerminal` y `table`. Estos atributos se inicializan como listas vacías en el constructor `__init__`.
-
-```python
-class LRTable:
-    def __init__(self, filename):
-        self.idRegla = []
-        self.lonRegla = []
-        self.noTerminal = []
-        self.table = []
-```
-
-
-Cada línea del archivo se lee y se almacena en la variable `lines`. Luego, se itera sobre las primeras tres líneas (`lines[:3]`). Para cada línea, se eliminan los espacios en blanco al inicio y al final con `strip()`, y luego se divide la línea en partes utilizando el carácter de tabulación como separador (`'\t'`) mediante `split('\t')`. Estas partes se almacenan en la lista `parts`.
-
-```python
-lines = file.readlines()
-for line in lines[:3]:
-    parts = line.strip().split('\t')
-    try:
-        self.idRegla.append(int(parts[0]))
-        self.lonRegla.append(int(parts[1]))
-        self.noTerminal.append(parts[2])
-    except IndexError:
-        print("Error: formato incorrecto en la línea:", line.strip())
-```
-
-
-Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Construccion del Traductor
-
-En esta sección, se presentarán los avances generales del traductor. Mientras las demás secciones explican partes específicas del traductor, aquí se mostrará el traductor en su conjunto, si se puede llamar así. Claro que se irá actualizando, pero los avances estarán visibles.
-
-En cuanto a parsetab.py, este archivo contiene información crucial sobre cómo el analizador sintáctico debe interpretar y procesar la entrada. Algunos puntos clave incluyen:
-
-- `_tabversion`: Indica la versión de la tabla de análisis, útil para garantizar compatibilidad entre diferentes versiones del generador de analizadores sintácticos.
-- `_lr_method`: Especifica el método de análisis utilizado, en este caso, el método LALR (Look-Ahead Left-to-Right, Rightmost derivation).
-- `_lr_signature`: Define la firma de la tabla de análisis, describiendo las reglas gramaticales que el analizador debe reconocer. En la firma proporcionada, se ven reglas para expresiones, términos y factores.
-
-A continuación, se presenta una parte del código:
-
-```python
-_tabversion = '3.10'
-_lr_method = 'LALR'
-_lr_signature = 'DIVIDE LPAREN MINUS NUMBER PLUS RPAREN TIMESexpression :
-expression PLUS term\n | expression MINUS
-term\n | termterm : term TIMES factor\n |
-term DIVIDE factor\n | factorfactor : NUMBER\n |
-LPAREN expression RPAREN'
-```
-
-Además, se define una función para manejar el token NUMBER, que representa un número entero en la entrada. Esta función utiliza una expresión regular para identificar y convertir los números en enteros:
-
-```python
-def t_NUMBER(t):
-    r'\d+'
-    t.value = int(t.value)
-    return t
-```
-
-También se definen expresiones regulares para cada token simple, utilizadas para identificar y reconocer patrones correspondientes a cada token:
-
-```python
-t_PLUS = r'\+'
-t_MINUS = r'-'
-t_TIMES = r'\*'
-t_DIVIDE = r'/'
-t_LPAREN = r'\('
-t_RPAREN = r'\)'
-```
-
-Estas expresiones regulares son esenciales para el reconocimiento de patrones en la entrada del analizador sintáctico."
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # [Analizador Lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf)
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
@@ -479,6 +270,220 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
         for elemento in self.lista:
             elemento.muestra()
         print()
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
+
+Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
+Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
+
+La tarea del generador léxico es identificar y clasificar estos tokens a partir de la cadena de entrada, siguiendo reglas predefinidas que especifican la estructura léxica del lenguaje de programación. Estas reglas suelen definirse mediante expresiones regulares.
+
+Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
+
+
+<img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
+Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
+
+Entrada para el Ejercicio 1
+hola+mundo
+
+Entrada para el Ejercicio 2
+a+b+c+d+e+f
+
+<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [Mini analizador sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
+Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
+
+# [Codigo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo3/Tarea%3A%20Mini%20analizador%20sint%C3%A1ctico%20(c%C3%B3digo)Parte%202.py)
+Se define una clase Pila que implementa una pila básica utilizando una lista en Python. Esta clase tiene métodos para realizar operaciones típicas de una pila como push, pop, top, muestra, e isEmpty.
+
+    class Pila:
+    def __init__(self):
+        self.items = []
+
+    def push(self, elemento):
+        self.items.append(elemento)
+
+    def pop(self):
+        if not self.isEmpty():
+            return self.items.pop()
+
+    def top(self):
+        if not self.isEmpty():
+            return self.items[-1]
+
+    def muestra(self):
+        for item in self.items:
+            print(item, end=' ')
+        print()
+
+    def isEmpty(self):
+        return len(self.items) == 0
+
+
+Se define una clase Lexico que representa un analizador léxico básico. Esta clase se utiliza para analizar una cadena de entrada y dividirla en símbolos. Tiene métodos para avanzar al siguiente símbolo y verificar si se ha llegado al final de la entrada.
+
+    class Lexico:
+    def __init__(self, entrada):
+        self.entrada = entrada
+        self.indice = 0
+        self.simbolo = ''
+
+    def sigSimbolo(self):
+        if self.indice < len(self.entrada):
+            self.simbolo = self.entrada[self.indice]
+            self.indice += 1
+
+    def terminado(self):
+        return self.indice >= len(self.entrada)
+
+
+
+<img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
+
+
+    import { Pila } from './pila.js';
+    import * as genR from './Tree/generadorReglas.js';
+    import { Nodo, Arbol } from './Tree/arbol.js';
+
+    class Sintactico {
+    
+    constructor() {
+        this.pila = new Pila();
+        this.fila = 0;
+        this.columna = 0;
+        this.accion = 0;
+        this.idReglas = [];
+        this.lonReglas = [];
+        this.simReglas = [];
+        this.tablaLR = [];
+        this.arbol = new Arbol();
+
+
+        fetch('/GramaticaCompilador/compilador.lr').then(res => res.text())
+        .then(content => {
+            console.log(content);
+            let lines = content.split(/\n/);
+            let numReglas = parseInt(lines.shift());
+            for (let i = 0; i < numReglas; i++) {
+                lines[i] = lines[i].replace("\r", "");
+                let regla = lines[i].split("\t");
+                this.idReglas.push(regla[0]);
+                this.lonReglas.push(regla[1]);
+                this.simReglas.push(regla[2]);
+            }
+
+            let numFila = parseInt(lines[numReglas].split("\t").shift());
+            numReglas++;
+            for (let i = numReglas; i < numReglas + numFila; i++) {
+                lines[i] = lines[i].replace("\r", "");
+                let fila = lines[i].split("\t");
+                this.tablaLR.push(fila);
+            }
+        });
+    }
+
+
+
+
+Este código implementa un analizador léxico y un analizador sintáctico utilizando una tabla LR para llevar a cabo el análisis sintáctico de un archivo de código fuente. Aquí se proporciona una introducción para una mejor comprensión de cada parte:
+
+**Analizador Léxico (scanner):** Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
+
+La clase `LRTable` tiene cuatro atributos: `idRegla`, `lonRegla`, `noTerminal` y `table`. Estos atributos se inicializan como listas vacías en el constructor `__init__`.
+
+```python
+class LRTable:
+    def __init__(self, filename):
+        self.idRegla = []
+        self.lonRegla = []
+        self.noTerminal = []
+        self.table = []
+```
+
+
+Cada línea del archivo se lee y se almacena en la variable `lines`. Luego, se itera sobre las primeras tres líneas (`lines[:3]`). Para cada línea, se eliminan los espacios en blanco al inicio y al final con `strip()`, y luego se divide la línea en partes utilizando el carácter de tabulación como separador (`'\t'`) mediante `split('\t')`. Estas partes se almacenan en la lista `parts`.
+
+```python
+lines = file.readlines()
+for line in lines[:3]:
+    parts = line.strip().split('\t')
+    try:
+        self.idRegla.append(int(parts[0]))
+        self.lonRegla.append(int(parts[1]))
+        self.noTerminal.append(parts[2])
+    except IndexError:
+        print("Error: formato incorrecto en la línea:", line.strip())
+```
+
+
+Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Construccion del Traductor
+
+En esta sección, se presentarán los avances generales del traductor. Mientras las demás secciones explican partes específicas del traductor, aquí se mostrará el traductor en su conjunto, si se puede llamar así. Claro que se irá actualizando, pero los avances estarán visibles.
+
+En cuanto a parsetab.py, este archivo contiene información crucial sobre cómo el analizador sintáctico debe interpretar y procesar la entrada. Algunos puntos clave incluyen:
+
+- `_tabversion`: Indica la versión de la tabla de análisis, útil para garantizar compatibilidad entre diferentes versiones del generador de analizadores sintácticos.
+- `_lr_method`: Especifica el método de análisis utilizado, en este caso, el método LALR (Look-Ahead Left-to-Right, Rightmost derivation).
+- `_lr_signature`: Define la firma de la tabla de análisis, describiendo las reglas gramaticales que el analizador debe reconocer. En la firma proporcionada, se ven reglas para expresiones, términos y factores.
+
+A continuación, se presenta una parte del código:
+
+```python
+_tabversion = '3.10'
+_lr_method = 'LALR'
+_lr_signature = 'DIVIDE LPAREN MINUS NUMBER PLUS RPAREN TIMESexpression :
+expression PLUS term\n | expression MINUS
+term\n | termterm : term TIMES factor\n |
+term DIVIDE factor\n | factorfactor : NUMBER\n |
+LPAREN expression RPAREN'
+```
+
+Además, se define una función para manejar el token NUMBER, que representa un número entero en la entrada. Esta función utiliza una expresión regular para identificar y convertir los números en enteros:
+
+```python
+def t_NUMBER(t):
+    r'\d+'
+    t.value = int(t.value)
+    return t
+```
+
+También se definen expresiones regulares para cada token simple, utilizadas para identificar y reconocer patrones correspondientes a cada token:
+
+```python
+t_PLUS = r'\+'
+t_MINUS = r'-'
+t_TIMES = r'\*'
+t_DIVIDE = r'/'
+t_LPAREN = r'\('
+t_RPAREN = r'\)'
+```
+
+Estas expresiones regulares son esenciales para el reconocimiento de patrones en la entrada del analizador sintáctico."
+
+
 
 
 
