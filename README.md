@@ -22,6 +22,36 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
+
+Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
+Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
+
+La tarea del generador léxico es identificar y clasificar estos tokens a partir de la cadena de entrada, siguiendo reglas predefinidas que especifican la estructura léxica del lenguaje de programación. Estas reglas suelen definirse mediante expresiones regulares.
+
+Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
+
+
+<img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
+Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
+
+Entrada para el Ejercicio 1
+hola+mundo
+
+Entrada para el Ejercicio 2
+a+b+c+d+e+f
+
+<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Analizador Lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf)
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
@@ -121,6 +151,58 @@ En esta parte del codigo se puede observar que se utilizaron todos los simbolos 
 
 <img width="410" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/60a6948f-8bb3-4b55-873d-0701cd521801">
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [Mini analizador sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
+Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
+
+# [Codigo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo3/Tarea%3A%20Mini%20analizador%20sint%C3%A1ctico%20(c%C3%B3digo)Parte%202.py)
+Se define una clase Pila que implementa una pila básica utilizando una lista en Python. Esta clase tiene métodos para realizar operaciones típicas de una pila como push, pop, top, muestra, e isEmpty.
+
+    class Pila:
+    def __init__(self):
+        self.items = []
+
+    def push(self, elemento):
+        self.items.append(elemento)
+
+    def pop(self):
+        if not self.isEmpty():
+            return self.items.pop()
+
+    def top(self):
+        if not self.isEmpty():
+            return self.items[-1]
+
+    def muestra(self):
+        for item in self.items:
+            print(item, end=' ')
+        print()
+
+    def isEmpty(self):
+        return len(self.items) == 0
+
+
+Se define una clase Lexico que representa un analizador léxico básico. Esta clase se utiliza para analizar una cadena de entrada y dividirla en símbolos. Tiene métodos para avanzar al siguiente símbolo y verificar si se ha llegado al final de la entrada.
+
+    class Lexico:
+    def __init__(self, entrada):
+        self.entrada = entrada
+        self.indice = 0
+        self.simbolo = ''
+
+    def sigSimbolo(self):
+        if self.indice < len(self.entrada):
+            self.simbolo = self.entrada[self.indice]
+            self.indice += 1
+
+    def terminado(self):
+        return self.indice >= len(self.entrada)
+
+
+
+<img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -270,90 +352,6 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
         for elemento in self.lista:
             elemento.muestra()
         print()
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
-
-Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
-Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
-
-La tarea del generador léxico es identificar y clasificar estos tokens a partir de la cadena de entrada, siguiendo reglas predefinidas que especifican la estructura léxica del lenguaje de programación. Estas reglas suelen definirse mediante expresiones regulares.
-
-Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
-
-
-<img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
-Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
-
-Entrada para el Ejercicio 1
-hola+mundo
-
-Entrada para el Ejercicio 2
-a+b+c+d+e+f
-
-<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# [Mini analizador sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
-Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
-
-# [Codigo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo3/Tarea%3A%20Mini%20analizador%20sint%C3%A1ctico%20(c%C3%B3digo)Parte%202.py)
-Se define una clase Pila que implementa una pila básica utilizando una lista en Python. Esta clase tiene métodos para realizar operaciones típicas de una pila como push, pop, top, muestra, e isEmpty.
-
-    class Pila:
-    def __init__(self):
-        self.items = []
-
-    def push(self, elemento):
-        self.items.append(elemento)
-
-    def pop(self):
-        if not self.isEmpty():
-            return self.items.pop()
-
-    def top(self):
-        if not self.isEmpty():
-            return self.items[-1]
-
-    def muestra(self):
-        for item in self.items:
-            print(item, end=' ')
-        print()
-
-    def isEmpty(self):
-        return len(self.items) == 0
-
-
-Se define una clase Lexico que representa un analizador léxico básico. Esta clase se utiliza para analizar una cadena de entrada y dividirla en símbolos. Tiene métodos para avanzar al siguiente símbolo y verificar si se ha llegado al final de la entrada.
-
-    class Lexico:
-    def __init__(self, entrada):
-        self.entrada = entrada
-        self.indice = 0
-        self.simbolo = ''
-
-    def sigSimbolo(self):
-        if self.indice < len(self.entrada):
-            self.simbolo = self.entrada[self.indice]
-            self.indice += 1
-
-    def terminado(self):
-        return self.indice >= len(self.entrada)
-
-
-
-<img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
