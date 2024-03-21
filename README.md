@@ -270,8 +270,21 @@ compilador.Ir(https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/comp
 
 <img width="266" alt="Captura de pantalla 2024-03-15 083922" src="https://github.com/Ivannini/SSPTL2/assets/99306363/53a3dd60-0840-4d98-a00e-0dacf733e6f6">
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Analizador semantico
+
+El analizador semántico, en colaboración con el analizador sintáctico, se encarga de verificar si la información proporcionada en el código fuente es coherente y tiene sentido dentro del contexto del lenguaje de programación en cuestión. Utiliza las estructuras de datos generadas por el analizador sintáctico, como el árbol de análisis sintáctico, para realizar estas verificaciones.
+
+Una vez que el analizador sintáctico ha validado la estructura gramatical del código, el analizador semántico se enfoca en aspectos como el tipo de datos, el alcance de las variables, las conversiones de tipo, la asignación de valores, entre otros. Esto garantiza que el código cumpla con las reglas y restricciones semánticas del lenguaje.
+
+En el proyecto, se utilizará un archivo de texto (por ejemplo, un archivo .txt) como entrada para el proceso de traducción. Antes de iniciar la traducción, es necesario especificar la ubicación y el alcance del texto que se va a traducir. El analizador semántico verifica la integridad y coherencia del texto, identificando posibles errores semánticos o inconsistencias.
+
+Una vez completada la traducción, el analizador semántico genera una lista de datos que proporciona información sobre la naturaleza del texto y las acciones realizadas durante la traducción. Esto puede incluir detalles sobre las variables utilizadas, los tipos de datos asignados, las operaciones realizadas y cualquier otro aspecto relevante para comprender el significado del texto.
+
+<img width="470" alt="Captura de pantalla 2024-03-15 082910" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f33d9408-f091-4621-9d41-1f91f90aa4f5">
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea de Gramatica del compilador
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
 
