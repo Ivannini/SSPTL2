@@ -266,7 +266,7 @@ Cuando el analizador sintáctico lee el código fuente, consulta el documento pr
 
 El resultado del análisis sintáctico es una estructura de datos que representa la estructura gramatical del código fuente, como un árbol de análisis sintáctico (también conocido como árbol de análisis o árbol de sintaxis). Esta estructura se utiliza como entrada para el analizador semántico, que se encarga de realizar verificaciones adicionales y análisis de significado en el código fuente.
 
-
+compilador.Ir[https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/compilador.lr]
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea de Gramatica del compilador
