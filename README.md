@@ -26,6 +26,16 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II" es un curso avanzado dentro del ámbito de la informática y la ingeniería de software, que se centra en el estudio y la resolución de problemas específicos relacionados con la construcción y optimización de traductores de lenguajes de programación.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Modulos
+
+- **Módulo 1: Los símbolos léxicos del compilador.**
+- **Módulo 2: Ejemplos LR(1).**
+- **Módulo 3: Practica de analizador Sintáctico LR.**
+- **Módulo 4: Gramática del Compilador.**
+- **Módulo 5: Análisis semántico Práctica análisis semántico.**
+- **Módulo 6: Practica Árbol Sintáctico.**
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Proyecto Final
 
