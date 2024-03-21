@@ -344,7 +344,6 @@ Después de obtener las instrucciones del archivo, el programa llama a un compon
 
 
 
-Este código implementa un analizador léxico y un analizador sintáctico utilizando una tabla LR para llevar a cabo el análisis sintáctico de un archivo de código fuente. Aquí se proporciona una introducción para una mejor comprensión de cada parte:
 
 Analizador Léxico (scanner): Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
 
