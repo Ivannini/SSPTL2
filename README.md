@@ -434,7 +434,6 @@ Los árboles sintácticos son útiles porque proporcionan una representación vi
 ![arbol_sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06d18926-f390-4730-9384-e3565b317824)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Tarea de Gramatica del compilador
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
 
 El objetivo principal del compilador es leer instrucciones de un archivo de texto, analizar sintácticamente esas instrucciones y mostrar el resultado del análisis.
