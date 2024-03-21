@@ -1,44 +1,37 @@
+import sys
+
 class TipoCadena:
     "Clase que define los tipos de simbolos"
     def __init__(self):
+        self.TIPOS_DATOS = ['int', 'string', 'float', 'double', 'void']
         self.ERROR = -2
-        self.PESO = -1
         self.IDENTIFICADOR = 0
         self.ENTERO = 1
         self.REAL = 2
         self.CADENA = 3
         self.TIPO = 4
         self.OPSUMA = 5
-        self.OPRESTA = 6
-        self.OPMULTIPLICACION = 7
-        self.OPDIVISION = 8
-        self.OPOR = 9
-        self.OPAND = 10
-        self.OPNOT = 11
-        self.OPMAYORQ = 12
-        self.OPMENORQ = 13
-        self.OPMAYOROIGUAL = 14
-        self.OPMENOROIGUAL = 15
-        self.OPIGUAL = 16
-        self.OPESIGUAL = 17
-        self.OPESDIFERENTE = 18
-        self.PUNTOYCOMA = 19
-        self.COMA = 20
-        self.PARENTESIOSABIERTO = 21
-        self.PARENTESISCERRADO = 22
-        self.LLAVEABIERTA = 23
-        self.LLAVECERRADA = 24
-        self.BRACKETABIERTO = 25
-        self.BRACKETCERRADO = 26
-        self.DOSPUNTOS = 27
-        self.IF = 50
-        self.WHILE = 51 
-        self.RETURN = 52
-        self.ELSE = 53
-        self.INT = 54
-        self.FLOAT = 55
-        self.VOID = 56
-    
+        self.OPMULTIPLICACION = 6
+        self.OPDIVISION = 7
+        self.OPOR = 8
+        self.OPAND = 9
+        self.OPNOT = 10
+        self.OPESIGUAL = 11
+        self.PUNTOYCOMA = 12
+        self.COMA = 13
+        self.PARENTESISABIERTO = 14
+        self.PARENTESISCERRADO = 15
+        self.LLAVEABIERTA = 16
+        self.LLAVECERRADA = 17
+        self.OPIGUAL = 18
+        self.IF = 19
+        self.WHILE = 20 
+        self.RETURN = 21
+        self.ELSE = 22
+        self.PESO = 23
+        
+
+
 class AnalizadorLexico(TipoCadena):
     "Metodos para el analisis de cadenas"
     def __init__(self, cadena, indice = 0, continua = True, caracter = "", estado = 1, simbolo = "", tipo = -1, tipoCadenaMensaje = ""): 
@@ -65,36 +58,25 @@ class AnalizadorLexico(TipoCadena):
             self.ENTERO: self.m_ENTERO,
             self.REAL: self.m_REAL,
             self.CADENA: self.m_CADENA,
+            self.TIPO: self.m_TIPO,
             self.OPSUMA: self.m_OPMAS,
-            self.OPRESTA: self.m_OPMENOS,
             self.OPMULTIPLICACION: self.m_OPMULTI,
             self.OPDIVISION: self.m_OPDIV,
-            self.OPMAYORQ: self.m_MAYORQUE,
-            self.OPMENORQ: self.m_MENORQUE,
-            self.OPMAYOROIGUAL: self.m_MAYORIGUAL,
-            self.OPMENOROIGUAL: self.m_MENORIGUAL,
             self.OPOR: self.m_OR,
             self.OPAND: self.m_AND,
             self.OPNOT: self.m_NOT,
             self.OPIGUAL: self.m_IGUAL,
             self.OPESIGUAL: self.m_ESIGUAL,
-            self.OPESDIFERENTE: self.m_ESDIFERENTE,
             self.PUNTOYCOMA: self.m_PUNTOCOMA,
             self.COMA: self.m_COMA,
-            self.PARENTESIOSABIERTO: self.m_PARENTESISABIERTO,
+            self.PARENTESISABIERTO: self.m_PARENTESISABIERTO,
             self.PARENTESISCERRADO: self.m_PARENTESISCERRADO,
             self.LLAVEABIERTA: self.m_LLAVEABIERTA,
             self.LLAVECERRADA: self.m_LLAVECERRADA,
-            self.BRACKETABIERTO: self.m_BRACKETABIERTO,
-            self.BRACKETCERRADO: self.m_BRACKETCERRADO,
-            self.DOSPUNTOS: self.m_DOSPUNTOS,
             self.IF: self.m_IF,
             self.WHILE: self.m_WHILE,
             self.RETURN: self.m_RETURN,
             self.ELSE: self.m_ELSE,
-            self.INT: self.m_INT,
-            self.FLOAT: self.m_FLOAT,
-            self.VOID: self.m_VOID,
             self.PESO: self.m_PESO
         }
 
@@ -161,50 +143,59 @@ class AnalizadorLexico(TipoCadena):
 
             switch = {
                 -2: self.error, # ERROR
-                -1: self.tipoM1, # Peso
+                -1: self.tipo23, # Peso
                 2: self.tipo00, # Identificador
                 3: self.tipo01, # Entero
                 5: self.tipo02, # Real
+                4: self.tipo04, # Tipo de dato
                 7: self.tipo03, # Cadena
                 8: self.tipo05, # Suma
-                9: self.tipo06, # Resta
-                10: self.tipo07, # Multiplicacion
-                11: self.tipo08, # Division
-                17: self.tipo09, # OR
-                19: self.tipo10, # AND
-                20: self.tipo11, # NOT
-                14: self.tipo12, # Mayor que
-                12: self.tipo13, # Menor que
-                15: self.tipo14, # Mayor o igual que
-                13: self.tipo15, # Menor o igual que
-                22: self.tipo16, # Igual
-                23: self.tipo17, # Es igual
-                21: self.tipo18, # Es diferente
-                24: self.tipo19, # Punto y coma
-                25: self.tipo20, # Coma
-                26: self.tipo21, # Parantesis abierto
-                27: self.tipo22, # Parentesis cerrado
-                28: self.tipo23, # Llave abierta
-                29: self.tipo24, # Llave cerrada
-                30: self.tipo25, # Bracket abierto
-                31: self.tipo26, # Bracket cerrado
-                32: self.tipo27 # Dos puntos
+                # 9: self.tipo06, # Resta
+                10: self.tipo06, # Multiplicacion
+                11: self.tipo07, # Division
+                17: self.tipo08, # OR
+                19: self.tipo09, # AND
+                20: self.tipo10, # NOT
+                # 14: self.tipo12, # Mayor que
+                # 12: self.tipo13, # Menor que
+                # 15: self.tipo14, # Mayor o igual que
+                # 13: self.tipo15, # Menor o igual que
+                22: self.tipo18, # Igual
+                23: self.tipo11, # Es igual
+                # 21: self.tipo18, # Es diferente
+                24: self.tipo12, # Punto y coma
+                25: self.tipo13, # Coma
+                26: self.tipo14, # Parantesis abierto
+                27: self.tipo15, # Parentesis cerrado
+                28: self.tipo16, # Llave abierta
+                29: self.tipo17, # Llave cerrada
+                39: self.tipo19, # If
+                40: self.tipo20, # While
+                41: self.tipo21, # Return
+                42: self.tipo22, # else
             }
 
             switch.get(self.estado, self.error)()
+        if self.tipo == -2:
+            print("El simbolo '{}' no esta definido".format(self.simbolo))
+            sys.exit(0)
         return (self.simbolo, self.tipo, self.tipoCadena(self.tipo))
 
     def verificarPalabraReservada(self, simbolo):
         palabrasReservadas = {
-            "int": self.INT,
-            "float": self.FLOAT,
-            "void": self.VOID,
             "if": self.IF,
             "while": self.WHILE,
             "return": self.RETURN,
             "else": self.ELSE
         }
         self.tipo = palabrasReservadas.get(simbolo, self.tipo)
+        if self.tipo >= self.IF and self.tipo <= self.ELSE:
+            self.estado = self.tipo + 20
+
+    def verificarTiposDatos(self, simbolo):
+        if simbolo in self.TIPOS_DATOS:
+            self.tipo = self.TIPO
+            self.estado = self.TIPO
 
     def siguienteCaracter(self):
         """Determina el siguiente caracter
@@ -376,9 +367,10 @@ class AnalizadorLexico(TipoCadena):
             self.siguienteEstado(2)
         elif self.esNumero(self.caracter):
             self.siguienteEstado(2)
-        elif self.esEspacio(self.caracter):
+        elif self.esEspacio(self.caracter) or self.esPeso(self.caracter):
             self.continua = False
             self.verificarPalabraReservada(self.simbolo)
+            self.verificarTiposDatos(self.simbolo)
         else:
             self.retroceso()
 
@@ -386,7 +378,7 @@ class AnalizadorLexico(TipoCadena):
         if self.esNumero(self.caracter):
             self.siguienteEstado(3)
         elif self.esPunto(self.caracter):
-            self.tipo = -1
+            self.tipo = -2
             self.siguienteEstado(4)
         elif self.esEspacio(self.caracter):
             self.continua = False
@@ -547,72 +539,57 @@ class AnalizadorLexico(TipoCadena):
         self.tipo = self.OPSUMA
 
     def tipo06(self):
-        self.tipo = self.OPRESTA
-
-    def tipo07(self):
         self.tipo = self.OPMULTIPLICACION
 
-    def tipo08(self):
+    def tipo07(self):
         self.tipo = self.OPDIVISION
 
-    def tipo09(self):
+    def tipo08(self):
         self.tipo = self.OPOR
 
-    def tipo10(self):
+    def tipo09(self):
         self.tipo = self.OPAND
 
-    def tipo11(self):
+    def tipo10(self):
         self.tipo = self.OPNOT
 
-    def tipo12(self):
-        self.tipo = self.OPMAYORQ
-
-    def tipo13(self):
-        self.tipo = self.OPMENORQ
-
-    def tipo14(self):
-        self.tipo = self.OPMAYOROIGUAL
-
-    def tipo15(self):
-        self.tipo = self.OPMENOROIGUAL
-
-    def tipo16(self):
+    def tipo18(self):
         self.tipo = self.OPIGUAL
 
-    def tipo17(self):
+    def tipo11(self):
         self.tipo = self.OPESIGUAL
 
-    def tipo18(self):
-        self.tipo = self.OPESDIFERENTE
-
-    def tipo19(self):
+    def tipo12(self):
         self.tipo = self.PUNTOYCOMA
 
-    def tipo20(self):
+    def tipo13(self):
         self.tipo = self.COMA
 
-    def tipo21(self):
-        self.tipo = self.PARENTESIOSABIERTO
+    def tipo14(self):
+        self.tipo = self.PARENTESISABIERTO
 
-    def tipo22(self):
+    def tipo15(self):
         self.tipo = self.PARENTESISCERRADO
 
-    def tipo23(self):
+    def tipo16(self):
         self.tipo = self.LLAVEABIERTA
 
-    def tipo24(self):
+    def tipo17(self):
         self.tipo = self.LLAVECERRADA
 
-    def tipo25(self):
-        self.tipo = self.BRACKETABIERTO
+    def tipo19(self):
+        self.tipo = self.IF
 
-    def tipo26(self):
-        self.tipo = self.BRACKETCERRADO
+    def tipo20(self):
+        self.tipo = self.WHILE
 
-    def tipo27(self):
-        self.tipo = self.DOSPUNTOS
+    def tipo21(self):
+        self.tipo = self.RETURN
+
+    def tipo22(self):
+        self.tipo = self.ELSE
     
-    def tipoM1(self):
+    def tipo23(self):
         self.tipo = self.PESO
 
     
@@ -636,6 +613,9 @@ class AnalizadorLexico(TipoCadena):
     def m_CADENA(self):
         self.tipoCadenaMensaje = "Cadena"
 
+    def m_TIPO(self):
+        self.tipoCadenaMensaje = "Tipo"
+
     def m_OPMAS(self):
         self.tipoCadenaMensaje = "Mas"
 
@@ -654,8 +634,6 @@ class AnalizadorLexico(TipoCadena):
     def m_MENORQUE(self):
         self.tipoCadenaMensaje = "Menor que"
 
-    def m_MAYORIGUAL(self):
-        self.tipoCadenaMensaje = "Mayor o igual que"
 
     def m_MENORIGUAL(self):
         self.tipoCadenaMensaje = "Menor o igual que"
@@ -688,7 +666,7 @@ class AnalizadorLexico(TipoCadena):
         self.tipoCadenaMensaje = "Parentesis abierto"
 
     def m_PARENTESISCERRADO(self):
-        self.tipoCadenaMensaje = "Parentesis abierto"
+        self.tipoCadenaMensaje = "Parentesis cerrado"
 
     def m_LLAVEABIERTA(self):
         self.tipoCadenaMensaje = "Llave abierta"
