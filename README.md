@@ -117,6 +117,9 @@ Genera un analizador léxico utilizando todos los símbolos léxicos en el archi
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 Un analizador léxico es una parte esencial de un compilador o intérprete que se encarga de analizar un flujo de caracteres de un programa fuente y convertirlo en una secuencia de "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de programación, como palabras clave, identificadores, constantes y operadores. 
 
+<img width="353" alt="Captura de pantalla 2024-03-19 213658" src="https://github.com/Ivannini/SSPTL2/assets/99306363/01b3031e-78ec-4df4-afb9-3d074c8513d0">
+
+
 # [Codigo del analizador lexico completo](https://github.com/Ivannini/SSPTL2/tree/main/Modulo1/Simbolos_lexicos)
 En esta parte del codigo se puede observar que se utilizaron todos los simbolos lexicos del archivo, para asi realizar la actividad.
 
@@ -208,8 +211,6 @@ En esta parte del codigo se puede observar que se utilizaron todos los simbolos 
             self.resultados_text.delete(1.0, tk.END)
             self.resultados_text.insert(tk.END, resultados)
             self.resultados_text.configure(state="disabled")
-
-<img width="410" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/60a6948f-8bb3-4b55-873d-0701cd521801">
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
