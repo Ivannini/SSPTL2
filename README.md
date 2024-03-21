@@ -284,6 +284,11 @@ Una vez completada la traducción, el analizador semántico genera una lista de 
 
 <img width="470" alt="Captura de pantalla 2024-03-15 082910" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f33d9408-f091-4621-9d41-1f91f90aa4f5">
 
+Una vez completada la traducción, el analizador semántico genera una lista de datos que proporciona información sobre la naturaleza del texto y las acciones realizadas durante la traducción. Esto puede incluir detalles sobre las variables utilizadas, los tipos de datos asignados, las operaciones realizadas y cualquier otro aspecto relevante para comprender el significado del texto.
+
+<img width="641" alt="Captura de pantalla 2024-03-21 094043" src="https://github.com/Ivannini/SSPTL2/assets/99306363/4c8d94c9-ab6e-4d2e-8f73-96ef21265331">
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea de Gramatica del compilador
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
