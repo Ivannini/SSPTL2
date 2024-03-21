@@ -304,10 +304,6 @@ El programa comienza abriendo una ventana de diálogo que permite al usuario sel
 
 Después de obtener las instrucciones del archivo, el programa llama a un componente llamado "AnalizadorSintactico" para realizar el análisis sintáctico de esas instrucciones. Si el análisis es exitoso, el programa muestra el resultado del análisis, que puede incluir información sobre la estructura sintáctica de las instrucciones, como un árbol sintáctico.
 
-Finalmente, el programa imprime un mensaje indicando que el código se ha compilado correctamente, si el análisis sintáctico no encontró errores. En caso contrario, el programa no muestra ningún resultado y termina su ejecución.
-
-En resumen, el código representa un flujo básico de un compilador que utiliza una interfaz gráfica simple para interactuar con el usuario y realiza un análisis sintáctico de las instrucciones proporcionadas en un archivo de texto.
-
     class Sintactico {
     
     constructor() {
@@ -350,7 +346,7 @@ En resumen, el código representa un flujo básico de un compilador que utiliza 
 
 Este código implementa un analizador léxico y un analizador sintáctico utilizando una tabla LR para llevar a cabo el análisis sintáctico de un archivo de código fuente. Aquí se proporciona una introducción para una mejor comprensión de cada parte:
 
-**Analizador Léxico (scanner):** Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
+Analizador Léxico (scanner): Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
 
 La clase `LRTable` tiene cuatro atributos: `idRegla`, `lonRegla`, `noTerminal` y `table`. Estos atributos se inicializan como listas vacías en el constructor `__init__`.
 
