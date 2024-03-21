@@ -74,6 +74,17 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
 La etapa del proyecto de un analizador léxico completo implica el diseño e implementación de un componente crucial en la construcción de compiladores y procesadores de lenguaje: el analizador léxico. Este componente es responsable de leer el código fuente de un programa y convertirlo en una secuencia de "tokens" o unidades léxicas significativas para el compilador.
 
+La etapa del proyecto de un analizador léxico completo consiste en:
+
+**Análisis de requisitos:** Identificar las necesidades específicas del lenguaje de programación y los tipos de tokens requeridos.
+**Diseño:** Planificar la estructura y el comportamiento del analizador léxico, incluyendo la elección de algoritmos y técnicas de reconocimiento de tokens.
+**Implementación:** Escribir el código del analizador léxico basado en el diseño previamente establecido.
+**Pruebas y depuración:** Verificar el funcionamiento del analizador léxico y corregir posibles errores o fallos.
+**Optimización:** Mejorar el rendimiento del analizador léxico, si es necesario.
+**Documentación:** Documentar el código para facilitar su comprensión y uso por parte de otros desarrolladores.
+**Integración:** Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje.
+
+
 
      import tkinter as tk
      from tkinter import ttk
