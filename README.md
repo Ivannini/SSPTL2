@@ -81,55 +81,68 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
-Por supuesto, aquí tienes un ejemplo simple de un mini analizador sintáctico en Python que puede analizar expresiones aritméticas básicas y construir un árbol sintáctico:
+ejemplo básico de un mini generador léxico en Python que puede reconocer y clasificar tokens simples en un fragmento de código:
 
-    ```python
-    class Nodo:
-    def __init__(self, valor):
-        self.valor = valor
-        self.izquierda = None
-        self.derecha = None
+```
+import re
 
-    def analizar_expresion(expresion):
-        tokens = expresion.split()
-        nodo_raiz = Nodo(tokens[0])
-        pila = [nodo_raiz]
+# Definición de los patrones para los tokens
+tokens = [
+    ('IDENTIFICADOR', r'[a-zA-Z_][a-zA-Z0-9_]*'),  # Identificadores
+    ('ENTERO', r'\d+'),                            # Números enteros
+    ('SUMA', r'\+'),                               # Operador suma
+    ('RESTA', r'-'),                               # Operador resta
+    ('MULTIPLICACION', r'\*'),                     # Operador multiplicación
+    ('DIVISION', r'/'),                            # Operador división
+    ('ASIGNACION', r'='),                          # Operador de asignación
+    ('ESPACIO', r'\s+'),                           # Espacios en blanco (ignorados)
+    ('ERROR', r'.'),                               # Otros caracteres (error)
+]
 
-    for token in tokens[1:]:
-        if token in ['+', '-', '*', '/']:
-            nodo = Nodo(token)
-            nodo.derecha = pila.pop()
-            nodo.izquierda = pila.pop()
-            pila.append(nodo)
+# Función para generar tokens
+def generar_tokens(cadena):
+    i = 0
+    while i < len(cadena):
+        match = None
+        for token in tokens:
+            tipo, patron = token
+            regex = re.compile(patron)
+            match = regex.match(cadena, i)
+            if match:
+                valor = match.group(0)
+                if tipo != 'ESPACIO':
+                    yield tipo, valor
+                break
+        if not match:
+            print("Token no reconocido:", cadena[i])
+            break
         else:
-            nodo = Nodo(token)
-            pila.append(nodo)
-
-    return nodo_raiz
-
-    def mostrar_arbol(nodo, nivel=0):
-    if nodo is not None:
-        mostrar_arbol(nodo.derecha, nivel + 1)
-        print("  " * nivel + str(nodo.valor))
-        mostrar_arbol(nodo.izquierda, nivel + 1)
-
-    expresion = "3 + 5 * 2"
-    arbol = analizar_expresion(expresion)
-    print("Árbol sintáctico:")
-    mostrar_arbol(arbol)
-    ```
-
-Este mini analizador sintáctico puede analizar expresiones aritméticas simples y construir un árbol sintáctico que representa la estructura de la expresión. En este ejemplo, la expresión `"3 + 5 * 2"` se analiza y se produce el siguiente árbol sintáctico:
-
-```
-    +
-  /   \
-3       *
-     /   \
-    5     2
+            i = match.end()
 ```
 
-Cada nodo del árbol representa un operador o un valor en la expresión aritmética. Los nodos hoja representan operandos (en este caso, los números `3`, `5` y `2`), mientras que los nodos internos representan operadores (`+` y `*`). Este ejemplo es bastante simple, pero muestra los conceptos básicos de cómo se puede implementar un analizador sintáctico para construir un árbol sintáctico.
+Este mini generador léxico define una lista de tuplas, donde cada tupla contiene un nombre de token y un patrón de expresión regular que describe cómo reconocer ese token en el código fuente. Luego, la función `generar_tokens` itera sobre la cadena de entrada y aplica los patrones de expresión regular para identificar los tokens. Cada token reconocido se devuelve como una tupla que contiene su tipo y su valor.
+
+ejemplo de cómo usar este generador léxico para analizar una cadena de entrada:
+
+```
+codigo_fuente = "x = 10 + 5 * 2"
+for tipo, valor in generar_tokens(codigo_fuente):
+    print(f"Token: {tipo}, Valor: {valor}")
+```
+
+Este código producirá la siguiente salida:
+
+```
+Token: IDENTIFICADOR, Valor: x
+Token: ASIGNACION, Valor: =
+Token: ENTERO, Valor: 10
+Token: SUMA, Valor: +
+Token: ENTERO, Valor: 5
+Token: MULTIPLICACION, Valor: *
+Token: ENTERO, Valor: 2
+```
+
+Este es solo un ejemplo muy básico de un mini generador léxico y puede ser expandido y mejorado para manejar más tipos de tokens y situaciones más complejas.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
