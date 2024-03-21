@@ -397,8 +397,6 @@ El analizador sintáctico es una parte fundamental del proceso de compilación q
 
 En lugar de "compilador.lr", el documento podría llamarse de manera diferente, pero su función principal sería proporcionar las reglas sintácticas necesarias para comprender la estructura del código fuente. Este documento es esencial para que el analizador sintáctico funcione correctamente.
 
-Cuando el analizador sintáctico lee el código fuente, consulta el documento proporcionado para determinar qué tipo de variables o acciones se están ejecutando en el código. Basándose en esta información y en las reglas sintácticas definidas, el analizador sintáctico puede identificar la estructura gramatical del código y determinar si cumple con la gramática especificada para el lenguaje en cuestión.
-
 El resultado del análisis sintáctico es una estructura de datos que representa la estructura gramatical del código fuente, como un árbol de análisis sintáctico (también conocido como árbol de análisis o árbol de sintaxis). Esta estructura se utiliza como entrada para el analizador semántico, que se encarga de realizar verificaciones adicionales y análisis de significado en el código fuente.
 
 compilador.Ir(https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/compilador.lr)
@@ -421,17 +419,6 @@ La traducción del texto implica convertir el código fuente en una forma ejecut
 Además, el analizador semántico puede contribuir a la creación y construcción de estructuras de datos más complejas, como el árbol de sintaxis abstracta, que representa de manera más precisa la semántica del código y facilita procesos posteriores, como la optimización y la generación de código.
 
 <img width="641" alt="Captura de pantalla 2024-03-21 094043" src="https://github.com/Ivannini/SSPTL2/assets/99306363/4c8d94c9-ab6e-4d2e-8f73-96ef21265331">
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Arbol sintactico
-
-Un árbol sintáctico, también conocido como árbol de análisis sintáctico o árbol de sintaxis abstracta, es una estructura de datos utilizada en el análisis sintáctico de un lenguaje de programación. Su objetivo es representar la estructura gramatical de una expresión o sentencia del lenguaje de manera jerárquica y fácilmente interpretable.
-
-Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
-
-Los árboles sintácticos son útiles porque proporcionan una representación visual de la estructura del programa que es más fácil de entender y manipular que el código fuente original. Además, son utilizados por el compilador para realizar análisis semántico y optimizaciones, así como para generar código objeto o intermedio.
-
-![arbol_sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06d18926-f390-4730-9384-e3565b317824)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
@@ -509,6 +496,17 @@ for line in lines[:3]:
 
 
 Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Arbol sintactico
+
+Un árbol sintáctico, también conocido como árbol de análisis sintáctico o árbol de sintaxis abstracta, es una estructura de datos utilizada en el análisis sintáctico de un lenguaje de programación. Su objetivo es representar la estructura gramatical de una expresión o sentencia del lenguaje de manera jerárquica y fácilmente interpretable.
+
+Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
+
+Los árboles sintácticos son útiles porque proporcionan una representación visual de la estructura del programa que es más fácil de entender y manipular que el código fuente original. Además, son utilizados por el compilador para realizar análisis semántico y optimizaciones, así como para generar código objeto o intermedio.
+
+![arbol_sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06d18926-f390-4730-9384-e3565b317824)
 
 
 
