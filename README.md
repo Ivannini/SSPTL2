@@ -33,7 +33,11 @@ Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se com
 
 **Analizador lexico** 
 
-nalizador Sintactico Analizador Semantico Gramatica del compilador Arbol Sintactico
+**Analizador Sintactico** 
+
+**Analizador Semantico** **Gramatica del compilador** 
+
+**Arbol Sintactico**
 
 
 
