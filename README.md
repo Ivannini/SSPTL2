@@ -268,6 +268,9 @@ El resultado del análisis sintáctico es una estructura de datos que representa
 
 compilador.Ir(https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/compilador.lr)
 
+<img width="266" alt="Captura de pantalla 2024-03-15 083922" src="https://github.com/Ivannini/SSPTL2/assets/99306363/53a3dd60-0840-4d98-a00e-0dacf733e6f6">
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea de Gramatica del compilador
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
