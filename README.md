@@ -274,17 +274,17 @@ compilador.Ir(https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/comp
 
 # Analizador semantico
 
-El analizador semántico, en colaboración con el analizador sintáctico, se encarga de verificar si la información proporcionada en el código fuente es coherente y tiene sentido dentro del contexto del lenguaje de programación en cuestión. Utiliza las estructuras de datos generadas por el analizador sintáctico, como el árbol de análisis sintáctico, para realizar estas verificaciones.
+El analizador semántico es una fase crucial en el proceso de compilación que se encarga de analizar el significado y la coherencia del código fuente, una vez que ha pasado la etapa de análisis sintáctico. A diferencia del analizador sintáctico, que se enfoca en la estructura gramatical del código, el analizador semántico se centra en el significado y la lógica detrás de las construcciones del lenguaje de programación.
 
-Una vez que el analizador sintáctico ha validado la estructura gramatical del código, el analizador semántico se enfoca en aspectos como el tipo de datos, el alcance de las variables, las conversiones de tipo, la asignación de valores, entre otros. Esto garantiza que el código cumpla con las reglas y restricciones semánticas del lenguaje.
+Después de que el analizador sintáctico ha generado una representación estructurada del código, como un árbol de análisis sintáctico, el analizador semántico examina este árbol para detectar posibles errores semánticos, como incompatibilidades de tipos, uso incorrecto de variables o funciones, o cualquier otra violación de las reglas semánticas del lenguaje.
 
-En el proyecto, se utilizará un archivo de texto (por ejemplo, un archivo .txt) como entrada para el proceso de traducción. Antes de iniciar la traducción, es necesario especificar la ubicación y el alcance del texto que se va a traducir. El analizador semántico verifica la integridad y coherencia del texto, identificando posibles errores semánticos o inconsistencias.
-
-Una vez completada la traducción, el analizador semántico genera una lista de datos que proporciona información sobre la naturaleza del texto y las acciones realizadas durante la traducción. Esto puede incluir detalles sobre las variables utilizadas, los tipos de datos asignados, las operaciones realizadas y cualquier otro aspecto relevante para comprender el significado del texto.
+Una vez que el análisis semántico ha validado el código y ha confirmado su coherencia, el proceso de traducción puede comenzar. En un proyecto específico, este texto puede ser un archivo de texto plano que contiene código fuente en el lenguaje definido por el compilador. Antes de iniciar la traducción, el analizador semántico puede requerir información adicional, como la ubicación y terminación del texto a traducir.
 
 <img width="470" alt="Captura de pantalla 2024-03-15 082910" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f33d9408-f091-4621-9d41-1f91f90aa4f5">
 
-Una vez completada la traducción, el analizador semántico genera una lista de datos que proporciona información sobre la naturaleza del texto y las acciones realizadas durante la traducción. Esto puede incluir detalles sobre las variables utilizadas, los tipos de datos asignados, las operaciones realizadas y cualquier otro aspecto relevante para comprender el significado del texto.
+La traducción del texto implica convertir el código fuente en una forma ejecutable o en un código objeto para su posterior ejecución o uso. Durante este proceso, el analizador semántico puede generar una lista de datos relevantes que ayudan a comprender la naturaleza del texto, como información sobre las variables, funciones, clases u otros elementos del programa.
+
+Además, el analizador semántico puede contribuir a la creación y construcción de estructuras de datos más complejas, como el árbol de sintaxis abstracta, que representa de manera más precisa la semántica del código y facilita procesos posteriores, como la optimización y la generación de código.
 
 <img width="641" alt="Captura de pantalla 2024-03-21 094043" src="https://github.com/Ivannini/SSPTL2/assets/99306363/4c8d94c9-ab6e-4d2e-8f73-96ef21265331">
 
