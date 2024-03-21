@@ -393,7 +393,7 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
         print()
 
 
-El analizador sintáctico es una parte fundamental del proceso de compilación que se encarga de analizar la estructura gramatical del código fuente, según las reglas sintácticas definidas para el lenguaje de programación en cuestión. Para llevar a cabo esta tarea, el analizador sintáctico utiliza un documento proporcionado por el profesor llamado "compilador.lr", que generalmente contiene información sobre la gramática del lenguaje y una tabla de estados que guía el proceso de análisis.
+El analizador sintáctico utiliza un documento proporcionado por el profesor llamado "compilador.lr", que generalmente contiene información sobre la gramática del lenguaje y una tabla de estados que guía el proceso de análisis.
 
 En lugar de "compilador.lr", el documento podría llamarse de manera diferente, pero su función principal sería proporcionar las reglas sintácticas necesarias para comprender la estructura del código fuente. Este documento es esencial para que el analizador sintáctico funcione correctamente.
 
