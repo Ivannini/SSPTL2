@@ -76,19 +76,19 @@ La etapa del proyecto de un analizador léxico completo implica el diseño e imp
 
 La etapa del proyecto de un analizador léxico completo consiste en:
 
-**Análisis de requisitos:** Identificar las necesidades específicas del lenguaje de programación y los tipos de tokens requeridos.
+**Análisis de requisitos**: Identificar los requisitos específicos del lenguaje que el analizador léxico debe reconocer y procesar.
 
-**Diseño:** Planificar la estructura y el comportamiento del analizador léxico, incluyendo la elección de algoritmos y técnicas de reconocimiento de tokens.
+**Diseño del analizador léxico**: Establecer la estructura y el comportamiento del analizador, incluyendo la elección de algoritmos y estructuras de datos.
 
-**Implementación:** Escribir el código del analizador léxico basado en el diseño previamente establecido.
+**Implementación**: Escribir el código del analizador léxico basado en el diseño previamente establecido.
 
-**Pruebas y depuración:** Verificar el funcionamiento del analizador léxico y corregir posibles errores o fallos.
+**Pruebas y depuración**: Probar exhaustivamente el analizador léxico para garantizar su funcionamiento correcto y corregir cualquier error o defecto encontrado.
 
-**Optimización:** Mejorar el rendimiento del analizador léxico, si es necesario.
+**Optimización**: Mejorar el rendimiento y eficiencia del analizador léxico, si es necesario, mediante técnicas de optimización.
 
-**Documentación:** Documentar el código para facilitar su comprensión y uso por parte de otros desarrolladores.
+**Documentación**: Documentar el código del analizador léxico para facilitar su comprensión y uso por parte de otros desarrolladores.
 
-**Integración:** Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje.
+**Integración**: Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje, como el analizador sintáctico y el generador de código.
 
 
 
