@@ -29,7 +29,8 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 
 # proyecto Final
 
-Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se compilen en un solo programa [En caso se necesitara compilador.Ir(https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/compilador.lr] 
+Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se compilen en un solo programa 
+
 Analizador lexico
 Analizador Sintactico
 Analizador Semantico
