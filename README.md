@@ -41,7 +41,23 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
-Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
+La etapa del proyecto de un analizador léxico completo implica el diseño e implementación de un componente crucial en la construcción de compiladores y procesadores de lenguaje: el analizador léxico. Este componente es responsable de leer el código fuente de un programa y convertirlo en una secuencia de "tokens" o unidades léxicas significativas para el compilador.
+
+Análisis de requisitos: Comienza identificando los requisitos específicos del lenguaje de programación que el analizador debe admitir. Esto incluye comprender la sintaxis del lenguaje, los tokens válidos, las palabras clave, los operadores, los delimitadores, etc.
+
+Diseño del analizador léxico: Esto implica diseñar una estructura para el analizador léxico que sea capaz de reconocer los diferentes tokens según las reglas del lenguaje. Puedes elegir entre diferentes enfoques, como usar expresiones regulares, autómatas finitos deterministas o autómatas finitos no deterministas.
+
+Implementación: Aquí es donde se escribe el código del analizador léxico en el lenguaje de programación elegido. Esto implica la traducción del diseño en algoritmos concretos y la implementación de estructuras de datos necesarias para el análisis léxico.
+
+Pruebas y depuración: Después de la implementación, es crucial probar exhaustivamente el analizador léxico para asegurarse de que funcione correctamente en una variedad de casos de prueba, incluidos los límites y situaciones de error.
+
+Optimización: Una vez que el analizador léxico funcione correctamente, se puede considerar la optimización para mejorar su rendimiento, como la optimización del tiempo de ejecución y la gestión eficiente de la memoria.
+
+Documentación: Es importante documentar el código del analizador léxico para que otros desarrolladores puedan entender fácilmente su funcionamiento y cómo integrarlo en sistemas más grandes.
+
+Integración: Finalmente, el analizador léxico se integra con otros componentes del compilador o procesador de lenguaje, como el analizador sintáctico, el generador de código, etc.
+
+
 
      import tkinter as tk
      from tkinter import ttk
