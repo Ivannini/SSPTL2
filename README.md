@@ -51,13 +51,45 @@ Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se com
 
 **Arbol Sintactico**
 
-
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
 
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
+
+Imaginemos que queremos construir un analizador léxico para un lenguaje de programación simple que solo admite operaciones aritméticas básicas (+, -, *, /) y números enteros. El analizador léxico debe ser capaz de reconocer y clasificar los tokens presentes en una cadena de entrada.
+
+Por ejemplo, dada la cadena de entrada: "5 + 3 * 2 - 4", el analizador léxico debería producir la siguiente secuencia de tokens:
+
+- Número entero: 5
+- Operador de suma: +
+- Número entero: 3
+- Operador de multiplicación: *
+- Número entero: 2
+- Operador de resta: -
+- Número entero: 4
+
+Esta secuencia de tokens representa los elementos individuales de la expresión aritmética y es el resultado del análisis léxico realizado por el analizador.
+
+**Analizador léxico para un lenguaje de marcado como HTML:**
+
+Supongamos que queremos construir un analizador léxico para el lenguaje de marcado HTML. En este caso, el analizador léxico debe ser capaz de reconocer y clasificar las etiquetas HTML, atributos y contenido de texto.
+
+Por ejemplo, dada la siguiente porción de código HTML:
+
+```html
+<h1 class="titulo">Bienvenido</h1>
+```
+
+El analizador léxico debería producir la siguiente secuencia de tokens:
+
+- Etiqueta de apertura: \<h1>
+- Atributo de clase: class="titulo"
+- Texto: Bienvenido
+- Etiqueta de cierre: \</h1>
+
+Esta secuencia de tokens representa los componentes individuales del código HTML y es el resultado del análisis léxico realizado por el analizador.
+
+Estos son solo dos ejemplos simples que ilustran cómo funciona un analizador léxico y qué tipo de tokens puede reconocer en diferentes contextos. Los analizadores léxicos pueden ser mucho más complejos y pueden reconocer una amplia variedad de tokens en lenguajes de programación y marcado más complejos.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
