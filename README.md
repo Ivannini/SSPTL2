@@ -115,6 +115,7 @@ Genera un analizador léxico utilizando todos los símbolos léxicos en el archi
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Proyecto
 
+
 # [Analizador Lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf)
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
