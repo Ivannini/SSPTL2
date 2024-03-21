@@ -21,6 +21,22 @@ Codigo: 218130122
 PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Curso de la Materia
+
+La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II" es un curso avanzado dentro del ámbito de la informática y la ingeniería de software, que se centra en el estudio y la resolución de problemas específicos relacionados con la construcción y optimización de traductores de lenguajes de programación.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# proyecto Final
+
+Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se compilen en un solo programa 
+Analizador lexico
+Analizador Sintactico
+Analizador Semantico
+Gramatica del compilador
+Arbol Sintactico
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tareas de Analizador Lexico
 # [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
 
