@@ -27,7 +27,7 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# proyecto Final
+# Proyecto Final
 
 Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se compilen en un solo programa 
 
