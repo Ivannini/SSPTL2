@@ -432,51 +432,6 @@ for line in lines[:3]:
 
 Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Construccion del Traductor
-
-En esta sección, se presentarán los avances generales del traductor. Mientras las demás secciones explican partes específicas del traductor, aquí se mostrará el traductor en su conjunto, si se puede llamar así. Claro que se irá actualizando, pero los avances estarán visibles.
-
-En cuanto a parsetab.py, este archivo contiene información crucial sobre cómo el analizador sintáctico debe interpretar y procesar la entrada. Algunos puntos clave incluyen:
-
-- `_tabversion`: Indica la versión de la tabla de análisis, útil para garantizar compatibilidad entre diferentes versiones del generador de analizadores sintácticos.
-- `_lr_method`: Especifica el método de análisis utilizado, en este caso, el método LALR (Look-Ahead Left-to-Right, Rightmost derivation).
-- `_lr_signature`: Define la firma de la tabla de análisis, describiendo las reglas gramaticales que el analizador debe reconocer. En la firma proporcionada, se ven reglas para expresiones, términos y factores.
-
-A continuación, se presenta una parte del código:
-
-```python
-_tabversion = '3.10'
-_lr_method = 'LALR'
-_lr_signature = 'DIVIDE LPAREN MINUS NUMBER PLUS RPAREN TIMESexpression :
-expression PLUS term\n | expression MINUS
-term\n | termterm : term TIMES factor\n |
-term DIVIDE factor\n | factorfactor : NUMBER\n |
-LPAREN expression RPAREN'
-```
-
-Además, se define una función para manejar el token NUMBER, que representa un número entero en la entrada. Esta función utiliza una expresión regular para identificar y convertir los números en enteros:
-
-```python
-def t_NUMBER(t):
-    r'\d+'
-    t.value = int(t.value)
-    return t
-```
-
-También se definen expresiones regulares para cada token simple, utilizadas para identificar y reconocer patrones correspondientes a cada token:
-
-```python
-t_PLUS = r'\+'
-t_MINUS = r'-'
-t_TIMES = r'\*'
-t_DIVIDE = r'/'
-t_LPAREN = r'\('
-t_RPAREN = r'\)'
-```
-
-Estas expresiones regulares son esenciales para el reconocimiento de patrones en la entrada del analizador sintáctico."
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Arbol sintactico
