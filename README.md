@@ -298,10 +298,15 @@ El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en
 # Tarea de Gramatica del compilador
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
 
+El objetivo principal del compilador es leer instrucciones de un archivo de texto, analizar sintácticamente esas instrucciones y mostrar el resultado del análisis.
 
-    import { Pila } from './pila.js';
-    import * as genR from './Tree/generadorReglas.js';
-    import { Nodo, Arbol } from './Tree/arbol.js';
+El programa comienza abriendo una ventana de diálogo que permite al usuario seleccionar un archivo de texto. Una vez que el usuario selecciona un archivo, el programa lee el contenido del archivo y lo almacena en una cadena de texto. Si el usuario no selecciona ningún archivo, el programa muestra un mensaje de advertencia y termina.
+
+Después de obtener las instrucciones del archivo, el programa llama a un componente llamado "AnalizadorSintactico" para realizar el análisis sintáctico de esas instrucciones. Si el análisis es exitoso, el programa muestra el resultado del análisis, que puede incluir información sobre la estructura sintáctica de las instrucciones, como un árbol sintáctico.
+
+Finalmente, el programa imprime un mensaje indicando que el código se ha compilado correctamente, si el análisis sintáctico no encontró errores. En caso contrario, el programa no muestra ningún resultado y termina su ejecución.
+
+En resumen, el código representa un flujo básico de un compilador que utiliza una interfaz gráfica simple para interactuar con el usuario y realiza un análisis sintáctico de las instrucciones proporcionadas en un archivo de texto.
 
     class Sintactico {
     
