@@ -12,7 +12,7 @@ Seccion: D02
 
 Siglo: 2024A
 
-Lunes y Miercoles 1 a 3 PM
+Horario: Lunes y Miercoles 1 a 3 PM
 
 Alumno: Nudelstejer Gomez Ivan
 
@@ -29,12 +29,15 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 
 # proyecto Final
 
-Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se compilen en un solo programa 
+Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se compilen en un solo programa [En caso se necesitara compilador.Ir(https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/compilador.lr] 
 Analizador lexico
 Analizador Sintactico
 Analizador Semantico
 Gramatica del compilador
 Arbol Sintactico
+
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tareas de Analizador Lexico
