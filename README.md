@@ -302,6 +302,8 @@ El objetivo principal del compilador es leer instrucciones de un archivo de text
 
 El programa comienza abriendo una ventana de diálogo que permite al usuario seleccionar un archivo de texto. Una vez que el usuario selecciona un archivo, el programa lee el contenido del archivo y lo almacena en una cadena de texto. Si el usuario no selecciona ningún archivo, el programa muestra un mensaje de advertencia y termina.
 
+link aqui[https://github.com/Ivannini/SSPTL2/blob/main/Modulo4/pruebas.py]
+
 Después de obtener las instrucciones del archivo, el programa llama a un componente llamado "AnalizadorSintactico" para realizar el análisis sintáctico de esas instrucciones. Si el análisis es exitoso, el programa muestra el resultado del análisis, que puede incluir información sobre la estructura sintáctica de las instrucciones, como un árbol sintáctico.
 
     class Sintactico {
@@ -345,7 +347,6 @@ Después de obtener las instrucciones del archivo, el programa llama a un compon
 
 
 
-Analizador Léxico (scanner): Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
 
 La clase `LRTable` tiene cuatro atributos: `idRegla`, `lonRegla`, `noTerminal` y `table`. Estos atributos se inicializan como listas vacías en el constructor `__init__`.
 
