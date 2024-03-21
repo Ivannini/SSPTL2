@@ -317,10 +317,13 @@ Además, el analizador semántico puede contribuir a la creación y construcció
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Arbol sintactico
 
-El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
+Un árbol sintáctico, también conocido como árbol de análisis sintáctico o árbol de sintaxis abstracta, es una estructura de datos utilizada en el análisis sintáctico de un lenguaje de programación. Su objetivo es representar la estructura gramatical de una expresión o sentencia del lenguaje de manera jerárquica y fácilmente interpretable.
+
+Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
+
+Los árboles sintácticos son útiles porque proporcionan una representación visual de la estructura del programa que es más fácil de entender y manipular que el código fuente original. Además, son utilizados por el compilador para realizar análisis semántico y optimizaciones, así como para generar código objeto o intermedio.
 
 ![arbol_sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06d18926-f390-4730-9384-e3565b317824)
-
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Tarea de Gramatica del compilador
