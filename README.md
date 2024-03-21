@@ -482,11 +482,6 @@ Después de obtener las instrucciones del archivo, el programa llama a un compon
         });
     }
 
-
-
-
-
-
 La clase `LRTable` tiene cuatro atributos: `idRegla`, `lonRegla`, `noTerminal` y `table`. Estos atributos se inicializan como listas vacías en el constructor `__init__`.
 
 ```python
