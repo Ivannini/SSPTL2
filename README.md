@@ -21,6 +21,8 @@ Codigo: 218130122
 PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Tareas de Analizador Lexico
+
 
 # [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
 
@@ -38,20 +40,81 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
-Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
+# [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
+Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
 
-Entrada para el Ejercicio 1
-hola+mundo
+     import tkinter as tk
+     from tkinter import ttk
+     from lexico import AnalizadorLexico
 
-Entrada para el Ejercicio 2
-a+b+c+d+e+f
+     class AnalizadorLexicoApp:
+        def __init__(self, master):
+        self.master = master
+        master.title("Analizador Léxico")
 
-<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
+        self.label = ttk.Label(master, text="Ingresa el código a evaluar:")
+        self.label.grid(row=0, column=0, padx=10, pady=10, sticky="w")
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        self.entry = ttk.Entry(master, width=50)
+        self.entry.grid(row=0, column=1, padx=10, pady=10)
+
+        self.analizar_button = ttk.Button(master, text="Analizar", command=self.analizar)
+        self.analizar_button.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
+
+        self.resultados_label = ttk.Label(master, text="Resultados:")
+        self.resultados_label.grid(row=2, column=0, padx=10, pady=5, sticky="w")
+
+        self.resultados_text = tk.Text(master, height=10, width=60, wrap="none")
+        self.resultados_text.grid(row=3, column=0, columnspan=2, padx=10, pady=5)
+        self.resultados_text.configure(state="disabled", relief="sunken")
+
+    def analizar(self):
+        cadena = self.entry.get()
+
+        if not cadena:
+            self.resultados_text.configure(state="normal")
+            self.resultados_text.delete(1.0, tk.END)
+            self.resultados_text.insert(tk.END, "La cadena no es válida.")
+            self.resultados_text.configure(state="disabled")
+        else:
+            analizador = AnalizadorLexico(cadena)
+            resultados = "\nResultado del análisis léxico:\n\n"
+            resultados += '{:<20} {:<20} {:<20}\n'.format("Símbolo", "Tipo", "Código de Tipo")
+
+            while analizador.caracter != "$":
+                analizador.siguienteSimbolo()
+                resultado = '{:<20} {:<20} {:<20}\n'.format(
+                    analizador.simbolo,
+                    analizador.tipoCadena(analizador.tipo),
+                    str(analizador.tipo)
+                )
+                resultados += resultado
+
+            self.resultados_text.configure(state="normal")
+            self.resultados_text.delete(1.0, tk.END)
+            self.resultados_text.insert(tk.END, resultados)
+            self.resultados_text.configure(state="disabled")
+
+    def main():
+        root = tk.Tk()
+        app = AnalizadorLexicoApp(root)
+        root.mainloop()
+
+        if __name__ == '__main__':
+        main()
+
+
+<img width="386" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/82023752-ec93-45ab-8989-15e69f9d875f">
+
+
+
+<img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Proyecto
+
 # [Analizador Lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf)
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
@@ -152,7 +215,20 @@ En esta parte del codigo se puede observar que se utilizaron todos los simbolos 
 <img width="410" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/60a6948f-8bb3-4b55-873d-0701cd521801">
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
+Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
+
+Entrada para el Ejercicio 1
+hola+mundo
+
+Entrada para el Ejercicio 2
+a+b+c+d+e+f
+
+<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # [Mini analizador sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
 Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
@@ -204,79 +280,10 @@ Se define una clase Lexico que representa un analizador léxico básico. Esta cl
 
 <img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
-Genera un analizador léxico utilizando todos los símbolos léxicos en el archivo simbolos_lexicos.pdf.
-
-     import tkinter as tk
-     from tkinter import ttk
-     from lexico import AnalizadorLexico
-
-     class AnalizadorLexicoApp:
-        def __init__(self, master):
-        self.master = master
-        master.title("Analizador Léxico")
-
-        self.label = ttk.Label(master, text="Ingresa el código a evaluar:")
-        self.label.grid(row=0, column=0, padx=10, pady=10, sticky="w")
-
-        self.entry = ttk.Entry(master, width=50)
-        self.entry.grid(row=0, column=1, padx=10, pady=10)
-
-        self.analizar_button = ttk.Button(master, text="Analizar", command=self.analizar)
-        self.analizar_button.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
-
-        self.resultados_label = ttk.Label(master, text="Resultados:")
-        self.resultados_label.grid(row=2, column=0, padx=10, pady=5, sticky="w")
-
-        self.resultados_text = tk.Text(master, height=10, width=60, wrap="none")
-        self.resultados_text.grid(row=3, column=0, columnspan=2, padx=10, pady=5)
-        self.resultados_text.configure(state="disabled", relief="sunken")
-
-    def analizar(self):
-        cadena = self.entry.get()
-
-        if not cadena:
-            self.resultados_text.configure(state="normal")
-            self.resultados_text.delete(1.0, tk.END)
-            self.resultados_text.insert(tk.END, "La cadena no es válida.")
-            self.resultados_text.configure(state="disabled")
-        else:
-            analizador = AnalizadorLexico(cadena)
-            resultados = "\nResultado del análisis léxico:\n\n"
-            resultados += '{:<20} {:<20} {:<20}\n'.format("Símbolo", "Tipo", "Código de Tipo")
-
-            while analizador.caracter != "$":
-                analizador.siguienteSimbolo()
-                resultado = '{:<20} {:<20} {:<20}\n'.format(
-                    analizador.simbolo,
-                    analizador.tipoCadena(analizador.tipo),
-                    str(analizador.tipo)
-                )
-                resultados += resultado
-
-            self.resultados_text.configure(state="normal")
-            self.resultados_text.delete(1.0, tk.END)
-            self.resultados_text.insert(tk.END, resultados)
-            self.resultados_text.configure(state="disabled")
-
-    def main():
-        root = tk.Tk()
-        app = AnalizadorLexicoApp(root)
-        root.mainloop()
-
-        if __name__ == '__main__':
-        main()
-
-
-<img width="386" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/82023752-ec93-45ab-8989-15e69f9d875f">
 
 
 
-<img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Arbol sintactico
 
 El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
