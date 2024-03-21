@@ -81,6 +81,56 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
+Por supuesto, aquí tienes un ejemplo simple de un mini analizador sintáctico en Python que puede analizar expresiones aritméticas básicas y construir un árbol sintáctico:
+
+    ```python
+    class Nodo:
+    def __init__(self, valor):
+        self.valor = valor
+        self.izquierda = None
+        self.derecha = None
+
+    def analizar_expresion(expresion):
+        tokens = expresion.split()
+        nodo_raiz = Nodo(tokens[0])
+        pila = [nodo_raiz]
+
+    for token in tokens[1:]:
+        if token in ['+', '-', '*', '/']:
+            nodo = Nodo(token)
+            nodo.derecha = pila.pop()
+            nodo.izquierda = pila.pop()
+            pila.append(nodo)
+        else:
+            nodo = Nodo(token)
+            pila.append(nodo)
+
+    return nodo_raiz
+
+    def mostrar_arbol(nodo, nivel=0):
+    if nodo is not None:
+        mostrar_arbol(nodo.derecha, nivel + 1)
+        print("  " * nivel + str(nodo.valor))
+        mostrar_arbol(nodo.izquierda, nivel + 1)
+
+    expresion = "3 + 5 * 2"
+    arbol = analizar_expresion(expresion)
+    print("Árbol sintáctico:")
+    mostrar_arbol(arbol)
+    ```
+
+Este mini analizador sintáctico puede analizar expresiones aritméticas simples y construir un árbol sintáctico que representa la estructura de la expresión. En este ejemplo, la expresión `"3 + 5 * 2"` se analiza y se produce el siguiente árbol sintáctico:
+
+```
+    +
+  /   \
+3       *
+     /   \
+    5     2
+```
+
+Cada nodo del árbol representa un operador o un valor en la expresión aritmética. Los nodos hoja representan operandos (en este caso, los números `3`, `5` y `2`), mientras que los nodos internos representan operadores (`+` y `*`). Este ejemplo es bastante simple, pero muestra los conceptos básicos de cómo se puede implementar un analizador sintáctico para construir un árbol sintáctico.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
 La etapa del proyecto de un analizador léxico completo implica el diseño e implementación de un componente crucial en la construcción de compiladores y procesadores de lenguaje: el analizador léxico. Este componente es responsable de leer el código fuente de un programa y convertirlo en una secuencia de "tokens" o unidades léxicas significativas para el compilador.
