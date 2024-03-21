@@ -165,7 +165,7 @@ La etapa del proyecto de un analizador léxico completo consiste en:
 **Integración**: Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje, como el analizador sintáctico y el generador de código.
 
 
-    ´´´
+    
      import tkinter as tk
      from tkinter import ttk
      from lexico import AnalizadorLexico
@@ -225,7 +225,7 @@ La etapa del proyecto de un analizador léxico completo consiste en:
 
         if __name__ == '__main__':
         main()
-´´´
+
 
 
 <img width="386" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/82023752-ec93-45ab-8989-15e69f9d875f">
