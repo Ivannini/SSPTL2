@@ -84,40 +84,55 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 ejemplo básico de un mini generador léxico en Python que puede reconocer y clasificar tokens simples en un fragmento de código:
 
 ```
+import tkinter as tk
+from tkinter import scrolledtext
 import re
 
-# Definición de los patrones para los tokens
-tokens = [
-    ('IDENTIFICADOR', r'[a-zA-Z_][a-zA-Z0-9_]*'),  # Identificadores
-    ('ENTERO', r'\d+'),                            # Números enteros
-    ('SUMA', r'\+'),                               # Operador suma
-    ('RESTA', r'-'),                               # Operador resta
-    ('MULTIPLICACION', r'\*'),                     # Operador multiplicación
-    ('DIVISION', r'/'),                            # Operador división
-    ('ASIGNACION', r'='),                          # Operador de asignación
-    ('ESPACIO', r'\s+'),                           # Espacios en blanco (ignorados)
-    ('ERROR', r'.'),                               # Otros caracteres (error)
-]
+def es_numero_real(cadena):
+    try:
+        float(cadena)
+        return True
+    except ValueError:
+        return False
 
-# Función para generar tokens
-def generar_tokens(cadena):
-    i = 0
-    while i < len(cadena):
-        match = None
-        for token in tokens:
-            tipo, patron = token
-            regex = re.compile(patron)
-            match = regex.match(cadena, i)
-            if match:
-                valor = match.group(0)
-                if tipo != 'ESPACIO':
-                    yield tipo, valor
-                break
-        if not match:
-            print("Token no reconocido:", cadena[i])
-            break
-        else:
-            i = match.end()
+def analizador_lexico(texto):
+    patron_identificador = r'[a-zA-Z_]\w*'
+    patron_numero_real = r'\d+\.\d+'
+
+    identificadores = list(set(re.findall(patron_identificador, texto)))
+    numeros_reales = [num for num in re.findall(patron_numero_real, texto) if es_numero_real(num)]
+
+    return identificadores, numeros_reales
+
+def analizar_texto():
+    texto_entrada = entrada_texto.get("1.0", tk.END)
+    identificadores, numeros_reales = analizador_lexico(texto_entrada)
+
+    lista_resultados.delete(1.0, tk.END)
+
+    for identificador in identificadores:
+        lista_resultados.insert(tk.END, f"{identificador:<20} | Identificador\n")
+
+    for numero_real in numeros_reales:
+        lista_resultados.insert(tk.END, f"{numero_real:<20} | Número real\n")
+
+# Configuración de la interfaz gráfica
+ventana = tk.Tk()
+ventana.title("Analizador Léxico")
+
+etiqueta_texto = tk.Label(ventana, text="Ingrese el texto:")
+etiqueta_texto.pack()
+
+entrada_texto = scrolledtext.ScrolledText(ventana, width=40, height=10)
+entrada_texto.pack()
+
+boton_analizar = tk.Button(ventana, text="Analizar", command=analizar_texto)
+boton_analizar.pack()
+
+lista_resultados = scrolledtext.ScrolledText(ventana, width=50, height=10, wrap=tk.WORD)
+lista_resultados.pack()
+
+ventana.mainloop()
 ```
 
 Este mini generador léxico define una lista de tuplas, donde cada tupla contiene un nombre de token y un patrón de expresión regular que describe cómo reconocer ese token en el código fuente. Luego, la función `generar_tokens` itera sobre la cadena de entrada y aplica los patrones de expresión regular para identificar los tokens. Cada token reconocido se devuelve como una tupla que contiene su tipo y su valor.
