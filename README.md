@@ -393,15 +393,8 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
         print()
 
 
-El analizador sintáctico utiliza un documento proporcionado por el profesor llamado "compilador.lr", que generalmente contiene información sobre la gramática del lenguaje y una tabla de estados que guía el proceso de análisis.
-
-En lugar de "compilador.lr", el documento podría llamarse de manera diferente, pero su función principal sería proporcionar las reglas sintácticas necesarias para comprender la estructura del código fuente. Este documento es esencial para que el analizador sintáctico funcione correctamente.
 
 El resultado del análisis sintáctico es una estructura de datos que representa la estructura gramatical del código fuente, como un árbol de análisis sintáctico (también conocido como árbol de análisis o árbol de sintaxis). Esta estructura se utiliza como entrada para el analizador semántico, que se encarga de realizar verificaciones adicionales y análisis de significado en el código fuente.
-
-compilador.Ir(https://github.com/Ivannini/SSPTL2/blob/main/Proyecto%20Final/compilador.lr)
-
-<img width="266" alt="Captura de pantalla 2024-03-15 083922" src="https://github.com/Ivannini/SSPTL2/assets/99306363/53a3dd60-0840-4d98-a00e-0dacf733e6f6">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Analizador semantico
