@@ -530,7 +530,21 @@ Este es el resultado de la compilación. Sin embargo, parece que hay un problema
 
 
 
+
+
+
+
+
+
+
 <img width="124" alt="Captura de pantalla 2024-03-24 194137" src="https://github.com/Ivannini/SSPTL2/assets/99306363/3591b2cb-3af3-49ed-94fa-c7ab3498428f">
+
+
+
+
+
+
+
 
 
 
