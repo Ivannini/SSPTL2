@@ -505,7 +505,7 @@ requerimientos:
 
 **Analizador Semantico** 
 
-**Gramatica del compilador** 
+**Gramatica del compilador(compilador.Ir)** 
 
 **Arbol Sintactico**
 
