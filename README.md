@@ -27,13 +27,13 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 
 # Evaluación:
 
-**Prácticas y tareas 20%**
+- **Prácticas y tareas 20%**
 
-**Etapas de su proyecto terminado:**
-**Analizador léxico 5%**
-**Analizador sintáctico 30%**
-**Analizador semántico 15%**
-**Generación de código 30%**
+- **Etapas de su proyecto terminado:**
+- **Analizador léxico 5%**
+- **Analizador sintáctico 30%**
+- **Analizador semántico 15%**
+- **Generación de código 30%**
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Modulos](https://github.com/TraductoresLenguajes2/Traductores)
