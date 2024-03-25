@@ -497,6 +497,7 @@ Este código lee las primeras tres líneas del archivo para inicializar los atri
 
 Objetivo: reunir los programas y realizar un arbol sintactico para hacer que se compile en un solo programa tanto como lexico, sintactico y semantico.
 requerimientos:
+
 **Analizador lexico** 
 
 **Analizador Sintactico** 
