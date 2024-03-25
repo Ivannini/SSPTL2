@@ -29,7 +29,7 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 
 - **Prácticas y tareas 20%**
 
-- **Etapas de su proyecto terminado:**
+Etapas de su proyecto terminado:
 - **Analizador léxico 5%**
 - **Analizador sintáctico 30%**
 - **Analizador semántico 15%**
