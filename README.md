@@ -510,30 +510,42 @@ Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se com
 -------------------------------------------------------------------------------------------------------------------------------------------
 Para la compilación y ejecución del código, empleé Python 3.12 (asegúrate de tener la versión actualizada para compilar correctamente) y Tkinter para facilitar la selección del archivo que deseas traducir. Tkinter nos proporciona una herramienta que hace más práctica la visualización de nuestros archivos. En mi caso, dirigí la ejecución directamente a la carpeta de pruebas y solicité que buscara los archivos con la extensión .txt.
 
+
 <img width="511" alt="Captura1" src="https://github.com/Ivannini/SSPTL2/assets/99306363/5f467874-ce5f-44f1-acea-237be4334251">
+
 
 Al iniciar la compilación del programa, se despliega el proceso de manera habitual y solicita al usuario que indique la ubicación del archivo que desea traducir. Tras la selección, el programa inicia la traducción. Para este ejemplo, emplearemos p1 y p2, ambos con la extensión .txt, como se muestra a continuación.
 
+
 <img width="263" alt="suma" src="https://github.com/Ivannini/SSPTL2/assets/99306363/29b6b174-8ef4-403e-b8a2-665c9b3ad8de">
+
 
 <img width="255" alt="sumafloat" src="https://github.com/Ivannini/SSPTL2/assets/99306363/082f1ae0-87c8-4fa6-bad4-3c2af1727c37">
 
+
 Este es el resultado de la compilación. Sin embargo, parece que hay un problema de lógica, ya que el programa falla de manera inesperada al finalizar la compilación. Algunos de los inconvenientes detectados incluyen la incapacidad del programa para interpretar ciertos signos como <>. Para solucionar este problema, deshabilité esa opción, ya que fue la solución más rápida que encontré.
 
+
 <img width="908" alt="Captura de pantalla 2024-03-24 194624" src="https://github.com/Ivannini/SSPTL2/assets/99306363/3e8b4f09-7be5-4a00-b68a-8398c968460e">
+
 
 
 <img width="124" alt="Captura de pantalla 2024-03-24 194137" src="https://github.com/Ivannini/SSPTL2/assets/99306363/3591b2cb-3af3-49ed-94fa-c7ab3498428f">
 
 
+
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
+
 
 
 Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
 
 Los árboles sintácticos son útiles porque proporcionan una representación visual de la estructura del programa que es más fácil de entender y manipular que el código fuente original. Además, son utilizados por el compilador para realizar análisis semántico y optimizaciones, así como para generar código objeto o intermedio.
 
+
 arbol utilizando drawio
+
+
 ![arbol_sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06d18926-f390-4730-9384-e3565b317824)
 
 
