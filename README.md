@@ -545,7 +545,7 @@ El cual nos mostrara el siguiente arbol.
 
 Comprobando con el mensaje final que el codigo compilo correctamente.
 
-# Arbol
+# [Arbol](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/%C3%A1rbol%20sint%C3%A1ctico.pdf)
 
 Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
 
