@@ -25,6 +25,16 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II" es un curso avanzado dentro del ámbito de la informática y la ingeniería de software, que se centra en el estudio y la resolución de problemas específicos relacionados con la construcción y optimización de traductores de lenguajes de programación.
 
+# Evaluación:
+
+**Prácticas y tareas 20%**
+
+**Etapas de su proyecto terminado:**
+**Analizador léxico 5%**
+**Analizador sintáctico 30%**
+**Analizador semántico 15%**
+**Generación de código 30%**
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Modulos](https://github.com/TraductoresLenguajes2/Traductores)
 
