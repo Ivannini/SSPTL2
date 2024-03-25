@@ -562,7 +562,7 @@ arbol utilizando drawio
 
 # Conclusiones
 
-Este proyecto fue bastante complicado para mí. Nunca antes había utilizado Python en profundidad, y saltar a crear un analizador fue un desafío considerable. Por eso, tardé tanto en comprender su funcionamiento. Sin embargo, fue una experiencia muy enriquecedora, ya que ahora tengo una mejor comprensión de cómo funcionan los compiladores. Aunque no pude terminarlo de la manera que hubiera deseado, me divertí y aprendí muchas cosas en el proceso. Para mí, eso es más que suficiente. Espero tener más desafíos como este en el futuro para seguir creciendo.
+Este proyecto fue bastante complicado para mí. Nunca antes había utilizado mas en Python en profundidad, y saltar a crear un analizador fue un desafío considerable. Por eso, tardé tanto en comprender su funcionamiento. Sin embargo, fue una experiencia muy enriquecedora, ya que ahora tengo una mejor comprensión de cómo funcionan los compiladores. Aunque de la manera no le pudido terminarlo que hubiera deseado por completarlo, pero me divertí y aprendí muchas cosas en el proceso. Para mí, eso es más que suficiente. Espero tener más desafíos como este en el futuro para seguir creciendo.
 
 https://app.diagrams.net/
 
