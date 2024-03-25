@@ -495,8 +495,8 @@ Este código lee las primeras tres líneas del archivo para inicializar los atri
 
 # Proyecto Final
 
-Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se compilen en un solo programa tanto como sintactico y semantico
-
+Objetivo: reunir los programas y realizar un arbol sintactico para hacer que se compile en un solo programa tanto como lexico, sintactico y semantico.
+requerimientos:
 **Analizador lexico** 
 
 **Analizador Sintactico** 
@@ -508,13 +508,15 @@ Objetivo: reunir los programas y realizar un arbol sintactico y hacer que se com
 **Arbol Sintactico**
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-Para la elaboración y decodificación del programa empleé Python 3.9 (es imprescindible contar con la versión actualizada para compilar) y Tkinter para facilitar la selección del archivo que se desea traducir. Tkinter nos proporciona una herramienta que hace más práctica la visualización de nuestros archivos. En mi caso, dirigí el programa directamente a la carpeta de pruebas y le indiqué que buscara los archivos con la extensión .txt.
+Acontinuacion Se mostrara el funcionamiento del codigo del Proyecto Final de la materia, el cual cuenta con la implementacion del Analizador Lexico, Analizador Sintactico y el Analizador Semantico.
+
+para esta elaboración y decodificación del programa es necesario contar con la version 3.9 de python,(es imprescindible contar con la versión actualizada para compilar) y Tkinter para facilitar la selección del archivo que se desea traducir. Tkinter nos proporciona una herramienta que hace más práctica la visualización de nuestros archivos. En mi caso, dirigí el programa directamente a la carpeta de pruebas y le indiqué que buscara los archivos con la extensión .txt.
 
 
 <img width="511" alt="Captura1" src="https://github.com/Ivannini/SSPTL2/assets/99306363/5f467874-ce5f-44f1-acea-237be4334251">
 
 
-Al iniciar la compilación del programa, este solicita el directorio del archivo a traducir. Una vez seleccionado, comienza el proceso de  la traducción. Para este ejemplo, utilizaremos los archivos p1 y p2, ambos con extensión .txt.
+Al iniciar la compilación del programa, una vez seleccionemos nuestro archivo comenzara el analisis. este solicita el directorio del archivo a traducir. al seleccionado, comienza el proceso de  la traducción. Para este ejemplo, utilizaremos los archivos p1 y p2, ambos con extensión .txt.
 
 
 <img width="263" alt="suma" src="https://github.com/Ivannini/SSPTL2/assets/99306363/29b6b174-8ef4-403e-b8a2-665c9b3ad8de">
@@ -522,15 +524,10 @@ Al iniciar la compilación del programa, este solicita el directorio del archivo
 
 <img width="255" alt="sumafloat" src="https://github.com/Ivannini/SSPTL2/assets/99306363/082f1ae0-87c8-4fa6-bad4-3c2af1727c37">
 
-
-Este es el resultado del proceso de compilación. Sin embargo, parece que hay un problema de lógica, ya que el programa se bloquea de forma inesperada al finalizar la compilación. Uno de los inconvenientes del programa es que no interpreta algunos signos como <>, lo cual causaba problemas. La solución más rápida fue desactivar esa opción. Adjunto el diagrama de árbol generado utilizando Draw.io.
+El cual nos mostrara el siguiente arbol.
 
 
 <img width="908" alt="Captura de pantalla 2024-03-24 194624" src="https://github.com/Ivannini/SSPTL2/assets/99306363/3e8b4f09-7be5-4a00-b68a-8398c968460e">
-
-
-
-
 
 
 
@@ -542,27 +539,26 @@ Este es el resultado del proceso de compilación. Sin embargo, parece que hay un
 
 
 
-
-
-
-
-
-
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
 
+Comprobando con el mensaje final que el codigo compilo correctamente.
 
+# Arbol
 
 Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
 
 Los árboles sintácticos son útiles porque proporcionan una representación visual de la estructura del programa que es más fácil de entender y manipular que el código fuente original. Además, son utilizados por el compilador para realizar análisis semántico y optimizaciones, así como para generar código objeto o intermedio.
 
+Este es el resultado del proceso de compilación, El cual nos mostrara el siguiente arbol. Adjunto el diagrama de árbol generado utilizando Draw.io.
+
 arbol utilizando drawio
 
 ![arbol_sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06d18926-f390-4730-9384-e3565b317824)
 
+
 # Conclusiones
 
-Este proyecto fue bastante complicado para mí. Nunca antes había utilizado mas en Python en profundidad, y saltar a crear un analizador fue un desafío considerable. Por eso, tardé tanto en comprender su funcionamiento. Sin embargo, fue una experiencia muy enriquecedora, ya que ahora tengo una mejor comprensión de cómo funcionan los compiladores. Aunque de la manera no le pudido terminarlo que hubiera deseado por completarlo, pero me divertí y aprendí muchas cosas en el proceso. Para mí, eso es más que suficiente. Espero tener más desafíos como este en el futuro para seguir creciendo.
+Este proyecto fue bastante complicado para mí. Nunca antes había utilizado mas en Python en profundidad, y saltar a crear un analizador fue un desafío considerable. Por eso, tardé tanto en comprender su funcionamiento. Sin embargo, fue una experiencia muy enriquecedora, ya que ahora tengo una mejor comprensión de cómo funcionan los compiladores, aprendí muchas cosas en el proceso Para mí, eso es más que suficiente. Espero tener más desafíos como este en el futuro para seguir creciendo.
 
 https://app.diagrams.net/
 
