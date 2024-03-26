@@ -154,6 +154,7 @@ Este es solo un ejemplo muy básico de un mini generador léxico y puede ser exp
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
+
 La etapa del proyecto de un analizador léxico completo implica el diseño e implementación de un componente crucial en la construcción de compiladores y procesadores de lenguaje: el analizador léxico. Este componente es responsable de leer el código fuente de un programa y convertirlo en una secuencia de "tokens" o unidades léxicas significativas para el compilador.
 
 La etapa del proyecto de un analizador léxico completo consiste en:
@@ -171,6 +172,7 @@ La etapa del proyecto de un analizador léxico completo consiste en:
 - **Documentación**: Documentar el código del analizador léxico para facilitar su comprensión y uso por parte de otros desarrolladores.
 
 - **Integración**: Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje, como el analizador sintáctico y el generador de código.
+
 
 
     
