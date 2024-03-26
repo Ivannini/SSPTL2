@@ -567,7 +567,7 @@ Este proyecto fue bastante complicado para mí. Nunca antes había utilizado mas
 
 # Referencias
 
-https://app.diagrams.net/
+*https://app.diagrams.net/*
 
 
 
