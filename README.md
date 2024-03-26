@@ -157,8 +157,6 @@ Este es solo un ejemplo muy básico de un mini generador léxico y puede ser exp
 
 La etapa del proyecto de un analizador léxico completo implica el diseño e implementación de un componente crucial en la construcción de compiladores y procesadores de lenguaje: el analizador léxico. Este componente es responsable de leer el código fuente de un programa y convertirlo en una secuencia de "tokens" o unidades léxicas significativas para el compilador.
 
-La etapa del proyecto de un analizador léxico completo consiste en:
-
 **Análisis de requisitos**: Identificar los requisitos específicos del lenguaje que el analizador léxico debe reconocer y procesar.
 
 **Diseño del analizador léxico**: Establecer la estructura y el comportamiento del analizador, incluyendo la elección de algoritmos y estructuras de datos.
@@ -239,7 +237,6 @@ La etapa del proyecto de un analizador léxico completo consiste en:
 
 
 <img width="386" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/82023752-ec93-45ab-8989-15e69f9d875f">
-
 
 
 <img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
@@ -563,7 +560,6 @@ Este es el resultado del proceso de compilación, El cual nos mostrara el siguie
 arbol utilizando drawio
 
 ![arbol_sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06d18926-f390-4730-9384-e3565b317824)
-
 
 # Conclusiones
 
