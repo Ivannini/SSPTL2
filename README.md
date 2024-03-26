@@ -158,19 +158,19 @@ La etapa del proyecto de un analizador léxico completo implica el diseño e imp
 
 La etapa del proyecto de un analizador léxico completo consiste en:
 
-**Análisis de requisitos**: Identificar los requisitos específicos del lenguaje que el analizador léxico debe reconocer y procesar.
+- **Análisis de requisitos**: Identificar los requisitos específicos del lenguaje que el analizador léxico debe reconocer y procesar.
 
-**Diseño del analizador léxico**: Establecer la estructura y el comportamiento del analizador, incluyendo la elección de algoritmos y estructuras de datos.
+- **Diseño del analizador léxico**: Establecer la estructura y el comportamiento del analizador, incluyendo la elección de algoritmos y estructuras de datos.
 
-**Implementación**: Escribir el código del analizador léxico basado en el diseño previamente establecido.
+- **Implementación**: Escribir el código del analizador léxico basado en el diseño previamente establecido.
 
-**Pruebas y depuración**: Probar exhaustivamente el analizador léxico para garantizar su funcionamiento correcto y corregir cualquier error o defecto encontrado.
+- **Pruebas y depuración**: Probar exhaustivamente el analizador léxico para garantizar su funcionamiento correcto y corregir cualquier error o defecto encontrado.
 
-**Optimización**: Mejorar el rendimiento y eficiencia del analizador léxico, si es necesario, mediante técnicas de optimización.
+- **Optimización**: Mejorar el rendimiento y eficiencia del analizador léxico, si es necesario, mediante técnicas de optimización.
 
-**Documentación**: Documentar el código del analizador léxico para facilitar su comprensión y uso por parte de otros desarrolladores.
+- **Documentación**: Documentar el código del analizador léxico para facilitar su comprensión y uso por parte de otros desarrolladores.
 
-**Integración**: Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje, como el analizador sintáctico y el generador de código.
+- **Integración**: Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje, como el analizador sintáctico y el generador de código.
 
 
     
