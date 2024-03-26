@@ -1,6 +1,6 @@
 # [UNIVERSIDAD DE GUADALAJARA CUCEI](https://www.udg.mx/es)
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/f138dab3-55d3-4c09-b704-f479b3214fc4)
+**![image](https://github.com/Ivannini/SSPTL2/assets/99306363/f138dab3-55d3-4c09-b704-f479b3214fc4)**
 
 
 Centro Universitario de Ciencias Exactas e Ingenierías
