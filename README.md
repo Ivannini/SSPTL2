@@ -7,27 +7,27 @@
 División de Electrónica y Computación
 Departamento de Ciencias Computacionales
 
-- Carrera: Ingenieria en computacion
+Carrera: Ingenieria en computacion
 
-- Materia: SEMNINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJE II
+Materia: SEMNINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJE II
 
-- NRC: 103841
+Nrc: 103841
 
-- Clave: I7028
+Clave: I7028
 
-- AULA DUCT2-7
+AULA DUCT2-7
 
-- Seccion: D02
+Seccion: D02
+        
+Siglo: 2024A
 
-- Siglo: 2024A
+Horario: |Lunes y Miercoles| 1 a 3 PM |
 
-- Horario: |Lunes y Miercoles| 1 a 3 PM |
+Alumno: Nudelstejer Gomez Ivan
 
-- Alumno: Nudelstejer Gomez Ivan
+Codigo: 218130122
 
-- Codigo: 218130122
-
-- PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
+PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Curso de la Materia](http://pregrado.udg.mx/sites/default/files/unidadesAprendizaje/i7028_-_seminario_de_solucion_de_problemas_de_traductores_de_lenguajes_ii_-_2016b_0.pdf)
