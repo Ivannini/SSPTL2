@@ -564,9 +564,12 @@ Este proyecto fue bastante complicado para mí. Nunca antes había utilizado mas
 
 # Referencias
 
+![ejemplo1](https://github.com/Ivannini/SSPTL2/assets/99306363/aa6589ee-5af2-414e-817e-0aebc29c83e1)
+
 https://app.diagrams.net/
 
-"C:\Users\Ivann\Documents\Visual studio code\UNIVERSIDAD DE GUADALAJARA CUCEI\proyecto Final\SSPTL2-main\proyecto Final\capturas\ejemplo1.png"
+
+
 
 
 
