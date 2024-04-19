@@ -275,8 +275,6 @@ hola+mundo
 Entrada para el Ejercicio 2
 a+b+c+d+e+f
 
-<img width="458" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/cefb22e0-fc0a-4312-87e4-292f38daf905">
-
 ![Captura de pantalla 2024-04-19 174426](https://github.com/Ivannini/SSPTL2/assets/99306363/b954eca3-7cf4-4a4b-9954-c2ecbf669cdc)
 
 
