@@ -567,7 +567,9 @@ Este es el resultado del proceso de compilación, El cual nos mostrara el siguie
 
 arbol utilizando drawio
 
-![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f6a6a219-d978-4113-a283-29b99ccd66e1)
+
+![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/41668374-527f-4e9d-bd44-8a04384c4937)
+
 
 
 
