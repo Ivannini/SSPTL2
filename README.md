@@ -21,7 +21,7 @@ Seccion: D02
         
 Siglo: 2024A
 
-Horario: |Lunes y Miercoles| 1 a 3 PM |
+Horario: Lunes y Miercoles 1 a 3 PM 
 
 Alumno: Nudelstejer Gomez Ivan
 
