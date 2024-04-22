@@ -560,7 +560,30 @@ Este es el resultado del proceso de compilación, El cual nos mostrara el siguie
 
 arbol utilizando drawio
 
-![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/c2f68d1c-b0ae-4b8e-8d4b-7a2a0c379774)
+![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f6a6a219-d978-4113-a283-29b99ccd66e1)
+
+
+Programa
+├── Definicion
+│   └── DefFunciones
+│       └── int main
+│           └── BloqueFunction
+│               └── DefLocales
+│                   ├── int z
+│                   └── float x
+│                       └── ListVariables
+│                           ├── resultado
+│                           │   └── ExpresionTermino
+│                           │       └── None
+│                           ├── a
+│                           │   └── ExpresiónTermino
+│                           │       └── SentenciasExpre
+│                           │           └── ExpresiónTermino
+│                           │               └── terminoEntero
+│                           │                   └── 10e6
+│                           └── SentenciasIf
+│                               └── ExpresiónOperador
+
 
 
 # Conclusiones
