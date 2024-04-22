@@ -550,6 +550,11 @@ El cual nos mostrara el siguiente arbol.
 
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
 
+
+
+![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
+
+
 Comprobando con el mensaje final que el codigo compilo correctamente.
 
 Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
