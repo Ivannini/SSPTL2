@@ -407,8 +407,6 @@ El resultado del análisis sintáctico es una estructura de datos que representa
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
 
-El objetivo principal del compilador es leer instrucciones de un archivo de texto, analizar sintácticamente esas instrucciones y mostrar el resultado del análisis.
-
 El programa comienza abriendo una ventana de diálogo que permite al usuario seleccionar un archivo de texto. Una vez que el usuario selecciona un archivo, el programa lee el contenido del archivo y lo almacena en una cadena de texto. Si el usuario no selecciona ningún archivo, el programa muestra un mensaje de advertencia y termina.
 
 link aqui[https://github.com/Ivannini/SSPTL2/blob/main/Modulo4/pruebas.py]
