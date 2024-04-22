@@ -71,6 +71,20 @@ La tarea del generador léxico es identificar y clasificar estos tokens a partir
 
 Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
 
+Este mini generador léxico que has creado puede identificar y clasificar tokens como identificadores, enteros y operadores en una cadena de entrada. Utiliza un autómata finito para realizar el análisis léxico, con estados que representan diferentes partes del token que está siendo analizado.
+
+Por ejemplo, si proporcionas la cadena "a123.45+b", el generador léxico clasificará cada parte de la cadena en tokens y lexemas correspondientes. Por lo tanto, el resultado podría ser algo como:
+
+```
+{'token': 'identificador', 'lexema': 'a'} Tipo: 0
+{'token': 'entero', 'lexema': '123'} Tipo: 1
+{'token': 'real', 'lexema': '.45'} Tipo: 2
+{'token': 'opSuma', 'lexema': '+'} Tipo: 5
+{'token': 'error', 'lexema': 'b'} Tipo: -1
+```
+
+Esto indica que 'a' es un identificador, '123' es un número entero, '.45' es un número real, '+' es un operador de suma, y 'b' es un error porque no se ajusta a ninguna regla definida en el análisis léxico.
+
 
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
