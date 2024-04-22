@@ -563,26 +563,6 @@ arbol utilizando drawio
 ![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f6a6a219-d978-4113-a283-29b99ccd66e1)
 
 
-Programa
-├── Definicion
-│   └── DefFunciones
-│       └── int main
-│           └── BloqueFunction
-│               └── DefLocales
-│                   ├── int z
-│                   └── float x
-│                       └── ListVariables
-│                           ├── resultado
-│                           │   └── ExpresionTermino
-│                           │       └── None
-│                           ├── a
-│                           │   └── ExpresiónTermino
-│                           │       └── SentenciasExpre
-│                           │           └── ExpresiónTermino
-│                           │               └── terminoEntero
-│                           │                   └── 10e6
-│                           └── SentenciasIf
-│                               └── ExpresiónOperador
 
 
 
