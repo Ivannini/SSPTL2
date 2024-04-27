@@ -513,6 +513,11 @@ El cual nos mostrara el siguiente arbol.
 ![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
 ![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
 
+![repechaje drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/faefb05e-1682-41bd-b5d1-10c30d36bf8b)
+
+![repechaje drawio (1)](https://github.com/Ivannini/SSPTL2/assets/99306363/d33114bb-5d8f-406a-a915-54a93fd20219)
+
+
 
 
 Comprobando con el mensaje final que el codigo compilo correctamente.
@@ -529,6 +534,7 @@ arbol utilizando drawio
 ![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/41668374-527f-4e9d-bd44-8a04384c4937)
 
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/8400c6c2-5015-4ca8-b17f-4ab9c4207730)
 
 
 
