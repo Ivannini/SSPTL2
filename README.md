@@ -515,7 +515,8 @@ El cual nos mostrara el siguiente arbol.
 
 ![repechaje drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/faefb05e-1682-41bd-b5d1-10c30d36bf8b)
 
-![repechaje drawio (1)](https://github.com/Ivannini/SSPTL2/assets/99306363/d33114bb-5d8f-406a-a915-54a93fd20219)
+![repechaje drawio (2)](https://github.com/Ivannini/SSPTL2/assets/99306363/85672b18-496b-4f4b-8e38-3cb8bbf6006d)
+
 
 
 
