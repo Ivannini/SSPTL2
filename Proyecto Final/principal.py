@@ -2,8 +2,8 @@ import sys
 from tkinter import Tk
 from tkinter import messagebox
 from tkinter.filedialog import askopenfilename
-from src.analizador_Sintactico import AnalizadorSintactico
-from src.analizador_Semantico import AnalizadorSemantico
+from analizadorsintactico import AnalizadorSintactico
+from analizadorsemantico import AnalizadorSemantico
 
 def abrir_archivo():
     root = Tk()
@@ -11,9 +11,9 @@ def abrir_archivo():
     direccion = ""
     instrucciones = ''
     while not direccion:
-        direccion = askopenfilename(initialdir="./tests/", filetypes=[("C", "*.c")])
+        direccion = askopenfilename(initialdir="./pruebas/", filetypes=[("TXT", "*.txt")])
         if not direccion:
-            if not messagebox.askretrycancel(message="No se selecciono ningun archivo, ¿Desea volve a intentarlo?", title="No se selecciono archivo"):
+            if not messagebox.askretrycancel(message="No selecciona un archivo ¿Desea volve a intentarlo?", title="archivo no seleccionado"):
                 return False
     archivo = open(direccion, "r")
     instrucciones = archivo.readlines()
@@ -33,7 +33,7 @@ def main():
             analizador.arbol.arbol.muestra()
             analizadorSem = AnalizadorSemantico(analizador.arbol.arbol)
             print("El código compilo correctamente")
-    # Fin del if-else
+  
 
 if __name__ == '__main__':
     main()
