@@ -110,7 +110,9 @@ input_string = "hola123 45.67 890.123"
 tokens = lexer(input_string)
 print(tokens)
 ```
-Captura:
+
+·Captura:
+
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/bfb62eef-5e65-40bb-92b1-8bd08ea46ae2)
 
 
