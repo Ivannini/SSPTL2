@@ -456,6 +456,9 @@ Además, el analizador semántico puede contribuir a la creación y construcció
 
 <img width="641" alt="Captura de pantalla 2024-03-21 094043" src="https://github.com/Ivannini/SSPTL2/assets/99306363/4c8d94c9-ab6e-4d2e-8f73-96ef21265331">
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/cf9e37b0-8afd-48bb-b6cd-218ebfa99748)
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # [Proyecto Final](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/%C3%A1rbol%20sint%C3%A1ctico.pdf)
