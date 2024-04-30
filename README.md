@@ -525,6 +525,9 @@ El cual nos mostrara el siguiente arbol.
 
 ![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
 
+Muestra el codigo que se agrego el arbol sintactico(etapa)
+
+
 ·Ejemplo 1:
 ![repechaje drawio (3)](https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
 
