@@ -113,13 +113,6 @@ print(tokens)
 
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
-
-
-·Captura:
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/bfb62eef-5e65-40bb-92b1-8bd08ea46ae2)
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
 
