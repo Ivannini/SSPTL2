@@ -548,7 +548,7 @@ arbol utilizando drawio
 
 ![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/41668374-527f-4e9d-bd44-8a04384c4937)
 
-Ejemplo:
+- Ejemplo:
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/8400c6c2-5015-4ca8-b17f-4ab9c4207730)
 
 
