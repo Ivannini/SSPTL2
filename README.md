@@ -238,7 +238,7 @@ a+b+c+d+e+f
 
 ![Captura de pantalla 2024-04-19 174426](https://github.com/Ivannini/SSPTL2/assets/99306363/b954eca3-7cf4-4a4b-9954-c2ecbf669cdc)
 
-- Asi se veia en programa:
+- Asi se veia el programa:
 
   
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c1acbea6-51ec-4872-aa4e-590eed6e0b7f)
