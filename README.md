@@ -243,6 +243,8 @@ a+b+c+d+e+f
   
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c1acbea6-51ec-4872-aa4e-590eed6e0b7f)
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/d3cba9c4-72a3-4b4d-bdc4-f45e9d0d94c0)
+
 
 
 
