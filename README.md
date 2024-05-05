@@ -455,13 +455,6 @@ Este código lee las primeras tres líneas del archivo para inicializar los atri
 
 El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
 
-Por lo cual se genera la raiz en un arbol:
-
-![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
-
-![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
-
-
 ```
 int a;
 int suma(int a, int b){
@@ -557,11 +550,11 @@ El cual nos mostrara el siguiente arbol.
 
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
 
+Por lo cual se genera la raiz en un arbol:
 
+![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
 
-
-
-
+![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
 
 Comprobando con el mensaje final que el codigo compilo correctamente.
 
@@ -576,12 +569,7 @@ arbol utilizando drawio
 
 ![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/41668374-527f-4e9d-bd44-8a04384c4937)
 
-- Ejemplo:
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/8400c6c2-5015-4ca8-b17f-4ab9c4207730)
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Conclusiones
 
 Este proyecto fue algo bastante pesado para mí. Nunca antes había utilizado mas en Python en lo profundidad y saltar a crear un analizador que fue un desafío considerable. Por eso, tardé tanto en comprender su funcionamiento. Sin embargo, fue una experiencia muy enriquecedora, ya que ahora tengo una mejor comprensión de cómo funcionan los compiladores, aprendí muchas cosas en el proceso Para mí, eso es más que suficiente. Espero tener más desafíos como este en el futuro para seguir creciendo.
