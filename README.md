@@ -516,6 +516,118 @@ Además, el analizador semántico puede contribuir a la creación y construcció
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/cf9e37b0-8afd-48bb-b6cd-218ebfa99748)
 
+Simple de un árbol sintáctico abstracto (AST) generado a partir de un programa en un lenguaje de programación hipotético. 
+
+### Programa de ejemplo:
+```python
+entero x = 5
+entero y = 10
+
+funcion suma(entero a, entero b) retorna entero:
+    regresa a + b
+
+entero resultado = suma(x, y)
+escribir(resultado)
+```
+
+### Árbol Sintáctico Abstracto (AST):
+
+```
+Programa
+|__ Definiciones
+    |__ DefinicionVar
+    |   |__ Identificador: x
+    |   |__ Tipo: entero
+    |   |__ Valor: 5
+    |
+    |__ DefinicionVar
+    |   |__ Identificador: y
+    |   |__ Tipo: entero
+    |   |__ Valor: 10
+    |
+    |__ DefinicionFunc
+        |__ Identificador: suma
+        |__ Tipo: entero
+        |__ Parametros
+        |   |__ Parametro
+        |   |   |__ Identificador: a
+        |   |   |__ Tipo: entero
+        |   |
+        |   |__ Parametro
+        |       |__ Identificador: b
+        |       |__ Tipo: entero
+        |
+        |__ BloqFunc
+            |__ DefLocales
+            |   |__ DefLocalSent
+            |       |__ SentenciaExpre
+            |           |__ Expresion
+            |               |__ ExpresionOp (+)
+            |                   |__ ExpresionTermino
+            |                   |   |__ TerminoIdent: a
+            |                   |
+            |                   |__ ExpresionTermino
+            |                       |__ TerminoIdent: b
+            |
+            |__ SentenciaReturn
+                |__ ValorRegresa
+                    |__ Expresion
+                        |__ ExpresionOp (+)
+                            |__ ExpresionTermino
+                            |   |__ TerminoIdent: a
+                            |
+                            |__ ExpresionTermino
+                                |__ TerminoIdent: b
+
+|__ SentenciaFunc
+    |__ LlamadaFunc
+        |__ Identificador: escribir
+        |__ Argumentos
+            |__ Expresion
+                |__ TerminoIdent: resultado
+```
+
+Este es un ejemplo simplificado del árbol sintáctico abstracto que podría generarse a partir del programa proporcionado. Cada nodo del árbol representa una estructura o elemento del programa, y los nodos están organizados de acuerdo con la estructura jerárquica del programa. El árbol es atravesado por el analizador semántico para realizar análisis y verificaciones.
+
+Ejemplo de cómo se podría usar este analizador semántico en un programa Python ficticio:
+
+```python
+programa {
+    entero x
+    funcion suma(a, b) {
+        entero resultado
+        resultado = a + b
+        regresa resultado
+    }
+    
+    x = 10
+    entero y = 5
+    si (x > y) {
+        entero resultado_suma
+        resultado_suma = suma(x, y)
+        imprimir("La suma es: ", resultado_suma)
+    }
+}
+```
+
+Se define una variable `x`, una función `suma`, asigna valores a `x` e `y`, y luego verifica si `x` es mayor que `y` para llamar a la función `suma` y mostrar el resultado.
+
+Ahora, si ejecutamos este código utilizando el analizador semántico que proporcionaste, podría generar una tabla de símbolos similar a la siguiente:
+
+```
+Tabla de Símbolos:
+--------------------
+Identificador | Tipo    | Ámbito | Es Función
+-----------------------------------------------
+x             | entero  | Global | False
+suma          | función | Global | True
+y             | entero  | Global | False
+resultado     | entero  | suma   | False
+resultado_suma| entero  | Global | False
+```
+
+Este es solo un ejemplo de cómo se podría generar la tabla de símbolos para este programa en particular. La tabla muestra los identificadores, sus tipos, los ámbitos en los que están definidos y si son funciones o no. El analizador semántico se encarga de recorrer el código, construir esta tabla y asegurarse de que no haya errores semánticos, como el uso de variables no definidas o la redefinición de símbolos.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # [Proyecto Final](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/%C3%A1rbol%20sint%C3%A1ctico.pdf)
