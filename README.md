@@ -41,8 +41,8 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 - **Módulo 2: Ejemplos LR(1).**
 - **Módulo 3: Practica de analizador Sintáctico LR.**
 - **Módulo 4: Gramática del Compilador.**
-- **Módulo 5: Análisis semántico Práctica análisis semántico.**
-- **Módulo 6: Practica Árbol Sintáctico.**
+- **Módulo 5: Practica Árbol Sintáctico.** 
+- **Módulo 6: Análisis semántico Práctica análisis semántico.**
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
