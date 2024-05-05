@@ -305,6 +305,8 @@ Se define una clase Lexico que representa un analizador léxico básico. Esta cl
 
 Las reglas sintacticas que leemos por el documento compilador .lr que es la tabla estados, que nos proporciona la informacion de que tipo de variables o tipo de accion estamos ejecutando y asi sacar un lenguaje mas completo que nos sevira de apollo para el anamizador semantico.
 
+[Compilador.Ir](https://github.com/Ivannini/SSPTL2/blob/main/Modulo4/compilador.lr)
+
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/5f4dc38a-63ce-44f9-a875-b75a7a95d111)
 
 
