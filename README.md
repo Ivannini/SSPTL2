@@ -514,8 +514,6 @@ Además, el analizador semántico puede contribuir a la creación y construcció
 
 <img width="641" alt="Captura de pantalla 2024-03-21 094043" src="https://github.com/Ivannini/SSPTL2/assets/99306363/4c8d94c9-ab6e-4d2e-8f73-96ef21265331">
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/cf9e37b0-8afd-48bb-b6cd-218ebfa99748)
-
 Simple de un árbol sintáctico abstracto (AST) generado a partir de un programa en un lenguaje de programación hipotético. 
 
 ### Programa de ejemplo:
