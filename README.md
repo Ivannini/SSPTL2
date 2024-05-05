@@ -39,10 +39,11 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 
 - **Módulo 1: Los símbolos léxicos del compilador.**
 - **Módulo 2: Ejemplos LR(1).**
-- **Módulo 3: Practica de analizador Sintáctico LR.**
+- **Módulo 3: Practica de analizador sintáctico LR.**
 - **Módulo 4: Gramática del Compilador.**
 - **Módulo 5: Practica Árbol Sintáctico.** 
-- **Módulo 6: Análisis semántico Práctica análisis semántico.**
+- **Módulo 6: Practica de Análisis Semántico.**
+- **Proyecto Final.**
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
@@ -448,6 +449,15 @@ for line in lines[:3]:
 
 
 Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# [Arbol Sintactico](https://github.com/Ivannini/SSPTL2/files/15214192/Arbol.Sintactico.pdf)
+
+El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
+
+
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Analizador semantico
