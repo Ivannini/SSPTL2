@@ -455,9 +455,35 @@ Este código lee las primeras tres líneas del archivo para inicializar los atri
 
 El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
 
+Por lo cual se genera la raiz en un arbol:
+
+![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
+
+![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
 
 
+```
+int a;
+int suma(int a, int b){
+return a+b;
+}
 
+int main(){
+float a;
+int b;
+int c;
+c = a+b;
+c = suma(8,9);
+}
+```
+
+Muestra el codigo que se agrego el arbol sintactico(etapa)
+
+·Ejemplo 1:
+![repechaje drawio (3)](https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
+
+Ejemplo 2:
+![repechaje drawio (2)](https://github.com/Ivannini/SSPTL2/assets/99306363/85672b18-496b-4f4b-8e38-3cb8bbf6006d)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Analizador semantico
@@ -531,37 +557,7 @@ El cual nos mostrara el siguiente arbol.
 
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
 
-Por lo cual se genera la raiz en un arbol:
 
-![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
-
-![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
-
-
-```
-int a;
-int suma(int a, int b){
-return a+b;
-}
-
-int main(){
-float a;
-int b;
-int c;
-c = a+b;
-c = suma(8,9);
-}
-```
-
-
-Muestra el codigo que se agrego el arbol sintactico(etapa)
-
-
-·Ejemplo 1:
-![repechaje drawio (3)](https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
-
-Ejemplo 2:
-![repechaje drawio (2)](https://github.com/Ivannini/SSPTL2/assets/99306363/85672b18-496b-4f4b-8e38-3cb8bbf6006d)
 
 
 
