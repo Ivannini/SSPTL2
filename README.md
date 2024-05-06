@@ -638,6 +638,16 @@ Este es solo un ejemplo de cómo se podría generar la tabla de símbolos para e
 
 # [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
 
+La etapa de análisis semántico es una fase importante en la compilación de un programa, donde se verifica que las instrucciones del código fuente tienen sentido en el contexto del lenguaje de programación utilizado y cumplen con las reglas definidas por ese lenguaje.
+
+1. Declaraciones de variables: `a`, `b`, y `c` son variables. Se verifica si están declaradas correctamente y si sus tipos son consistentes con cómo se usan.
+
+2. Asignación de valores: `c = a + b;` asigna el resultado de la suma de `a` y `b` a la variable `c`. Se verifica si los tipos de `a`, `b` y `c` son compatibles y si la operación tiene sentido (por ejemplo, si `a` y `b` son números, si tienen tipos compatibles con la suma, etc.).
+
+3. Llamada a función: `c = suma(8,9);` parece ser una llamada a una función llamada `suma`. La semántica verificaría si la función `suma` está declarada correctamente y si los tipos de los argumentos coinciden con los esperados por la función.
+
+En la etapa de análisis semántico, el compilador analiza las reglas del lenguaje de programación y verifica si el código fuente cumple con esas reglas en términos de tipos de datos, operaciones permitidas y otras restricciones semánticas.
+ 
 - Ejemplo 1.
 ```
 int main(){
@@ -650,6 +660,37 @@ c = suma(8,9);
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/79a72258-0b9b-4c00-9e6e-4aa204e84a48)
 
+
+Este segundo ejemplo también es un fragmento de código en C. Vamos a analizarlo:
+
+```c
+int a;
+int suma(int a, int b){
+    return a+b;
+}
+
+int main(){
+    float a;
+    int b;
+    int c;
+    c = a+b;
+    c = suma(8.5,9.9);
+}
+```
+
+1. **Declaración de variable global:** Se declara una variable global llamada `a`, que es de tipo `int` (entero).
+
+2. **Declaración de una función:** Se define una función llamada `suma()` que toma dos parámetros de tipo `int` y devuelve un entero que es la suma de esos dos parámetros.
+
+3. **Función `main()`:** Similar al primer ejemplo, aquí también está la función `main()`, que es el punto de entrada del programa.
+
+4. **Declaración de variables locales:** Dentro de la función `main()`, se declaran tres variables locales: `a`, `b`, y `c`. `a` es de tipo `float`, mientras que `b` y `c` son de tipo `int`.
+
+5. **Operación de asignación:** Al igual que en el primer ejemplo, hay dos líneas que asignan valores a la variable `c`. En la primera línea, se está asignando la suma de `a` y `b` a `c`. Sin embargo, `a` no tiene un valor asignado en este punto, lo que puede causar un comportamiento indefinido.
+
+6. **Llamada a función:** En la segunda línea dentro de `main()`, se está llamando a la función `suma()` y asignando su resultado a la variable `c`. Sin embargo, los argumentos pasados a `suma()` son números decimales (`float`), pero la función `suma()` espera argumentos de tipo `int`. Esto podría generar un aviso o error de tipo en tiempo de compilación.
+
+Este segundo ejemplo presenta una función definida que suma dos enteros, pero en la función `main()` hay una mezcla de tipos que podría causar problemas de tipo en tiempo de compilación o comportamiento indefinido en tiempo de ejecución.
 
 - Ejemplo 2:
 ```
@@ -669,10 +710,6 @@ c = suma(8.5,9.9);
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
-
-
-
-
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
