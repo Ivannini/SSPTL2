@@ -665,21 +665,6 @@ c = suma(8,9);
 
 Este segundo ejemplo también es un fragmento de código en C.
 
-```c
-int a;
-int suma(int a, int b){
-    return a+b;
-}
-
-int main(){
-    float a;
-    int b;
-    int c;
-    c = a+b;
-    c = suma(8.5,9.9);
-}
-```
-
 1. **Declaración de variable global:** Se declara una variable global llamada `a`, que es de tipo `int` (entero).
 
 2. **Declaración de una función:** Se define una función llamada `suma()` que toma dos parámetros de tipo `int` y devuelve un entero que es la suma de esos dos parámetros.
@@ -692,7 +677,7 @@ int main(){
 
 6. **Llamada a función:** En la segunda línea dentro de `main()`, se está llamando a la función `suma()` y asignando su resultado a la variable `c`. Sin embargo, los argumentos pasados a `suma()` son números decimales (`float`), pero la función `suma()` espera argumentos de tipo `int`. Esto podría generar un aviso o error de tipo en tiempo de compilación.
 
-Este segundo ejemplo presenta una función definida que suma dos enteros, pero en la función `main()` hay una mezcla de tipos que podría causar problemas de tipo en tiempo de compilación o comportamiento indefinido en tiempo de ejecución.
+Se presenta una función definida que suma dos enteros, pero en la función `main()` hay una mezcla de tipos que podría causar problemas de tipo en tiempo de compilación o comportamiento indefinido en tiempo de ejecución.
 
 ```
 int a;
