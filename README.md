@@ -689,7 +689,13 @@ El cual nos mostrara el siguiente arbol.
 
 Por lo cual se genera la raiz en un arbol:
 
+Ejemplo 1:
+
+
 ![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
+
+Ejemplo 2:
+
 
 ![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
 
