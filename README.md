@@ -639,18 +639,20 @@ Este es solo un ejemplo de cómo se podría generar la tabla de símbolos para e
 # [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
 
 - Ejemplo 1.
+```
 int main(){
 float a;
 int b;
 int c;
 c = a+b;
 c = suma(8,9);
-
+```
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/79a72258-0b9b-4c00-9e6e-4aa204e84a48)
 
 
 - Ejemplo 2:
+```
 int a;
 int suma(int a, int b){
 return a+b;
@@ -663,6 +665,7 @@ int c;
 c = a+b;
 c = suma(8.5,9.9);
 }
+```
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
