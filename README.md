@@ -506,7 +506,7 @@ Capturas de pantalla del árbol generado:
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Analizador semantico
+# [Analizador semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Practica_Analizador%20Semantico.pdf)
 
 El analizador semántico es una fase crucial en el proceso de compilación que se encarga de analizar el significado y la coherencia del código fuente, una vez que ha pasado la etapa de análisis sintáctico. A diferencia del analizador sintáctico, que se enfoca en la estructura gramatical del código, el analizador semántico se centra en el significado y la lógica detrás de las construcciones del lenguaje de programación.
 
