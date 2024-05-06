@@ -648,7 +648,6 @@ La etapa de análisis semántico es una fase importante en la compilación de un
 
 En la etapa de análisis semántico, el compilador analiza las reglas del lenguaje de programación y verifica si el código fuente cumple con esas reglas en términos de tipos de datos, operaciones permitidas y otras restricciones semánticas.
  
-- Ejemplo 1.
 ```
 int main(){
 float a;
@@ -658,10 +657,13 @@ c = a+b;
 c = suma(8,9);
 ```
 
+- Ejemplo 1.
+
+
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/79a72258-0b9b-4c00-9e6e-4aa204e84a48)
 
 
-Este segundo ejemplo también es un fragmento de código en C. Vamos a analizarlo:
+Este segundo ejemplo también es un fragmento de código en C.
 
 ```c
 int a;
@@ -692,7 +694,6 @@ int main(){
 
 Este segundo ejemplo presenta una función definida que suma dos enteros, pero en la función `main()` hay una mezcla de tipos que podría causar problemas de tipo en tiempo de compilación o comportamiento indefinido en tiempo de ejecución.
 
-- Ejemplo 2:
 ```
 int a;
 int suma(int a, int b){
@@ -708,6 +709,7 @@ c = suma(8.5,9.9);
 }
 ```
 
+- Ejemplo 2:
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
 
