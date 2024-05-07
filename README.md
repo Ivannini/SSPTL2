@@ -490,21 +490,6 @@ Muestra el codigo que se agrego el arbol sintactico(etapa)
 Ejemplo 2:
 ![repechaje drawio (2)](https://github.com/Ivannini/SSPTL2/assets/99306363/85672b18-496b-4f4b-8e38-3cb8bbf6006d)
 
-
-
-Capturas de pantalla del árbol generado:
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/42703ddc-92a0-4b89-87b3-0efc3533e7db)
-
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a125e6b1-3ce3-43d3-a082-b6b63994d399)
-
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/71c912c1-f826-48ed-8325-b76901fbdcb8)
-
-
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Analizador semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Practica_Analizador%20Semantico.pdf)
 
