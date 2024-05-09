@@ -194,7 +194,8 @@ hola+mundo
 Entrada para el Ejercicio 2
 a+b+c+d+e+f
 
-![Captura de pantalla 2024-04-19 174426](https://github.com/Ivannini/SSPTL2/assets/99306363/b954eca3-7cf4-4a4b-9954-c2ecbf669cdc)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/d88bf6c7-8574-458b-baaf-de70b11cd3a8)
+
 
 - Asi se veia el programa:
 
