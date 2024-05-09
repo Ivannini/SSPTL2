@@ -50,19 +50,7 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
 
-Imaginemos que queremos construir un analizador léxico para un lenguaje de programación simple que solo admite operaciones aritméticas básicas (+, -, *, /) y números enteros. El analizador léxico debe ser capaz de reconocer y clasificar los tokens presentes en una cadena de entrada.
-
-Por ejemplo, dada la cadena de entrada: "5 + 3 * 2 - 4", el analizador léxico debería producir la siguiente secuencia de tokens:
-
-- Número entero: 5
-- Operador de suma: +
-- Número entero: 3
-- Operador de multiplicación: *
-- Número entero: 2
-- Operador de resta: -
-- Número entero: 4
-
-Esta secuencia de tokens representa los elementos individuales de la expresión aritmética y es el resultado del análisis léxico realizado por el analizador.
+Al construir un analizador léxico para un lenguaje de programación simple que solo admite operaciones aritméticas básicas (+, -, *, /) y números enteros. El analizador léxico debe ser capaz de reconocer y clasificar los tokens presentes en una cadena de entrada.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
