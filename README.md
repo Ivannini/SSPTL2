@@ -92,23 +92,6 @@ Esto indica que 'a' es un identificador, '123' es un número entero, '.45' es un
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
 
 La etapa del proyecto de un analizador léxico completo implica el diseño e implementación de un componente crucial en la construcción de compiladores y procesadores de lenguaje: el analizador léxico. Este componente es responsable de leer el código fuente de un programa y convertirlo en una secuencia de "tokens" o unidades léxicas significativas para el compilador.
-
-**Análisis de requisitos**: Identificar los requisitos específicos del lenguaje que el analizador léxico debe reconocer y procesar.
-
-**Diseño del analizador léxico**: Establecer la estructura y el comportamiento del analizador, incluyendo la elección de algoritmos y estructuras de datos.
-
-**Implementación**: Escribir el código del analizador léxico basado en el diseño previamente establecido.
-
-**Pruebas y depuración**: Probar exhaustivamente el analizador léxico para garantizar su funcionamiento correcto y corregir cualquier error o defecto encontrado.
-
-**Optimización**: Mejorar el rendimiento y eficiencia del analizador léxico, si es necesario, mediante técnicas de optimización.
-
-**Documentación**: Documentar el código del analizador léxico para facilitar su comprensión y uso por parte de otros desarrolladores.
-
-**Integración**: Integrar el analizador léxico con otros componentes del compilador o procesador de lenguaje, como el analizador sintáctico y el generador de código.
-
-
-
     
      import tkinter as tk
      from tkinter import ttk
