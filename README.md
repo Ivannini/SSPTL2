@@ -86,32 +86,6 @@ Por ejemplo, si proporcionas la cadena "a123.45+b", el generador léxico clasifi
 
 Esto indica que 'a' es un identificador, '123' es un número entero, '.45' es un número real, '+' es un operador de suma, y 'b' es un error porque no se ajusta a ninguna regla definida en el análisis léxico.
 
-·Ejemplo del codigo
-
-```
-import re
-
-def lexer(input_string):
-    tokens = []
-    patterns = [
-        ('IDENTIFIER', r'[a-zA-Z][a-zA-Z0-9]*'),
-        ('REAL', r'\d+\.\d+')
-    ]
-
-    for pattern in patterns:
-        token_type, regex = pattern
-        matches = re.findall(regex, input_string)
-        for match in matches:
-            tokens.append((token_type, match))
-    
-    return tokens
-
-input_string = "hola123 45.67 890.123"
-tokens = lexer(input_string)
-print(tokens)
-```
-
-
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
