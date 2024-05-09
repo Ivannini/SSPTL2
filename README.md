@@ -386,49 +386,9 @@ El resultado del análisis sintáctico es una estructura de datos que representa
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
 
-El programa comienza abriendo una ventana de diálogo que permite al usuario seleccionar un archivo de texto. Una vez que el usuario selecciona un archivo, el programa lee el contenido del archivo y lo almacena en una cadena de texto. Si el usuario no selecciona ningún archivo, el programa muestra un mensaje de advertencia y termina.
+Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
 
-link aqui[https://github.com/Ivannini/SSPTL2/blob/main/Modulo4/pruebas.py]
-
-Después de obtener las instrucciones del archivo, el programa llama a un componente llamado "AnalizadorSintactico" para realizar el análisis sintáctico de esas instrucciones. Si el análisis es exitoso, el programa muestra el resultado del análisis, que puede incluir información sobre la estructura sintáctica de las instrucciones, como un árbol sintáctico.
-
-    class Sintactico {
-    
-    constructor() {
-        this.pila = new Pila();
-        this.fila = 0;
-        this.columna = 0;
-        this.accion = 0;
-        this.idReglas = [];
-        this.lonReglas = [];
-        this.simReglas = [];
-        this.tablaLR = [];
-        this.arbol = new Arbol();
-
-
-        fetch('/GramaticaCompilador/compilador.lr').then(res => res.text())
-        .then(content => {
-            console.log(content);
-            let lines = content.split(/\n/);
-            let numReglas = parseInt(lines.shift());
-            for (let i = 0; i < numReglas; i++) {
-                lines[i] = lines[i].replace("\r", "");
-                let regla = lines[i].split("\t");
-                this.idReglas.push(regla[0]);
-                this.lonReglas.push(regla[1]);
-                this.simReglas.push(regla[2]);
-            }
-
-            let numFila = parseInt(lines[numReglas].split("\t").shift());
-            numReglas++;
-            for (let i = numReglas; i < numReglas + numFila; i++) {
-                lines[i] = lines[i].replace("\r", "");
-                let fila = lines[i].split("\t");
-                this.tablaLR.push(fila);
-            }
-        });
-    }
-
+Esta clase tiene cuatro atributos: idRegla, lonRegla, noTerminal, y table. Estos atributos se inicializan como listas vacías en el constructor init.
 La clase `LRTable` tiene cuatro atributos: `idRegla`, `lonRegla`, `noTerminal` y `table`. Estos atributos se inicializan como listas vacías en el constructor `__init__`.
 
 ```python
