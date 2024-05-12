@@ -506,21 +506,6 @@ c = suma(8.5,9.9);
 
 # [Proyecto Final](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/%C3%A1rbol%20sint%C3%A1ctico.pdf)
 
-Objetivo: reunir los programas y realizar un arbol para hacer que se compile en un solo programa tanto como lexico, sintactico y semantico.
-
-requerimientos:
-
-**Analizador lexico** 
-
-**Analizador Sintactico** 
-
-**Analizador Semantico** 
-
-**Gramatica del compilador(compilador.Ir)** 
-
-**Arbol Sintactico**
-
--------------------------------------------------------------------------------------------------------------------------------------------
 A continuacion Se mostrara el funcionamiento del codigo del Proyecto Final de la materia, el cual cuenta con la implementacion del Analizador Lexico, Analizador Sintactico y el Analizador Semantico.
 
 para esta elaboración y decodificación del programa es necesario contar con la version 3.12 de python,(es imprescindible contar con la versión actualizada para compilar) y Tkinter para facilitar la selección del archivo que se desea traducir. Tkinter nos proporciona una herramienta que hace más práctica la visualización de nuestros archivos. En mi caso, dirigí el programa directamente a la carpeta de pruebas y le indiqué que buscara los archivos con la extensión .txt.
