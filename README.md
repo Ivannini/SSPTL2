@@ -145,6 +145,9 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 
 <img width="353" alt="Captura de pantalla 2024-03-19 213658" src="https://github.com/Ivannini/SSPTL2/assets/99306363/01b3031e-78ec-4df4-afb9-3d074c8513d0">
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/b4793c7c-aae9-4939-951d-dd8804c8be99)
+
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
