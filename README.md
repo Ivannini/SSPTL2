@@ -166,7 +166,8 @@ a+b+c+d+e+f
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/befd26de-3656-487e-8255-e87d84f6b2a4)
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/d88bf6c7-8574-458b-baaf-de70b11cd3a8)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/745f714b-b8cb-4877-9aad-7439df799c16)
+
 
 
 - Asi se veia el programa:
