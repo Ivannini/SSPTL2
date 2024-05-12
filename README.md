@@ -154,8 +154,14 @@ Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del arch
 Entrada para el Ejercicio 1
 hola+mundo
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/fa6e7a0d-6274-4c2b-95cb-85cf0fd50916)
+
+
 Entrada para el Ejercicio 2
 a+b+c+d+e+f
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/befd26de-3656-487e-8255-e87d84f6b2a4)
+
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/d88bf6c7-8574-458b-baaf-de70b11cd3a8)
 
