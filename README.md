@@ -38,10 +38,10 @@ La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II
 # [Modulos](https://github.com/TraductoresLenguajes2/Traductores)
 
 - **Módulo 1: Mini analizador lexico.**
-- **Módulo 2: Analizador lexico.**
-- **Módulo 3: Mini analizador sintáctico LR.**
+- **Módulo 2: Mini Analizador lexico.**
+- **Módulo 3: Analizador sintáctico(Implementacion usando objetos.**
 - **Módulo 4: Gramática del Compilador.**
-- **Módulo 5: Árbol Sintáctico.** 
+- **Módulo 5: Mostrar Árbol Sintáctico.** 
 - **Módulo 6: Análisis Semántico.**
 - **Proyecto Final.**
 
