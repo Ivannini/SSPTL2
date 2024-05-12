@@ -388,13 +388,19 @@ c = suma(8,9);
 }
 ```
 
-Muestra el codigo que se agrego el arbol sintactico(etapa)
+Muestra el resultado del programa
 
 ·Ejemplo 1:
-![repechaje drawio (3)](https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
+![repechaje drawio (3)]
+(https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
 
 Ejemplo 2:
 ![repechaje drawio (2)](https://github.com/Ivannini/SSPTL2/assets/99306363/85672b18-496b-4f4b-8e38-3cb8bbf6006d)
+
+Resultado:
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/2f3eab48-0b56-4c8e-9bff-78ab4efcb6b5)
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Analizador semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Practica_Analizador%20Semantico.pdf)
