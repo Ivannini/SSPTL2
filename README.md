@@ -391,8 +391,7 @@ c = suma(8,9);
 Muestra el resultado del programa
 
 ·Ejemplo 1:
-![repechaje drawio (3)]
-(https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
+![repechaje drawio (3)](https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
 
 Ejemplo 2:
 ![repechaje drawio (2)](https://github.com/Ivannini/SSPTL2/assets/99306363/85672b18-496b-4f4b-8e38-3cb8bbf6006d)
