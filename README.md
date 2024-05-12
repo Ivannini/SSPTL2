@@ -154,6 +154,14 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 # [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
 
+En este trabajo analizaremos los elementos de la cadena, solo aplicando dos reglas:
+
+R1 = E -> id + E
+
+R2 = E -> id
+
+Metodo: Utilizaremos un elemento de tipo pila, en el cual añadiremos los elementos analizados, y el desplazamiento, este lo obtendremos por medio de la siguiente tabla:
+
 Entrada para el Ejercicio 1
 hola+mundo
 
