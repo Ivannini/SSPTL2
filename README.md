@@ -367,7 +367,7 @@ Este código lee las primeras tres líneas del archivo para inicializar los atri
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Arbol Sintactico](https://github.com/Ivannini/SSPTL2/files/15214192/Arbol.Sintactico.pdf)
 
-El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa. Un AST es usualmente el resultado del analizador sintáctico en la fase de un compilador. A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
+El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa.A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
 
 Ademas incluye el siguiente el siguiente codigo y su árbol sintáctico que se genera.
 
