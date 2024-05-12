@@ -145,21 +145,7 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 
 <img width="353" alt="Captura de pantalla 2024-03-19 213658" src="https://github.com/Ivannini/SSPTL2/assets/99306363/01b3031e-78ec-4df4-afb9-3d074c8513d0">
 
-Supongamos que tenemos una línea de código en Python:
 
-```python
-x = 10 + 20
-```
-
-El analizador léxico dividiría esta línea en los siguientes tokens:
-
-1. Token de identificador: `x`
-2. Token de asignación: `=`
-3. Token de número entero: `10`
-4. Token de operador de suma: `+`
-5. Token de número entero: `20`
-
-Cada token representa una unidad léxica significativa en el código, y el analizador léxico los identifica para su procesamiento posterior por parte del compilador o intérprete de Python.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
