@@ -389,7 +389,7 @@ resultado     | entero  | suma   | False
 resultado_suma| entero  | Global | False
 ```
 
-Este es solo un ejemplo de cómo se podría generar la tabla de símbolos para este programa en particular. La tabla muestra los identificadores, sus tipos, los ámbitos en los que están definidos y si son funciones o no. El analizador semántico se encarga de recorrer el código, construir esta tabla y asegurarse de que no haya errores semánticos, como el uso de variables no definidas o la redefinición de símbolos.
+Este es solo un ejemplo de cómo se podría generar la tabla de símbolos para este programa en particular. La tabla muestra los identificadores, sus tipos, los ámbitos en los que están definidos y si son funciones o no. 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
