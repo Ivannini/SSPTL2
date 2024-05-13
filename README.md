@@ -554,16 +554,7 @@ Ejemplo 2:
 
 Comprobando con el mensaje final que el codigo compilo correctamente.
 
-Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. Durante este proceso, se construye un árbol sintáctico que refleja la jerarquía de las construcciones sintácticas del programa.
-
-Los árboles sintácticos son útiles porque proporcionan una representación visual de la estructura del programa que es más fácil de entender y manipular que el código fuente original. Además, son utilizados por el compilador para realizar análisis semántico y optimizaciones, así como para generar código objeto o intermedio.
-
-Este es el resultado del proceso de compilación, El cual nos mostrara el siguiente arbol. Adjunto el diagrama de árbol generado utilizando Draw.io.
-
-arbol utilizando drawio
-
-
-![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/41668374-527f-4e9d-bd44-8a04384c4937)
+Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Conclusiones
