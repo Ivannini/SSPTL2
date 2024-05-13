@@ -414,7 +414,7 @@ programa {
 
 Se define una variable `x`, una función `suma`, asigna valores a `x` e `y`, y luego verifica si `x` es mayor que `y` para llamar a la función `suma` y mostrar el resultado.
 
-Ahora, si ejecutamos este código utilizando el analizador semántico que proporcionaste, podría generar una tabla de símbolos similar a la siguiente:
+Si ejecutamos este código utilizando el analizador semántico, podría generar una tabla de símbolos similar a la siguiente:
 
 ```
 Tabla de Símbolos:
@@ -428,7 +428,7 @@ resultado     | entero  | suma   | False
 resultado_suma| entero  | Global | False
 ```
 
-Este es solo un ejemplo de cómo se podría generar la tabla de símbolos para este programa en particular. La tabla muestra los identificadores, sus tipos, los ámbitos en los que están definidos y si son funciones o no. 
+Generar la tabla de símbolos para este programa en particular. La tabla muestra los identificadores, sus tipos, los ámbitos en los que están definidos y si son funciones o no. 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
