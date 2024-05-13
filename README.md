@@ -451,7 +451,7 @@ Este es solo un ejemplo de cómo se podría generar la tabla de símbolos para e
 
 La etapa de análisis semántico es una fase importante en la compilación de un programa, donde se verifica que las instrucciones del código fuente tienen sentido en el contexto del lenguaje de programación utilizado y cumplen con las reglas definidas por ese lenguaje.
 
-En la etapa de análisis semántico, el compilador analiza las reglas del lenguaje de programación y verifica si el código fuente cumple con esas reglas en términos de tipos de datos, operaciones permitidas y otras restricciones semánticas.
+- Ejemplo 1
  
 ```
 int main(){
@@ -462,13 +462,16 @@ c = a+b;
 c = suma(8,9);
 ```
 
-- Ejemplo 1.
-
+- Resultado
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/79a72258-0b9b-4c00-9e6e-4aa204e84a48)
 
 
+- Ejemplo 2:
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
+
+- Resultado
 
 ```
 int a;
@@ -484,10 +487,6 @@ c = a+b;
 c = suma(8.5,9.9);
 }
 ```
-
-- Ejemplo 2:
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
