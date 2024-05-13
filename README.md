@@ -51,15 +51,6 @@ Un "mini" generador léxico generalmente implica que se trata de una implementac
 
 
 ```
-import re
-
-# Definición de la clase Token
-class Token:
-    def __init__(self, tipo, valor):
-        self.tipo = tipo
-        self.valor = valor
-
-# Función del analizador léxico
 def analizador_lexico(cadena):
     # Lista de tokens
     tokens = []
