@@ -49,8 +49,48 @@ La tarea del generador léxico es identificar y clasificar estos tokens a partir
 
 Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
 
+
+```
+import re
+
+# Definición de la clase Token
+class Token:
+    def __init__(self, tipo, valor):
+        self.tipo = tipo
+        self.valor = valor
+
+# Función del analizador léxico
+def analizador_lexico(cadena):
+    # Lista de tokens
+    tokens = []
+    # Patrones para identificar los diferentes tipos de tokens
+    patrones = [
+        ('IDENTIFICADOR', r'\b[a-zA-Z_][a-zA-Z0-9_]*\b'),
+        ('ENTERO', r'\b\d+\b'),
+        ('OP_SUMA', r'\+'),
+        ('REAL', r'\b\d+\.\d+\b'),
+        ('CADENA', r'"[^"]*"'),
+        ('PESOS', r'\$')
+    ]
+    # Búsqueda de los patrones en la cadena de entrada
+    for tipo, patron in patrones:
+        for match in re.finditer(patron, cadena):
+            token = Token(tipo, match.group(0))
+            tokens.append(token)
+    return tokens
+
+# Cadena a analizar
+cadena_a_analizar = 'Adios 21 + 14.3 "Texto" $100'
+tokens = analizador_lexico(cadena_a_analizar)
+
+# Imprimir los tokens encontrados
+for token in tokens:
+    print(f'Tipo: {token.tipo}, Valor: {token.valor}')
+```
+
 Este mini generador léxico puede identificar y clasificar tokens como identificadores, enteros y operadores en una cadena de entrada. Utiliza un autómata finito para realizar el análisis léxico, con estados que representan diferentes partes del token que está siendo analizado.
 
+cadena_prueba = 'Adios 21 + 14.3 "Texto" $100'
 
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
