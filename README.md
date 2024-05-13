@@ -427,16 +427,14 @@ Al iniciar la compilación del programa, una vez seleccionemos nuestro archivo c
 
 
 
-
-
 <img width="124" alt="Captura de pantalla 2024-03-24 194137" src="https://github.com/Ivannini/SSPTL2/assets/99306363/3591b2cb-3af3-49ed-94fa-c7ab3498428f">
-
 
 
 
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
 
 
+```
 int a;
 int suma(int a, int b){
 return a+b;
@@ -449,6 +447,7 @@ int c;
 c = a+b;
 c = suma(8,9);
 }
+```
 
 
 ![Arbol drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f61c7667-4d26-4a5d-90f2-daddffb4ff9b)
