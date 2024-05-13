@@ -165,7 +165,7 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 
 <img width="353" alt="Captura de pantalla 2024-03-19 213658" src="https://github.com/Ivannini/SSPTL2/assets/99306363/01b3031e-78ec-4df4-afb9-3d074c8513d0">
 
-
+# [Codigo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/AnalizadorLexico.py)
 
 ```
 tokens = [
@@ -195,7 +195,6 @@ tokens = [
     ('DESCONOCIDO', r'$', 23)
 ]
 ```
-
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a10f1e3c-d801-4231-82a4-f36fe286b236)
 
