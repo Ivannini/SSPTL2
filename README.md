@@ -591,6 +591,7 @@ c = suma(8,9);
 }
 ```
 
+- Muestra del codigo que se agrego al arbol sintactico
 
 ![Arbol drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f61c7667-4d26-4a5d-90f2-daddffb4ff9b)
 
