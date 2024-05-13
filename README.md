@@ -543,8 +543,6 @@ Ejemplo 2:
 
 Comprobando con el mensaje final que el codigo compilo correctamente.
 
-Cuando un compilador o un analizador sintáctico procesa el código fuente de un programa, lo descompone en componentes léxicos (tokens) y luego analiza la estructura de estos componentes para verificar su conformidad con las reglas gramaticales del lenguaje. 
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Conclusiones
 
