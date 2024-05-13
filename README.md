@@ -462,7 +462,10 @@ def generar(archivo):
 
 
 # [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
+
 - (Tambien se representa como proyecto)
+
+
 La etapa de análisis semántico es una fase importante en la compilación de un programa, donde se verifica que las instrucciones del código fuente tienen sentido en el contexto del lenguaje de programación utilizado y cumplen con las reglas definidas por ese lenguaje.
 
 - Ejemplo 1
