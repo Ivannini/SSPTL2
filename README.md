@@ -188,6 +188,7 @@ a+b+c+d+e+f
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/befd26de-3656-487e-8255-e87d84f6b2a4)
 
+EXCEL
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/745f714b-b8cb-4877-9aad-7439df799c16)
 
