@@ -333,11 +333,12 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
         print()
 
 
-El resultado del análisis sintáctico es una estructura de datos que representa la estructura gramatical del código fuente, como un árbol de análisis sintáctico (también conocido como árbol de análisis o árbol de sintaxis). Esta estructura se utiliza como entrada para el analizador semántico, que se encarga de realizar verificaciones adicionales y análisis de significado en el código fuente.
+El resultado del análisis sintáctico es una estructura de datos que representa la estructura gramatical del código fuente, como un árbol de análisis sintáctico (también conocido como árbol de análisis o árbol de sintaxis). 
 
 - Ejemplo:
   
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/b9020d48-c42d-42c3-a750-5b9c18f6c0b2)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/2940971e-30a6-43d2-b227-3f02abb6577c)
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
