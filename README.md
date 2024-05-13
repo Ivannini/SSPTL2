@@ -473,17 +473,30 @@ Al iniciar la compilación del programa, una vez seleccionemos nuestro archivo c
 
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
 
-Por lo cual se genera la raiz en un arbol:
 
-Ejemplo 1:
+int a;
+int suma(int a, int b){
+return a+b;
+}
+
+int main(){
+float a;
+int b;
+int c;
+c = a+b;
+c = suma(8,9);
+}
 
 
-![algo drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/06a8fe63-0bc1-48e5-9a05-012fd6282140)
-
-Ejemplo 2:
+![Arbol drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f61c7667-4d26-4a5d-90f2-daddffb4ff9b)
 
 
-![algo2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/6d92b01d-6c4f-43b0-b884-8bb84deb5f7c)
+![Arbol2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/4bb377a3-fd49-428f-8fc9-ab0929332f73)
+
+
+
+
+
 
 Comprobando con el mensaje final que el codigo compilo correctamente.
 
