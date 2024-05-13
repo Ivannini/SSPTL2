@@ -366,6 +366,12 @@ El resultado del análisis sintáctico es una estructura de datos que representa
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/2940971e-30a6-43d2-b227-3f02abb6577c)
 
 
+- Resultado
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/70369374-a1d9-4b9a-8e56-e82273ce9431)
+
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
