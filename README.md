@@ -497,9 +497,6 @@ c = suma(8,9);
 ![Arbol drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f61c7667-4d26-4a5d-90f2-daddffb4ff9b)
 
 
-![Arbol2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/4bb377a3-fd49-428f-8fc9-ab0929332f73)
-
-
 Comprobando con el mensaje final que el codigo compilo correctamente.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
