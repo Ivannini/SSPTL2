@@ -222,7 +222,7 @@ a+b+c+d+e+f
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/befd26de-3656-487e-8255-e87d84f6b2a4)
 
-EXCEL
+[EXCEL](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Tarea%20-%20Mini%20analizador%20sint%C3%A1ctico%20(Excel).xlsx)
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/745f714b-b8cb-4877-9aad-7439df799c16)
 
