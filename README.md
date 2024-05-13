@@ -342,43 +342,6 @@ for line in lines[:3]:
 Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Arbol Sintactico](https://github.com/Ivannini/SSPTL2/files/15214192/Arbol.Sintactico.pdf)
-
-El Árbol de sintaxis abstracta es una estructura de datos usada extensamente en compiladores, debido a su propiedad de representar la estructura del código de un programa.A menudo sirve como un intermediario de la representación del programa a través de etapas que requiere el compilador, y tiene un impacto fuerte en la salida final del compilador.
-
-Ademas incluye el siguiente el siguiente codigo y su árbol sintáctico que se genera.
-
-El objetivo es generar un árbol sintáctico utilizando el siguiente código:
-
-```
-int a;
-int suma(int a, int b){
-return a+b;
-}
-
-int main(){
-float a;
-int b;
-int c;
-c = a+b;
-c = suma(8,9);
-}
-```
-
-Muestra el resultado del programa
-
-·Ejemplo 1:
-![repechaje drawio (3)](https://github.com/Ivannini/SSPTL2/assets/99306363/4f6d169c-d031-48ee-848f-5dd8214b909f)
-
-Ejemplo 2:
-![repechaje drawio (2)](https://github.com/Ivannini/SSPTL2/assets/99306363/85672b18-496b-4f4b-8e38-3cb8bbf6006d)
-
-Resultado:
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/2f3eab48-0b56-4c8e-9bff-78ab4efcb6b5)
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Analizador semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Practica_Analizador%20Semantico.pdf)
 
 El analizador semántico es una fase crucial en el proceso de compilación que se encarga de analizar el significado y la coherencia del código fuente, una vez que ha pasado la etapa de análisis sintáctico. A diferencia del analizador sintáctico, que se enfoca en la estructura gramatical del código, el analizador semántico se centra en el significado y la lógica detrás de las construcciones del lenguaje de programación.
