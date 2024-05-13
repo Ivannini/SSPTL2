@@ -432,8 +432,37 @@ Generar la tabla de símbolos para este programa en particular. La tabla muestra
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
+# Generador de codigo
 
+```
+import subprocess
+
+def generar(archivo):
+    try:
+        archivo = '../../' + archivo
+
+        # Convertir el código C a ensamblador
+        subprocess.run(["gcc", "-S", "-masm=intel", archivo, "-o", "../../ejecutable/final.asm"], cwd="MINGW/bin")
+
+        # Enlazar el código objeto para crear un test ejecutable
+        subprocess.run(["gcc", archivo, "-o", "../../ejecutable/final.exe"], cwd="MINGW/bin")
+
+        # Abrir el archivo .exe después de generar
+        subprocess.run(["start", "../../ejecutable/final.exe"], cwd="MINGW/bin", shell=True)
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error: {e}")
+    except FileNotFoundError as e:
+        print(f"Error: {e}")
+    except Exception as e:
+        print(f"Error desconocido: {e}")
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
+- (Tambien se representa como proyecto)
 La etapa de análisis semántico es una fase importante en la compilación de un programa, donde se verifica que las instrucciones del código fuente tienen sentido en el contexto del lenguaje de programación utilizado y cumplen con las reglas definidas por ese lenguaje.
 
 - Ejemplo 1
@@ -473,33 +502,7 @@ c = suma(8.5,9.9);
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Generador de codigo
-
-```
-import subprocess
-
-def generar(archivo):
-    try:
-        archivo = '../../' + archivo
-
-        # Convertir el código C a ensamblador
-        subprocess.run(["gcc", "-S", "-masm=intel", archivo, "-o", "../../ejecutable/final.asm"], cwd="MINGW/bin")
-
-        # Enlazar el código objeto para crear un test ejecutable
-        subprocess.run(["gcc", archivo, "-o", "../../ejecutable/final.exe"], cwd="MINGW/bin")
-
-        # Abrir el archivo .exe después de generar
-        subprocess.run(["start", "../../ejecutable/final.exe"], cwd="MINGW/bin", shell=True)
-
-    except subprocess.CalledProcessError as e:
-        print(f"Error: {e}")
-    except FileNotFoundError as e:
-        print(f"Error: {e}")
-    except Exception as e:
-        print(f"Error desconocido: {e}")
-```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
