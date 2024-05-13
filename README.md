@@ -165,6 +165,41 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 
 <img width="353" alt="Captura de pantalla 2024-03-19 213658" src="https://github.com/Ivannini/SSPTL2/assets/99306363/01b3031e-78ec-4df4-afb9-3d074c8513d0">
 
+
+
+```
+tokens = [
+    ('IDENTIFICADOR', r'[a-zA-Z][a-zA-Z0-9]*', 0),
+    ('ENTERO', r'\d+', 1),
+    ('REAL', r'\d+\.\d+', 2),
+    ('CADENA', r'"[^"]*"', 3),
+    ('TIPO', r'int|float|void', 4),
+    ('OP_SUMA', r'[+-]', 5),
+    ('OP_MUL', r'[*/]', 6),
+    ('OP_RELAC', r'<|<=|>|>=|!=|==', 7),
+    ('OP_OR', r'\|\|', 8),
+    ('OP_AND', r'&&', 9),
+    ('OP_NOT', r'!', 10),
+    ('OP_IGUALDAD', r'==|!=', 11),
+    ('PUNTO_Y_COMA', r';', 12),
+    ('COMA', r',', 13),
+    ('PARENTESIS_ABIERTO', r'\(', 14),
+    ('PARENTESIS_CERRADO', r'\)', 15),
+    ('LLAVE_ABIERTA', r'{', 16),
+    ('LLAVE_CERRADA', r'}', 17),
+    ('ASIGNACION', r'=', 18),
+    ('IF', r'if', 19),
+    ('WHILE', r'while', 20),
+    ('RETURN', r'return', 21),
+    ('ELSE', r'else', 22),
+    ('DESCONOCIDO', r'$', 23)
+]
+```
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a10f1e3c-d801-4231-82a4-f36fe286b236)
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
