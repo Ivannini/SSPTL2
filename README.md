@@ -35,17 +35,6 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II" es un curso avanzado dentro del ámbito de la informática y la ingeniería de software, que se centra en el estudio y la resolución de problemas específicos relacionados con la construcción y optimización de traductores de lenguajes de programación.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Modulos](https://github.com/TraductoresLenguajes2/Traductores)
-
-- **Módulo 1: Mini analizador lexico.**
-- **Módulo 2: Mini Analizador lexico.**
-- **Módulo 3: Analizador sintáctico(Implementacion usando objetos.**
-- **Módulo 4: Gramática del Compilador.**
-- **Módulo 5: Mostrar Árbol Sintáctico.** 
-- **Módulo 6: Análisis Semántico.**
-- **Proyecto Final.**
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
 
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
