@@ -538,6 +538,7 @@ c = suma(8.5,9.9);
 # Conclusiones
 
 Este proyecto fue algo bastante pesado para mí. Nunca antes había utilizado mas en Python en lo profundidad y saltar a crear un analizador que fue un desafío considerable. Por eso, tardé tanto en comprender su funcionamiento. Sin embargo, fue una experiencia muy enriquecedora, ya que ahora tengo una mejor comprensión de cómo funcionan los compiladores, aprendí muchas cosas en el proceso Para mí, eso es más que suficiente. 
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Referencias
 
