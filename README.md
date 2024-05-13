@@ -434,6 +434,33 @@ c = suma(8.5,9.9);
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Generador de codigo
+
+```
+import subprocess
+
+def generar(archivo):
+    try:
+        archivo = '../../' + archivo
+
+        # Convertir el código C a ensamblador
+        subprocess.run(["gcc", "-S", "-masm=intel", archivo, "-o", "../../ejecutable/final.asm"], cwd="MINGW/bin")
+
+        # Enlazar el código objeto para crear un test ejecutable
+        subprocess.run(["gcc", archivo, "-o", "../../ejecutable/final.exe"], cwd="MINGW/bin")
+
+        # Abrir el archivo .exe después de generar
+        subprocess.run(["start", "../../ejecutable/final.exe"], cwd="MINGW/bin", shell=True)
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error: {e}")
+    except FileNotFoundError as e:
+        print(f"Error: {e}")
+    except Exception as e:
+        print(f"Error desconocido: {e}")
+```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -495,6 +522,10 @@ c = suma(8,9);
 
 
 ![Arbol drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/f61c7667-4d26-4a5d-90f2-daddffb4ff9b)
+
+
+
+
 
 
 Comprobando con el mensaje final que el codigo compilo correctamente.
