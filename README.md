@@ -136,9 +136,6 @@ Un analizador léxico es una parte esencial de un compilador o intérprete que s
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/b4793c7c-aae9-4939-951d-dd8804c8be99)
 
-
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Mini analizador sintáctico (Excel)](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
@@ -298,7 +295,6 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
         print()
 
 
-
 El resultado del análisis sintáctico es una estructura de datos que representa la estructura gramatical del código fuente, como un árbol de análisis sintáctico (también conocido como árbol de análisis o árbol de sintaxis). Esta estructura se utiliza como entrada para el analizador semántico, que se encarga de realizar verificaciones adicionales y análisis de significado en el código fuente.
 
 - Ejemplo:
@@ -348,11 +344,9 @@ El analizador semántico es una fase crucial en el proceso de compilación que s
 
 Después de que el analizador sintáctico ha generado una representación estructurada del código, como un árbol de análisis sintáctico, el analizador semántico examina este árbol para detectar posibles errores semánticos, como incompatibilidades de tipos, uso incorrecto de variables o funciones, o cualquier otra violación de las reglas semánticas del lenguaje.
 
-Una vez que el análisis semántico ha validado el código y ha confirmado su coherencia, el proceso de traducción puede comenzar. En un proyecto específico, este texto puede ser un archivo de texto plano que contiene código fuente en el lenguaje definido por el compilador. Antes de iniciar la traducción, el analizador semántico puede requerir información adicional, como la ubicación y terminación del texto a traducir.
+Una vez que el análisis semántico ha validado el código y ha confirmado su coherencia, el proceso de traducción puede comenzar. En un proyecto específico, este texto puede ser un archivo de texto plano que contiene código fuente en el lenguaje definido por el compilador. 
 
 <img width="470" alt="Captura de pantalla 2024-03-15 082910" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f33d9408-f091-4621-9d41-1f91f90aa4f5">
-
-La traducción del texto implica convertir el código fuente en una forma ejecutable o en un código objeto para su posterior ejecución o uso. Durante este proceso, el analizador semántico puede generar una lista de datos relevantes que ayudan a comprender la naturaleza del texto, como información sobre las variables, funciones, clases u otros elementos del programa.
 
 Además, el analizador semántico puede contribuir a la creación y construcción de estructuras de datos más complejas, como el árbol de sintaxis abstracta, que representa de manera más precisa la semántica del código y facilita procesos posteriores, como la optimización y la generación de código.
 
