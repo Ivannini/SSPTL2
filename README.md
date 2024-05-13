@@ -79,7 +79,7 @@ for token in tokens:
     print(f'Tipo: {token.tipo}, Valor: {token.valor}')
 ```
 
-Este mini generador léxico puede identificar y clasificar tokens como identificadores, enteros y operadores en una cadena de entrada. Utiliza un autómata finito para realizar el análisis léxico, con estados que representan diferentes partes del token que está siendo analizado.
+Este mini generador léxico puede identificar y clasificar tokens como identificadores, enteros y operadores en una cadena de entrada. 
 
 cadena_prueba = 'Adios 21 + 14.3 "Texto" $100'
 
