@@ -486,55 +486,6 @@ def generar(archivo):
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-# [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
-
-- (Tambien se representa como proyecto)
-
-
-La etapa de análisis semántico es una fase importante en la compilación de un programa, donde se verifica que las instrucciones del código fuente tienen sentido en el contexto del lenguaje de programación utilizado y cumplen con las reglas definidas por ese lenguaje.
-
-- Ejemplo 1
- 
-```
-int main(){
-float a;
-int b;
-int c;
-c = a+b;
-c = suma(8,9);
-```
-
-- Resultado
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/79a72258-0b9b-4c00-9e6e-4aa204e84a48)
-
-
-- Ejemplo 2:
-
-```
-int a;
-int suma(int a, int b){
-return a+b;
-}
-
-int main(){
-float a;
-int b;
-int c;
-c = a+b;
-c = suma(8.5,9.9);
-}
-```
-
-- Resultado
-
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
-
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # [Proyecto Final](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/%C3%A1rbol%20sint%C3%A1ctico.pdf)
 
 A continuacion Se mostrara el funcionamiento del codigo del Proyecto Final de la materia, el cual cuenta con la implementacion del Analizador Lexico, Analizador Sintactico y el Analizador Semantico.
@@ -598,8 +549,52 @@ c = suma(8,9);
 
 ![Arbol2 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/4eaa40b4-bf06-477a-b7fd-05d9d1058c45)
 
-
 Comprobando con el mensaje final que el codigo compilo correctamente.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
+
+- (Tambien se representa como proyecto)
+
+La etapa de análisis semántico es una fase importante en la compilación de un programa, donde se verifica que las instrucciones del código fuente tienen sentido en el contexto del lenguaje de programación utilizado y cumplen con las reglas definidas por ese lenguaje.
+
+- Ejemplo 1
+ 
+```
+int main(){
+float a;
+int b;
+int c;
+c = a+b;
+c = suma(8,9);
+```
+
+- Resultado
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/79a72258-0b9b-4c00-9e6e-4aa204e84a48)
+
+
+- Ejemplo 2:
+
+```
+int a;
+int suma(int a, int b){
+return a+b;
+}
+
+int main(){
+float a;
+int b;
+int c;
+c = a+b;
+c = suma(8.5,9.9);
+}
+```
+
+- Resultado
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Conclusiones
