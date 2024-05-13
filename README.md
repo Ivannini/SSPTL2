@@ -472,6 +472,12 @@ Al iniciar la compilación del programa, una vez seleccionemos nuestro archivo c
 <img width="158" alt="Captura de pantalla 2024-03-24 194255" src="https://github.com/Ivannini/SSPTL2/assets/99306363/a8f58853-0f4a-4fdc-bb38-8fe010104957">
 
 
+Este es el arbol utilizando drawio
+
+![arbol sintactico drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/d6c0d15e-3ce6-4d52-a5c1-952b450f3cd8)
+
+
+
 ```
 int a;
 int suma(int a, int b){
