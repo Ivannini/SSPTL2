@@ -1,7 +1,12 @@
-import sys
 from tkinter import Tk
 from tkinter import messagebox
 from tkinter.filedialog import askopenfilename
+
+
+import sys
+
+
+
 from analizadorsintactico import AnalizadorSintactico
 from analizadorsemantico import AnalizadorSemantico
 
