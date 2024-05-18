@@ -88,6 +88,10 @@ cadena_prueba = 'Adios 21 + 14.3 "Texto" $100'
 # [Etapa del proyecto Analizador Léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
 
 Un analizador léxico es un módulo destinado a leer caracteres del archivo de entrada, donde se encuentra la cadena a analizar, reconocer subcadenas que corresponden a símbolos del lenguaje y devolver los tokens correspondientes y sus atributos.
+
+Objetivo
+Construir un analizador léxico capaz de diferenciar cadenas, identificadores, números reales y enteros, además de múltiples símbolos, operadores, tipos de datos y palabras reservadas.
+
     
      import tkinter as tk
      from tkinter import ttk
