@@ -87,7 +87,7 @@ cadena_prueba = 'Adios 21 + 14.3 "Texto" $100'
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
 
-La etapa del proyecto de un analizador léxico completo implica el diseño e implementación de un componente crucial en la construcción de compiladores y procesadores de lenguaje: el analizador léxico. Este componente es responsable de leer el código fuente de un programa y convertirlo en una secuencia de "tokens" o unidades léxicas significativas para el compilador.
+Un analizador léxico es un módulo destinado a leer caracteres del archivo de entrada, donde se encuentra la cadena a analizar, reconocer subcadenas que corresponden a símbolos del lenguaje y devolver los tokens correspondientes y sus atributos.
     
      import tkinter as tk
      from tkinter import ttk
@@ -149,7 +149,7 @@ La etapa del proyecto de un analizador léxico completo implica el diseño e imp
         if __name__ == '__main__':
         main()
 
-
+- Ejecucion
 
 <img width="386" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/82023752-ec93-45ab-8989-15e69f9d875f">
 
