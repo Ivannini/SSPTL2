@@ -35,14 +35,14 @@ PROFESOR: MICHEL EMANUEL LOPEZ FRANCO
 La materia de "Seminario de Solución de Problemas de Traductores de Lenguaje II" es un curso avanzado dentro del ámbito de la informática y la ingeniería de software, que se centra en el estudio y la resolución de problemas específicos relacionados con la construcción y optimización de traductores de lenguajes de programación.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [¿Qué es es un analizador léxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
+# [¿Qué es es un AnalizadorLéxico?](https://github.com/Ivannini/SSPTL2/blob/main/Nudelstejer_Gomez_Ivan_218130122_%20Inv_Analizador%20Lexico.pdf)
 
 Un analizador léxico es una parte de un compilador o intérprete que escanea el código fuente y lo divide en unidades básicas llamadas tokens, como palabras clave, identificadores y operadores. Es el primer paso en el proceso de traducción del código fuente a un formato que la computadora pueda entender.
 
 Al construir un analizador léxico para un lenguaje de programación simple que solo admite operaciones aritméticas básicas (+, -, *, /) y números enteros. El analizador léxico debe ser capaz de reconocer y clasificar los tokens presentes en una cadena de entrada.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini Generador lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
+# [Mini GeneradorLexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
 Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
 
 Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
@@ -85,7 +85,7 @@ cadena_prueba = 'Adios 21 + 14.3 "Texto" $100'
 <img width="431" alt="Captura de pantalla 2024-01-18 193843" src="https://github.com/Ivannini/SSPTL2/assets/99306363/45bda66a-77b0-4438-b743-de11f63481f6">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Etapa del proyecto analizador léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
+# [Etapa del proyecto Analizador Léxico completo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Simbolos_lexicos/lexico.py)
 
 Un analizador léxico es un módulo destinado a leer caracteres del archivo de entrada, donde se encuentra la cadena a analizar, reconocer subcadenas que corresponden a símbolos del lenguaje y devolver los tokens correspondientes y sus atributos.
     
@@ -157,7 +157,7 @@ Un analizador léxico es un módulo destinado a leer caracteres del archivo de e
 <img width="293" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/c5f1442b-7e70-43dc-b59c-ad47cd71ce61">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Analizador Lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf)
+# [AnalizadorLexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/Etapa%20del%20proyecto%20de%20analizador%20lexico%20completo.pdf)
 
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 Un analizador léxico es una parte esencial de un compilador o intérprete que se encarga de analizar un flujo de caracteres de un programa fuente y convertirlo en una secuencia de "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de programación, como palabras clave, identificadores, constantes y operadores. 
@@ -200,7 +200,7 @@ tokens = [
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini analizador sintáctico](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
+# [Mini AnalizadorSintáctico](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
 
 En este trabajo analizaremos los elementos de la cadena, solo aplicando dos reglas:
@@ -227,7 +227,7 @@ a+b+c+d+e+f
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/745f714b-b8cb-4877-9aad-7439df799c16)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini analizador sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
+# [Mini Analizador Sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
 Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
 
 # [Codigo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo3/Tarea%3A%20Mini%20analizador%20sint%C3%A1ctico%20(c%C3%B3digo)Parte%202.py)
@@ -278,7 +278,7 @@ Se define una clase Lexico que representa un analizador léxico básico. Esta cl
 <img width="303" alt="image" src="https://github.com/Ivannini/SSPTL2/assets/99306363/f65ef57e-f3ee-44b0-a529-ae6fc6130162">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Analizador Sintactico(Implementacion usando objetos)](https://github.com/Ivannini/SSPTL2/blob/main/Tarea_%20Analizador%20Sint%C3%A1ctico%20(Implementaci%C3%B3n%20usando%20Objetos).pdf)
+# [AnalizadorSintactico(Implementacion usando objetos)](https://github.com/Ivannini/SSPTL2/blob/main/Tarea_%20Analizador%20Sint%C3%A1ctico%20(Implementaci%C3%B3n%20usando%20Objetos).pdf)
 
 Las reglas sintacticas que leemos por el documento compilador .lr que es la tabla estados, que nos proporciona la informacion de que tipo de variables o tipo de accion estamos ejecutando y asi sacar un lenguaje mas completo que nos sevira de apollo para el anamizador semantico.
 
@@ -361,11 +361,6 @@ Se define la clase Pila, que representa una pila de elementos. Tiene métodos pa
 
 El resultado del análisis sintáctico es una estructura de datos que representa la estructura gramatical del código fuente, como un árbol de análisis sintáctico (también conocido como árbol de análisis o árbol de sintaxis). 
 
-- Ejemplo:
-  
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/2940971e-30a6-43d2-b227-3f02abb6577c)
-
-
 - Resultado
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/70369374-a1d9-4b9a-8e56-e82273ce9431)
@@ -374,7 +369,7 @@ El resultado del análisis sintáctico es una estructura de datos que representa
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Gramática del compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
+# [Gramática del Compilador](https://github.com/Ivannini/SSPTL2/blob/main/Gramatica%20de%20compilador.pdf)
 
 Esta función toma el código fuente como entrada y genera una lista de tokens. Los tokens son los componentes básicos del lenguaje de programación, como palabras clave, identificadores, operadores, etc. El analizador léxico divide el código fuente en palabras individuales y las almacena como tokens.
 
@@ -409,7 +404,7 @@ for line in lines[:3]:
 Este código lee las primeras tres líneas del archivo para inicializar los atributos de la tabla LR. Si alguna línea tiene un formato incorrecto, se imprime un mensaje de error. Es importante tener en cuenta que esta implementación asume que las tres primeras líneas del archivo contienen información relevante para la tabla LR, como identificadores de reglas, longitud de reglas y no terminales.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Analizador semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Practica_Analizador%20Semantico.pdf)
+# [AnalizadorSemantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Practica_Analizador%20Semantico.pdf)
 
 El analizador semántico es una fase crucial en el proceso de compilación que se encarga de analizar el significado y la coherencia del código fuente, una vez que ha pasado la etapa de análisis sintáctico. A diferencia del analizador sintáctico, que se enfoca en la estructura gramatical del código, el analizador semántico se centra en el significado y la lógica detrás de las construcciones del lenguaje de programación.
 
