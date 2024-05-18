@@ -194,6 +194,7 @@ tokens = [
     ('DESCONOCIDO', r'$', 23)
 ]
 ```
+- Ejecucion
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a10f1e3c-d801-4231-82a4-f36fe286b236)
 
