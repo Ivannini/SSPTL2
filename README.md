@@ -468,46 +468,155 @@ resultado_suma| entero  | Global | False
 
 # Generador de codigo
 
+Script Generador
+
 ```
 import re
 from jinja2 import Template
 
-template_str = """
-class {{ class_name }}:
-    def __init__(self, {% for param, type in params.items() %}{{ param }}: {{ type }}{% if not loop.last %}, {% endif %}{% endfor %}):
-        {% for param in params.keys() %}
-        self.{{ param }} = {{ param }}
-        {% endfor %}
+# Define las plantillas para el lexer y el parser
+lexer_template_str = """
+import ply.lex as lex
+
+tokens = [
+    {% for token in tokens.keys() %}
+    '{{ token }}',{% endfor %}
+]
+
+{% for token, pattern in tokens.items() %}
+t_{{ token }} = r'{{ pattern }}'
+{% endfor %}
+
+# Ignorar espacios en blanco
+t_ignore = ' \\t'
+
+def t_newline(t):
+    r'\\n+'
+    t.lexer.lineno += len(t.value)
+
+def t_error(t):
+    print(f'Illegal character {{t.value[0]}}')
+    t.lexer.skip(1)
+
+lexer = lex.lex()
+"""
+
+parser_template_str = """
+import ply.yacc as yacc
+from lexer import tokens
+
+{% for rule_name, rule_definition in rules.items() %}
+def p_{{ rule_name }}(p):
+    '''{{ rule_name }} : {{ rule_definition }}'''
+    pass
+{% endfor %}
+
+def p_error(p):
+    print(f'Syntax error at {{p.value}}')
+
+parser = yacc.yacc()
 """
 
 def parse_readme(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
 
-    models = {}
-    model_sections = re.split(r'## ', content)[1:]
-    for section in model_sections:
+    tokens = {}
+    rules = {}
+
+    sections = re.split(r'## ', content)[1:]
+    for section in sections:
         lines = section.strip().split('\n')
-        class_name = lines[0].strip()
-        params = {}
-        for line in lines[1:]:
-            param_name, param_type = line.strip().split(': ')
-            params[param_name] = param_type
-        models[class_name] = params
+        section_name = lines[0].strip()
 
-    return models
+        if section_name == "Tokens":
+            for line in lines[1:]:
+                token_name, token_pattern = line.split(': ')
+                tokens[token_name] = token_pattern
+        elif section_name == "Reglas":
+            for line in lines[1:]:
+                rule_name, rule_definition = line.split(': ')
+                rules[rule_name.strip()] = rule_definition.strip()
 
-template = Template(template_str)
+    return tokens, rules
 
-models = parse_readme('README.md')
+tokens, rules = parse_readme('README.md')
 
-for class_name, params in models.items():
-    output = template.render(class_name=class_name, params=params)
-    with open(f'{class_name.lower()}.py', 'w') as f:
-        f.write(output)
+lexer_template = Template(lexer_template_str)
+parser_template = Template(parser_template_str)
 
-print("Clases generadas exitosamente!")
+lexer_content = lexer_template.render(tokens=tokens)
+parser_content = parser_template.render(rules=rules)
 
+with open('analyzer.py', 'w') as f:
+    f.write(lexer_content)
+    f.write('\n')
+    f.write(parser_content)
+
+print("Analizador léxico, sintáctico y semántico generado exitosamente en analyzer.py!")
+
+```
+
+Archivo Generado
+
+```
+import ply.lex as lex
+
+tokens = [
+    'NUM',
+    'PLUS',
+    'MINUS',
+    'MUL',
+    'DIV',
+    'LPAREN',
+    'RPAREN',
+]
+
+t_NUM = r'[0-9]+'
+t_PLUS = r'\+'
+t_MINUS = r'\-'
+t_MUL = r'\*'
+t_DIV = r'\/'
+t_LPAREN = r'\('
+t_RPAREN = r'\)'
+
+# Ignorar espacios en blanco
+t_ignore = ' \t'
+
+def t_newline(t):
+    r'\n+'
+    t.lexer.lineno += len(t.value)
+
+def t_error(t):
+    print(f'Illegal character {t.value[0]}')
+    t.lexer.skip(1)
+
+lexer = lex.lex()
+
+import ply.yacc as yacc
+from lexer import tokens
+
+def p_expr(p):
+    '''expr : expr PLUS term
+            | expr MINUS term
+            | term'''
+    pass
+
+def p_term(p):
+    '''term : term MUL factor
+            | term DIV factor
+            | factor'''
+    pass
+
+def p_factor(p):
+    '''factor : NUM
+              | LPAREN expr RPAREN'''
+    pass
+
+def p_error(p):
+    print(f'Syntax error at {p.value}')
+
+parser = yacc.yacc()
 
 ```
 
