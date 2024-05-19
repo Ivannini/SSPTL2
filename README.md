@@ -472,7 +472,6 @@ resultado_suma| entero  | Global | False
 import re
 from jinja2 import Template
 
-# Define la plantilla para una clase en Python
 template_str = """
 class {{ class_name }}:
     def __init__(self, {% for param, type in params.items() %}{{ param }}: {{ type }}{% if not loop.last %}, {% endif %}{% endfor %}):
@@ -500,7 +499,6 @@ def parse_readme(file_path):
 
 template = Template(template_str)
 
-# Parsear el archivo README
 models = parse_readme('README.md')
 
 for class_name, params in models.items():
