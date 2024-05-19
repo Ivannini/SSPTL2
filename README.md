@@ -236,6 +236,14 @@ a+b+c+d+e+f
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/745f714b-b8cb-4877-9aad-7439df799c16)
 
+
+
+[Codigo](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2/Objetos)
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a40a56be-5655-4b9c-a193-6be333059796)
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # [Mini Analizador Sintáctico (código)](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2)
 Generar un algoritmo para analizar los Ejercicios 1 y 2, los que se realizaron en excel, ahora se realizaran mediante codigo.
