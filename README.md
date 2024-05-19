@@ -211,7 +211,7 @@ Análisis sintáctico, es el proceso de analizar una secuencia de entrada para d
 Analizador sintáctico, analiza una cadena o texto en componentes sintácticos lógicos) es un programa que normalmente es parte de un compilador. El compilador se asegura de que el código se traduce correctamente a un lenguaje ejecutable.
 
 - Objetivo
-Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
+Generar un algoritmo para analizar de manera sintactica las siguiente cadenas de caracteres.
 
 En este trabajo analizaremos los elementos de la cadena, solo aplicando dos reglas:
 
@@ -240,7 +240,8 @@ a+b+c+d+e+f
 
 # [Codigo](https://github.com/Ivannini/SSPTL2/tree/main/Modulo2/Objetos)
 
-
+- Resultado
+  
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a40a56be-5655-4b9c-a193-6be333059796)
 
 
