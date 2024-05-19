@@ -708,7 +708,8 @@ c = suma(8,9);
 
 - Resultado
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/79a72258-0b9b-4c00-9e6e-4aa204e84a48)
+![arbol3 drawio](https://github.com/Ivannini/SSPTL2/assets/99306363/5ef3975d-c562-409c-8976-ec48098c4be6)
+
 
 
 - Ejemplo 2:
