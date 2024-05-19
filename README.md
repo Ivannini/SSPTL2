@@ -301,9 +301,6 @@ Las reglas sintacticas que leemos por el documento compilador .lr que es la tabl
 [Compilador.Ir](https://github.com/Ivannini/SSPTL2/blob/main/Modulo4/compilador.lr)
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/5f4dc38a-63ce-44f9-a875-b75a7a95d111)
-
-
 Se ha implementado una jerarquía de clases mediante el uso de herencia y clases abstractas para modelar elementos de una pila, tales como Terminal, NoTerminal y Estado. La clase Pila se encarga de gestionar una lista que actúa como una pila, con métodos para agregar, eliminar y mostrar elementos. Se han instanciado objetos de las clases definidas, añadiéndolos a la pila y mostrando su contenido. El código sigue los principios de la programación orientada a objetos (OOP) con la aplicación de encapsulamiento y polimorfismo.
 
 Se han definido tres clases concretas que heredan de ElementoPila: Terminal, NoTerminal y Estado. Cada una de estas clases representa un tipo de elemento que puede encontrarse en la pila. Además, cada clase implementa el método "muestra" según su propio tipo, permitiendo una visualización personalizada de la información asociada a cada elemento.
