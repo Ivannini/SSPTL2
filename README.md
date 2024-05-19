@@ -165,10 +165,6 @@ Construir un analizador léxico capaz de diferenciar cadenas, identificadores, n
 El Análisis Léxico es la primera fase de un compilador, este consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. 
 Un analizador léxico es una parte esencial de un compilador o intérprete que se encarga de analizar un flujo de caracteres de un programa fuente y convertirlo en una secuencia de "tokens" o unidades léxicas. Los tokens son unidades significativas de un lenguaje de programación, como palabras clave, identificadores, constantes y operadores. 
 
-- (la imagen representa proyecto)
-
-<img width="353" alt="Captura de pantalla 2024-03-19 213658" src="https://github.com/Ivannini/SSPTL2/assets/99306363/01b3031e-78ec-4df4-afb9-3d074c8513d0">
-
 # [Codigo](https://github.com/Ivannini/SSPTL2/blob/main/Modulo1/AnalizadorLexico.py)
 
 ```
