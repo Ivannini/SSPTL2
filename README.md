@@ -42,7 +42,7 @@ Un analizador léxico es una parte de un compilador o intérprete que escanea el
 Al construir un analizador léxico para un lenguaje de programación simple que solo admite operaciones aritméticas básicas (+, -, *, /) y números enteros. El analizador léxico debe ser capaz de reconocer y clasificar los tokens presentes en una cadena de entrada.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini GeneradorLexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
+# [Mini Generador Lexico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo2/Mini%20Generador%20lexico.py)
 Genera un pequeño analizador léxico, que identifique los siguientes tokens (identificadores y números reales) construidos de la siguiente manera.  identificadores = letra(letra|digito)* Real = entero.entero+
 
 Un "mini" generador léxico generalmente implica que se trata de una implementación más simplificada y compacta en comparación con un generador léxico completo. Puede ser utilizado con fines educativos, para entender los conceptos básicos de análisis léxico y compiladores, o para implementar rápidamente un análisis léxico en proyectos más pequeños.
@@ -204,7 +204,13 @@ tokens = [
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# [Mini AnalizadorSintáctico](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
+# [Mini Analizador Sintáctico](https://github.com/Ivannini/SSPTL2/blob/main/Mini%20analizador%20sintactico(excel).xlsx)
+
+Análisis sintáctico, es el proceso de analizar una secuencia de entrada para determinar su estructura gramatical según una determinada función formal.
+
+Analizador sintáctico, analiza una cadena o texto en componentes sintácticos lógicos) es un programa que normalmente es parte de un compilador. El compilador se asegura de que el código se traduce correctamente a un lenguaje ejecutable.
+
+- Objetivo
 Subir un archivo en excel simulando las gramáticas del ejercicio 1 y 2 del archivo (Practica Analizador Sintactico LR.pdf)
 
 En este trabajo analizaremos los elementos de la cadena, solo aplicando dos reglas:
