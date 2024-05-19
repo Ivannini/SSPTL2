@@ -469,24 +469,47 @@ resultado_suma| entero  | Global | False
 # Generador de codigo
 
 ```
-class codigo():
-    def __init__(self):
+import re
+from jinja2 import Template
 
-        self.codigo = list()
-        self.posicionvar = 4
-        self.comienzo = 0
-        self.codigoif = list()
-        self.cantidadparametros = 0
-    def traducto(self, bandera, code):
-        self.bandera = bandera
-        self.code = code
+# Define la plantilla para una clase en Python
+template_str = """
+class {{ class_name }}:
+    def __init__(self, {% for param, type in params.items() %}{{ param }}: {{ type }}{% if not loop.last %}, {% endif %}{% endfor %}):
+        {% for param in params.keys() %}
+        self.{{ param }} = {{ param }}
+        {% endfor %}
+"""
 
-        if self.bandera == 6:
-            self.codigo.append(str(self.code)+': db 0')
+def parse_readme(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
 
-        if self.bandera == 10 or self.bandera == 12:
-            if globals()['primera']==0:
-                self.codigo.append('section .text \n')
+    models = {}
+    model_sections = re.split(r'## ', content)[1:]
+    for section in model_sections:
+        lines = section.strip().split('\n')
+        class_name = lines[0].strip()
+        params = {}
+        for line in lines[1:]:
+            param_name, param_type = line.strip().split(': ')
+            params[param_name] = param_type
+        models[class_name] = params
+
+    return models
+
+template = Template(template_str)
+
+# Parsear el archivo README
+models = parse_readme('README.md')
+
+for class_name, params in models.items():
+    output = template.render(class_name=class_name, params=params)
+    with open(f'{class_name.lower()}.py', 'w') as f:
+        f.write(output)
+
+print("Clases generadas exitosamente!")
+
 
 ```
 
