@@ -756,7 +756,7 @@ int main ( ) {
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/8bc83518-5fa5-4e0f-a7c5-46095c582c88)
 
-
+```
 +++++++++ÀRBOL SINTÁCTICO+++++++++
 
 programa
@@ -831,6 +831,8 @@ Termino
                                                                                             ListaArgumentos
                                                                                                               DefLocales
                                                                                                                                   Definiciones
+
+```
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a7845251-82a2-4e4f-bae4-4fb1984c1112)
