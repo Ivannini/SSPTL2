@@ -230,8 +230,8 @@ class sintactico:
             valorTabla = int(self.matrizGramatica[topePila][valor])
                 
             if valorTabla == 0:
-                print("\n\n----------ANÁLISIS SEMÁNTICO----------")
-                print("Huvo un error\n\n")
+                print("\n\n+++++++++ANÁLIZADOR SEMÁNTICO+++++++++")
+                print("Se encontro un error\n\n")
                 break
 
             elif valorTabla > 0:
@@ -244,7 +244,7 @@ class sintactico:
             elif valorTabla < 0:
                 if valorTabla == -1:
                     valida = True
-                    print("\n\n----------ÀRBOL SINTÁCTICO----------\n")
+                    print("\n\n+++++++++ÀRBOL SINTÁCTICO+++++++++\n")
                     arbolFinal = arbolSintactico.arbolSintactico()
                     analizadorSem = analisisSemantico.Semantico()
                     self.pila.pop()
