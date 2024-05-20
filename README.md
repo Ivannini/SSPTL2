@@ -773,7 +773,24 @@ int main ( ) {
 - Pero que pasaria si se llega a equivocar al poner un ejemplo y logra detectar un error durante en el programa
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c7627908-9faa-408f-a1dd-4d33db41e822)
+```
+int suma(int x, int y) {
+    return x + y;
+}
+
+int resta(int z) {
+    return z - z;
+}
+
+int main() {
+    int resul1 = suma(8, 9);
+    int resul2 = resta(resul1);
+
+    std::cout << "Resultado 1: " << resul1 << std::endl;
+    std::cout << "Resultado 2: " << resul2 << std::endl;
+}
+
+```
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/f5d9c8d4-934f-4083-8928-dc0fabe0078e)
