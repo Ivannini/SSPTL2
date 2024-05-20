@@ -757,7 +757,80 @@ int main ( ) {
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/8bc83518-5fa5-4e0f-a7c5-46095c582c88)
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/80800e33-0043-4f9d-8977-a36dbab489b1)
++++++++++ÀRBOL SINTÁCTICO+++++++++
+
+programa
+Definiciones
+Definicion
+DefFunc
+Parametros
+ListaParam
+ListaParam
+BloqFunc
+DefLocales
+DefLocal
+Sentencia
+ValorRegresa
+Expresion
+Expresion
+Termino
+    Expresion
+    Termino
+                    DefLocales
+                            Definiciones
+                            Definicion
+                            DefFunc
+                            Parametros
+                            ListaParam
+                            BloqFunc
+                            DefLocales
+                            DefLocal
+                            Sentencia
+                            ValorRegresa
+                            Expresion
+                            Expresion
+                            Termino
+                                Expresion
+                                Termino
+                                                DefLocales
+                                                        Definiciones
+                                                        Definicion
+                                                        DefFunc
+                                                        Parametros
+                                                        BloqFunc
+                                                        DefLocales
+                                                        DefLocal
+                                                        DefVar
+                                                        ListaVar
+                                                           DefLocales
+                                                           DefLocal
+                                                           DefVar
+                                                           ListaVar
+                                                              DefLocales
+                                                              DefLocal
+                                                              Sentencia
+                                                              Expresion
+                                                              Termino
+                                                              LlamadaFunc
+                                                              Argumentos
+                                                              Expresion
+                                                              Termino
+                                                                  ListaArgumentos
+                                                                  Expresion
+                                                                  Termino
+                                                                      ListaArgumentos
+                                                                                        DefLocales
+                                                                                        DefLocal
+                                                                                        Sentencia
+                                                                                        Expresion
+                                                                                        Termino
+                                                                                        LlamadaFunc
+                                                                                        Argumentos
+                                                                                        Expresion
+                                                                                        Termino
+                                                                                            ListaArgumentos
+                                                                                                              DefLocales
+                                                                                                                                  Definiciones
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a7845251-82a2-4e4f-bae4-4fb1984c1112)
