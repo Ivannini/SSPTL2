@@ -746,9 +746,70 @@ int main ( ) {
 
 - Capturas
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/8bc83518-5fa5-4e0f-a7c5-46095c582c88)
-
 ```
++++++++++ANÁLISIS LÉXICO+++++++++
+
+-TOKEN-         -SÍMBOLO-               -TIPO-
+int             entero          4
+suma            Variable
+(               abrirPar                14
+int             entero          4
+x               identificador           0
+,               coma            13
+int             entero          4
+y               identificador           0
+)               cerrarPar               15
+{               abrirLlv                16
+return          retornar                21
+x               identificador           0
++               opSuma          5
+y               identificador           0
+;               puntYcom                12
+}               cerrarLlv               17
+int             entero          4
+resta           Variable
+(               abrirPar                14
+int             entero          4
+z               identificador           0
+)               cerrarPar               15
+{               abrirLlv                16
+return          retornar                21
+z               identificador           0
+-               opSuma          5
+z               identificador           0
+;               puntYcom                12
+}               cerrarLlv               17
+int             entero          4
+main            principal               0
+(               abrirPar                14
+)               cerrarPar               15
+{               abrirLlv                16
+int             entero          4
+resul1          Variable
+;               puntYcom                12
+int             entero          4
+resul2          Variable
+;               puntYcom                12
+resul1          Variable
+=               opRelac         18
+suma            Variable
+(               abrirPar                14
+8               numEnt                  1
+,               coma            13
+9               numEnt                  1
+)               cerrarPar               15
+;               puntYcom                12
+resul2          Variable
+=               opRelac         18
+resta           Variable
+(               abrirPar                14
+resul1          Variable
+)               cerrarPar               15
+;               puntYcom                12
+}               cerrarLlv               17
+```
+
+
 +++++++++ÀRBOL SINTÁCTICO+++++++++
 
 programa
