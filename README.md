@@ -728,17 +728,17 @@ c = suma(8.5,9.9);
 - Ejemplo de como se prueba este programa final
 
 ```
-int suma ( int a , int b ) {
-    return a + b ;
+ int suma ( int x , int y ) {
+    return x + y ;
 }
-int resta ( int c ) {
-    return c - c ;
+int resta ( int z ) {
+    return z - z ;
 }
 
 int main ( ) {
     int resul1 ;
     int resul2 ;
-    resul1 = suma ( 5 , 9 ) ;
+    resul1 = suma ( 8 , 9 ) ;
     resul2 = resta ( resul1 ) ;
 }
 
