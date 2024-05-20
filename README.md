@@ -920,7 +920,8 @@ int main() {
 ```
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/f5d9c8d4-934f-4083-8928-dc0fabe0078e)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/1afad77f-144a-4659-9324-f571eee8880a)
+
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/6e8cbee1-5ee4-4482-82fe-ec8897eca849)
