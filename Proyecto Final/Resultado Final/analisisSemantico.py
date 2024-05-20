@@ -307,12 +307,12 @@ class Semantico:
                 return i
 
     def muestraSimbolos(self):
-        print("----------TABLA DE SIMBOLOS----------\n")
+        print("+++++++++TABLA DE SIMBOLOS+++++++++\n")
         for i in self.tablaSimbolos:
             i.printSimbolo()
 
     def muestraErrores(self):
-        print("\n\n----------ANÁLISIS SEMÁNTICO----------")
+        print("\n\n+++++++++ANÁLIZADOR SEMÁNTICO+++++++++")
         if len(self.listaErrores) == 0:
             print("No se detecto ningun error")
    
