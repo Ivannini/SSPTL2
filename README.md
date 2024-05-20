@@ -622,9 +622,7 @@ parser = yacc.yacc()
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# [Proyecto Final](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/%C3%A1rbol%20sint%C3%A1ctico.pdf)
-
-A continuacion Se mostrara el funcionamiento del codigo del Proyecto Final de la materia, el cual cuenta con la implementacion del Analizador Lexico, Analizador Sintactico y el Analizador Semantico.
+# [Etapa Arbol Sintactico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/%C3%A1rbol%20sint%C3%A1ctico.pdf)
 
 para esta elaboración y decodificación del programa es necesario contar con la version 3.12 de python,(es imprescindible contar con la versión actualizada para compilar) y Tkinter para facilitar la selección del archivo que se desea traducir. Tkinter nos proporciona una herramienta que hace más práctica la visualización de nuestros archivos. En mi caso, dirigí el programa directamente a la carpeta de pruebas y le indiqué que buscara los archivos con la extensión .txt.
 
@@ -633,7 +631,6 @@ para esta elaboración y decodificación del programa es necesario contar con la
 
 
 Al iniciar la compilación del programa, una vez seleccionemos nuestro archivo comenzara el analisis. este solicita el directorio del archivo a traducir. al seleccionado, comienza el proceso de  la traducción. Para este ejemplo, utilizaremos los archivos p1 y p2, ambos con extensión .txt.
-
 
 
 <img width="263" alt="suma" src="https://github.com/Ivannini/SSPTL2/assets/99306363/29b6b174-8ef4-403e-b8a2-665c9b3ad8de">
@@ -690,8 +687,6 @@ Comprobando con el mensaje final que el codigo compilo correctamente.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # [Etapa Analizador Semantico](https://github.com/Ivannini/SSPTL2/blob/main/Modulo6/Etapa%20Analizador%20Semantico.pdf)
-
-- (Tambien se representa como proyecto)
 
 La etapa de análisis semántico es una fase importante en la compilación de un programa, donde se verifica que las instrucciones del código fuente tienen sentido en el contexto del lenguaje de programación utilizado y cumplen con las reglas definidas por ese lenguaje.
 
