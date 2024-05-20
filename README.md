@@ -421,7 +421,7 @@ El analizador semántico es una fase crucial en el proceso de compilación que s
 
 Después de que el analizador sintáctico ha generado una representación estructurada del código, como un árbol de análisis sintáctico, el analizador semántico examina este árbol para detectar posibles errores semánticos, como incompatibilidades de tipos, uso incorrecto de variables o funciones, o cualquier otra violación de las reglas semánticas del lenguaje.
 
-Ejemplo de cómo se podría usar este analizador semántico en un programa Python ficticio:
+- Ejemplo de cómo se podría usar este analizador semántico en un programa Python ficticio:
 
 ```python
 programa {
