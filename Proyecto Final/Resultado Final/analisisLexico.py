@@ -47,7 +47,7 @@ def AnalisisLexico(test):
  
     cadena=""
 
-    print("\n----------ANÁLISIS LÉXICO----------\n\n-TOKEN-\t\t-SÍMBOLO-\t\t-TIPO-")
+    print("\n+++++++++ANÁLISIS LÉXICO+++++++++\n\n-TOKEN-\t\t-SÍMBOLO-\t\t-TIPO-")
     for line in test:
         cont = cont + 1
         tokens = line.split(' ')
