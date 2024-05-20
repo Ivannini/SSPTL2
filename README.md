@@ -770,7 +770,7 @@ int main ( ) {
 
 
 
-- Pero que pasaria si se llega a equivocar al poner un ejemplo y logra detectar un error durante en el programa
+- Ahora que pasaria si se llega a equivocar y ponemos otro ejemplo
 
 
 ```
