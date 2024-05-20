@@ -809,7 +809,7 @@ resul1          Variable
 }               cerrarLlv               17
 ```
 
-
+```
 +++++++++ÀRBOL SINTÁCTICO+++++++++
 
 programa
@@ -884,7 +884,6 @@ Termino
                                                                                             ListaArgumentos
                                                                                                               DefLocales
                                                                                                                                   Definiciones
-
 ```
 
 
