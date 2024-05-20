@@ -735,6 +735,59 @@ c = suma(8.5,9.9);
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/25d4a7ea-6145-455e-98c5-c9e5aca5084b)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Resultado del Proyecto Final
+
+- Ejemplo de como se prueba este programa final
+
+```
+int suma ( int a , int b ) {
+    return a + b ;
+}
+int resta ( int c ) {
+    return c - c ;
+}
+
+int main ( ) {
+    int resul1 ;
+    int resul2 ;
+    resul1 = suma ( 5 , 9 ) ;
+    resul2 = resta ( resul1 ) ;
+}
+
+```
+
+- Capturas
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/8bc83518-5fa5-4e0f-a7c5-46095c582c88)
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/80800e33-0043-4f9d-8977-a36dbab489b1)
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/3428ae97-cbe3-4c9b-8a76-931ab63e607a)
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c28d7a34-d3f1-4a49-8ad9-ee3992c547ef)
+
+
+- Pero que pasaria si se llega a equivocar y lograra detectar un error que tuvo en el programa
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/dc6061b8-0412-4343-beb2-b3fa35aac093)
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/27cbc2f7-772f-4c73-ada4-3703bf5c4de3)
+
+
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/98eb185e-1909-40e8-bd72-ab138e9d7d26)
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Conclusiones
 
 Este proyecto fue algo bastante pesado para mí. Nunca antes había utilizado mas en Python en lo profundidad y saltar a crear un analizador que fue un desafío considerable. Por eso, tardé tanto en comprender su funcionamiento. Sin embargo, fue una experiencia muy enriquecedora, ya que ahora tengo una mejor comprensión de cómo funcionan los compiladores, aprendí muchas cosas en el proceso Para mí, eso es más que suficiente. 
