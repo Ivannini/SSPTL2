@@ -770,7 +770,7 @@ int main ( ) {
 
 
 
-- Pero que pasaria si se llega a equivocar y lograra detectar un error que tuvo en el programa
+- Pero que pasaria si se llega a equivocar al poner un ejemplo y logra detectar un error durante en el programa
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c7627908-9faa-408f-a1dd-4d33db41e822)
