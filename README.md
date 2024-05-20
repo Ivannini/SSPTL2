@@ -766,6 +766,10 @@ int main ( ) {
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c28d7a34-d3f1-4a49-8ad9-ee3992c547ef)
 
 
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/1d96f429-f906-4786-9ca0-5d45baf7c284)
+
+
+
 - Pero que pasaria si se llega a equivocar y lograra detectar un error que tuvo en el programa
 
 
