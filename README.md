@@ -760,7 +760,7 @@ int main ( ) {
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/80800e33-0043-4f9d-8977-a36dbab489b1)
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/3428ae97-cbe3-4c9b-8a76-931ab63e607a)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/a7845251-82a2-4e4f-bae4-4fb1984c1112)
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c28d7a34-d3f1-4a49-8ad9-ee3992c547ef)
