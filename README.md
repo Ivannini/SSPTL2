@@ -744,7 +744,7 @@ int main ( ) {
 
 ```
 
-- Capturas
+- Capturas del programa
 
 ```
 +++++++++ANÁLISIS LÉXICO+++++++++
@@ -897,7 +897,7 @@ Termino
 
 
 
-- Ahora que pasaria si se llega a equivocar y ponemos otro ejemplo
+- Ahora que pasaria si se llega a equivocar al poner un mal ejemplo 
 
 
 ```
