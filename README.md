@@ -912,9 +912,6 @@ int resta(int z) {
 int main() {
     int resul1 = suma(8, 9);
     int resul2 = resta(resul1);
-
-    std::cout << "Resultado 1: " << resul1 << std::endl;
-    std::cout << "Resultado 2: " << resul2 << std::endl;
 }
 
 ```
