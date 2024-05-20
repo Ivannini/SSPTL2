@@ -773,10 +773,11 @@ int main ( ) {
 - Pero que pasaria si se llega a equivocar y lograra detectar un error que tuvo en el programa
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/dc6061b8-0412-4343-beb2-b3fa35aac093)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/c7627908-9faa-408f-a1dd-4d33db41e822)
 
 
-![image](https://github.com/Ivannini/SSPTL2/assets/99306363/27cbc2f7-772f-4c73-ada4-3703bf5c4de3)
+![image](https://github.com/Ivannini/SSPTL2/assets/99306363/f5d9c8d4-934f-4083-8928-dc0fabe0078e)
+
 
 
 ![image](https://github.com/Ivannini/SSPTL2/assets/99306363/98eb185e-1909-40e8-bd72-ab138e9d7d26)
